@@ -8,12 +8,6 @@
 
 	$page = str_replace('-', ' ', $page);
 
-echo $json['sergiler'];
-
-//print_r($json);
-
-
-
 ?> 
 
 <div class="promo portfolio">
