@@ -9,7 +9,7 @@
 	/* SETTINGS */
 
 	$erkajans = 'false';
-	$under_construction = 'false';
+	$under_construction = 'true';
 
 
 	//$_SESSION ['language'] = _language();
