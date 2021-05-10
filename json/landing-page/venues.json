@@ -1,0 +1,67 @@
+{
+   "tr":{
+      "number":[
+         "02"
+      ],
+      "title":[
+         "MEKANLAR"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"İstanbul Arkeoloji Müzeleri":[
+			"/images/main/places/01-s.jpg",
+			"/images/main/places/01-l.jpg",
+			"Fatih",
+			"Topkapı Sarayı’nın yanında bulunan yapı, Osmanlı’dan günümüze ulaşan bir müze binası. Eski Sanayi-i Nefise Mektebi binasının Şark Eserleri Müzesi'ne dönüştürülmesi ve Çinili Köşk'ün de Çini Müzesi olarak yeniden düzenlenip açılmasıyla, üç büyük yapıdan oluşan bir müze kompleksi meydana getirilmiştir."
+		],
+		"Nuruosmaniye Cami Mahzeni":[
+			"/images/main/places/02-s.jpg",
+			"/images/main/places/02-l.jpg",
+			"Fatih",
+			"Yapımına I. Mahmud tarafından başlanan yapı, Sultan Mahmud’un vefatıyla yarıda kaldı. Sultan Mahmud’un yerine geçen III. Osman, inşaatı tamamladı ve adını Nûr-ı Osmânî Camii olarak belirledi. 1755 yılında tamamlanan külliye Hüsn-i Hat’la yazılmış kitabelerin haricinde neredeyse tamamen Barok tarzında yapıldı. Külliyenin yaptırılmış fakat hiç kullanılmamış, muhtemelen bir çarşı olarak düşünülmüş mahzenleri kapılarını ilk kez Yeditepe Bienali’yle ziyaretçilerine açtı."
+		],
+		"Süleymaniye Salis Medresesi":[
+			"/images/main/places/03-s.jpg",
+			"/images/main/places/03-l.jpg",
+			"Fatih",
+			"Osmanlı eğitim ve öğretim hayatının zirvesini temsil eden Süleymaniye Medrese’sinin bir parçası olan Salîs Medresesi, adında da anlaşılacağı üzere Medrese-i Evvel, Medrese-i Sânî’den sonra Medrese-i Salîs adıyla üçüncü medrese. Listeyi devamla Süleymaniye Medresesi: Medrese-i Râbî, tıp medresesi, dârüşşifâ ve dârül-hadis’ten oluşan Süleymaniye külliyesinin bir parçası. Salîs Medresesi’nin bu şekilsel farklılığından hareketle, şekiller üzerinden çağları irdeleyen Geometri Konsepti burada sergilendi."
+		]
+      }
+   },
+   "en":{
+      "number":[
+         "02"
+      ],
+      "title":[
+         "VENUES"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"İstanbul Arkeoloji Müzeleri":[
+			"/images/main/places/01-s.jpg",
+			"/images/main/places/01-l.jpg",
+			"Fatih",
+			"Topkapı Sarayı’nın yanında bulunan yapı, Osmanlı’dan günümüze ulaşan bir müze binası. Eski Sanayi-i Nefise Mektebi binasının Şark Eserleri Müzesi'ne dönüştürülmesi ve Çinili Köşk'ün de Çini Müzesi olarak yeniden düzenlenip açılmasıyla, üç büyük yapıdan oluşan bir müze kompleksi meydana getirilmiştir."
+		],
+		"Nuruosmaniye Cami Mahzeni":[
+			"/images/main/places/02-s.jpg",
+			"/images/main/places/02-l.jpg",
+			"Fatih",
+			"Yapımına I. Mahmud tarafından başlanan yapı, Sultan Mahmud’un vefatıyla yarıda kaldı. Sultan Mahmud’un yerine geçen III. Osman, inşaatı tamamladı ve adını Nûr-ı Osmânî Camii olarak belirledi. 1755 yılında tamamlanan külliye Hüsn-i Hat’la yazılmış kitabelerin haricinde neredeyse tamamen Barok tarzında yapıldı. Külliyenin yaptırılmış fakat hiç kullanılmamış, muhtemelen bir çarşı olarak düşünülmüş mahzenleri kapılarını ilk kez Yeditepe Bienali’yle ziyaretçilerine açtı."
+		],
+		"Süleymaniye Salis Medresesi":[
+			"/images/main/places/03-s.jpg",
+			"/images/main/places/03-l.jpg",
+			"Fatih",
+			"Osmanlı eğitim ve öğretim hayatının zirvesini temsil eden Süleymaniye Medrese’sinin bir parçası olan Salîs Medresesi, adında da anlaşılacağı üzere Medrese-i Evvel, Medrese-i Sânî’den sonra Medrese-i Salîs adıyla üçüncü medrese. Listeyi devamla Süleymaniye Medresesi: Medrese-i Râbî, tıp medresesi, dârüşşifâ ve dârül-hadis’ten oluşan Süleymaniye külliyesinin bir parçası. Salîs Medresesi’nin bu şekilsel farklılığından hareketle, şekiller üzerinden çağları irdeleyen Geometri Konsepti burada sergilendi."
+		]
+      }
+   }	
+}
+
+
+

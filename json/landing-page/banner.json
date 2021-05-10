@@ -1,0 +1,81 @@
+{
+   "tr": {
+	  "1":{
+		 "title":[
+			"II. YEDİTEPE BİENALİ",
+			"ÇERÇEVE İÇİ DIŞI"
+		 ],
+		 "image":[
+			"/images/main/slider/01.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  },
+	  "2":{
+		 "title":[
+			"KEŞFEDİN",
+			"SINIRLARIN ÖTESİNDEKİ ANLAM"
+		 ],
+		 "image":[
+			"/images/main/slider/02.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  },
+	  "3":{
+		 "title":[
+			"HAYRANLIK UYANDIRAN",
+			"BİENAL MEKANLARINI KEŞFEDİN"
+		 ],
+		 "image":[
+			"/images/main/slider/03.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  }		   
+   },
+   "en": {
+	  "1":{
+		 "title":[
+			"II. YEDİTEPE BİENALİ",
+			"ÇERÇEVE İÇİ DIŞI"
+		 ],
+		 "image":[
+			"/images/main/slider/01.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  },
+	  "2":{
+		 "title":[
+			"KEŞFEDİN",
+			"SINIRLARIN ÖTESİNDEKİ ANLAM"
+		 ],
+		 "image":[
+			"/images/main/slider/02.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  },
+	  "3":{
+		 "title":[
+			"HAYRANLIK UYANDIRAN",
+			"BİENAL MEKANLARINI KEŞFEDİN"
+		 ],
+		 "image":[
+			"/images/main/slider/03.jpg"
+		 ],
+		 "href":[
+			"group exhibitions"
+		 ]
+	  }		   
+   }
+}
+
+
+

@@ -1,0 +1,108 @@
+{
+   "category":{
+      "bienal":{
+         "en":[
+            "biennial"
+         ]		  
+      },
+      "sergiler":{
+         "en":[
+            "exhibitions"
+         ]
+      },
+      "canlı performans":{
+         "en":[
+            "live performances"
+         ]
+      },
+      "panel":{
+         "en":[
+            "panel"
+         ]
+      },
+      "sanatçılar":{
+         "en":[
+            "artists"
+         ]
+      },
+      "mekânlar":{
+         "en":[
+            "venues"
+         ]
+      },
+      "yayınlar":{
+         "en":[
+            "publications"
+         ]
+      },
+      "iletişim":{
+         "en":[
+            "contact us"
+         ]
+      },
+      "başvuru formu":{
+         "en":[
+            "application form"
+         ]
+      }
+   },
+
+   "subcategory":{
+      "grup sergileri":{
+         "en":[
+            "group exhibitions"
+         ]
+      },
+      "karma sergiler":{
+         "en":[
+            "mixed exhibitions"
+         ]
+      },
+      "kişisel sergiler":{
+         "en":[
+            "solo exhibitions"
+         ]
+      },
+      "koleksiyoner sergisi":{
+         "en":[
+            "collectors’ exhibitions"
+         ]
+      },
+      "tematik sergiler":{
+         "en":[
+            "thematic exhibitions"
+         ]
+      },
+      "uluslararası sergiler":{
+         "en":[
+            "international exhibitions"
+         ]
+      },
+      "1. yeditepe bienali":{
+         "en":[
+            "yeditepe biennal 1"
+         ]
+      },
+      "2. yeditepe bienali":{
+         "en":[
+            "yeditepe biennal 2"
+         ]
+      }
+   },
+
+	"title":{
+      "yeditepe bienali":{
+         "en":[
+            "yeditepe biennial"
+         ]
+      }
+   },	
+	
+   "form":{
+      "adınız":{
+         "en":[
+            "your name"
+         ]
+      }
+   }
+}

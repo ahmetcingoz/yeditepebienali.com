@@ -1,0 +1,55 @@
+{
+   "tr":{
+      "number":[
+         "03"
+      ],
+      "title":[
+         "TEMATİK SERGİLER"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"ÇİÇEĞİN HER HÂLİ":[
+			"/images/main/thematic-exhibitions/01.jpg",
+			"'Çiçek gibi' tabiridir, tüm güzelliklere işaret eden."
+		],
+		"MEKÂNDAN TAŞANLAR":[
+			"/images/main/thematic-exhibitions/02.jpg",
+			"Sanatı ruhuna sığmayan sanatkârların, mekândan taşanları."
+		],
+		"İSTANBUL’A DAİR":[
+			"/images/main/thematic-exhibitions/03.jpg",
+			"İstanbul’un düne dair söyledikleri, yarının heyecanına katacakları var."
+		]
+      }
+   },
+   "en":{
+      "number":[
+         "03"
+      ],
+      "title":[
+         "THEMATIC EXHIBITONS"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"ÇİÇEĞİN HER HÂLİ":[
+			"/images/main/thematic-exhibitions/01.jpg",
+			"'Çiçek gibi' tabiridir, tüm güzelliklere işaret eden."
+		],
+		"MEKÂNDAN TAŞANLAR":[
+			"/images/main/thematic-exhibitions/02.jpg",
+			"Sanatı ruhuna sığmayan sanatkârların, mekândan taşanları."
+		],
+		"İSTANBUL’A DAİR":[
+			"/images/main/thematic-exhibitions/03.jpg",
+			"İstanbul’un düne dair söyledikleri, yarının heyecanına katacakları var."
+		]
+      }
+   }	
+}
+
+
+

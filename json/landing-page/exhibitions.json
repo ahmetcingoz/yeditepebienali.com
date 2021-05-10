@@ -1,0 +1,103 @@
+{
+   "tr":{
+      "number":[
+         "01"
+      ],
+      "title":[
+         "SERGİLER"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"En Güzel İsimler: Esma'ül Hüsna":[
+			"Elif Ece Kopuz",
+			"Kelime-i Tevhid",
+			"/images/main/exhibitions/01.jpg",
+			""
+		],
+		"Kâbus-u Azat":[
+			"Aylin Özkan",
+			"Geçmişe Yolculuk; Uygur Türklerinde İnanç",
+			"/images/main/exhibitions/02.jpg",
+			""
+		],
+		"Bienal Karma Sergi":[
+			"Eda Funda Özkan",
+			"Kudüs Hilye",
+			"/images/main/exhibitions/03.jpg",
+			""
+		],
+		"Saray Sanatları":[
+			"Kâbus-u Azat",
+			"Saray Sanatları",
+			"/images/main/exhibitions/04.jpg",
+			"add"
+		],
+		"Kusursuz Tekrar":[
+			"Said Chuanyi Lei",
+			"Çay Keyfi",
+			"/images/main/exhibitions/05.jpg",
+			""
+		],
+		"İstanbul’a Dair":[
+			"Mahir Kurtulan",
+			"Kayıp Zaman Atlası",
+			"/images/main/exhibitions/06.jpg",
+			"add"
+		]
+      }
+   },
+   "en":{
+      "number":[
+         "01"
+      ],
+      "title":[
+         "EXHIBITIONS"
+      ],
+      "href":[
+         "#"
+      ],
+      "category":{
+		"En Güzel İsimler: Esma'ül Hüsna":[
+			"Elif Ece Kopuz",
+			"Kelime-i Tevhid",
+			"/images/main/exhibitions/01.jpg",
+			""
+		],
+		"Kâbus-u Azat":[
+			"Aylin Özkan",
+			"Geçmişe Yolculuk; Uygur Türklerinde İnanç",
+			"/images/main/exhibitions/02.jpg",
+			""
+		],
+		"Bienal Karma Sergi":[
+			"Eda Funda Özkan",
+			"Kudüs Hilye",
+			"/images/main/exhibitions/03.jpg",
+			""
+		],
+		"Saray Sanatları":[
+			"Kâbus-u Azat",
+			"Saray Sanatları",
+			"/images/main/exhibitions/04.jpg",
+			"add"
+		],
+		"Kusursuz Tekrar":[
+			"Said Chuanyi Lei",
+			"Çay Keyfi",
+			"/images/main/exhibitions/05.jpg",
+			""
+		],
+		"İstanbul’a Dair":[
+			"Mahir Kurtulan",
+			"Kayıp Zaman Atlası",
+			"/images/main/exhibitions/06.jpg",
+			"add"
+		]
+      }
+   }	
+}
+
+
+
