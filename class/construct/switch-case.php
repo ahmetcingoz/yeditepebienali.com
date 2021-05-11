@@ -91,9 +91,7 @@
 						switch($page) {
 								
 							case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
-								
-								//print_r ($article_key);
-								
+																
 								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
 
 								_include_once('article', $article_array);

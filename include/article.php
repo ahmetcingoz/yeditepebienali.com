@@ -1,4 +1,4 @@
-<?php // print_r($article) ?>
+<?php //print_r($article) ?>
 
 
 <div class="promo portfolio">
@@ -62,60 +62,58 @@
 				
 				<!-- project-area -->
 				
-						<div class="masonry-holder bienal-images">
-							<h2></h2>
-							<ul class="masonry add">
-				
-				
-				
-				<?php 
-				
-				foreach ($article[4]['images'] as $image_key) {
-					
-					$image_title = $image_key;
-					
-					$image_key = _seo($image_key) . '.jpg';
-										
-					$images = _content ('images/articles/sergiler/2018/grup-sergileri/hicten-gelen-dualar/');
-					
-					foreach ($images as $image) {
-												
-						if ($image_key == basename($image)) { ?>
-				
-								<li>
-									<div class="holder">
-										<div class="img">
-											<img src="<?php echo $image ?>" alt="image description">
-										</div>
-										<div class="caption">
-											<div class="c1">
-												<div class="c2">
-													<a><strong class="title"><?php echo $image_title ?></strong></a>
-													<!--<a><p><?php //echo _translate('venues', $related_value['location']); ?></p></a>-->
-													<ul class="icons">
-														<li><a href="<?php echo $image ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
-													</ul>
+				<div class="masonry-holder bienal-images">
+					<h2></h2>
+					<ul class="masonry add">
+
+					<?php 
+
+					if (array_key_exists('images', $article[4])) {
+
+						foreach ($article[4]['images'] as $image_key) {
+
+							$image_title = $image_key;
+
+							$image_key = _seo($image_key) . '.jpg';
+
+							$images = _content ('images/articles/sergiler/2018/grup-sergileri/hicten-gelen-dualar/');
+
+							foreach ($images as $image) {
+
+								if ($image_key == basename($image)) { ?>
+
+									<li>
+										<div class="holder">
+											<div class="img">
+												<img src="<?php echo $image ?>" alt="image description">
+											</div>
+											<div class="caption">
+												<div class="c1">
+													<div class="c2">
+														<a><strong class="title"><?php echo $image_title ?></strong></a>
+														<!--<a><p><?php //echo _translate('venues', $related_value['location']); ?></p></a>-->
+														<ul class="icons">
+															<li><a href="<?php echo $image ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+															<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</li>	
+									</li>	
 
-				
+							<?php }
 
-				
-						<?php }
+							}
+
+						} 
+
+					} 
 						
-					}
-					
-				}
-				
-				
-				?>
-				
-							</ul>
-						</div>								
+					?>
+
+					</ul>
+				</div>								
 				
 				<div class="masonry-holder">
 					<h2></h2>
