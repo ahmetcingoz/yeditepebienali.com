@@ -51,25 +51,41 @@
 				<div class="masonry-holder">
 					<h2></h2>
 					<ul class="masonry add">
-						<li>
-							<div class="holder">
-								<div class="img">
-									<img src="/images/placehold/350x260.png" alt="image description">
-								</div>
-								<div class="caption">
-									<div class="c1">
-										<div class="c2">
-											<strong class="title">Amber Bottle</strong>
-											<p>Branding Identity</p>
-											<ul class="icons">
-												<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-												<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>
-											</ul>
+						
+						<?php $i = 0 ?>
+
+						<?php foreach ($article[5] as $related_key => $related_value) { 
+						
+							if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
+						
+							<?php $i++; if ($i < 4) { ?>
+
+								<li>
+									<div class="holder">
+										<div class="img">
+											<img src="/images/placehold/350x260.png" alt="image description">
+										</div>
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<strong class="title"><?php echo _translate('article', $related_key); ?></strong>
+													<p>Branding Identity</p>
+													<ul class="icons">
+														<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</li>
+								</li>						
+														
+							<?php } 
+							
+							}
+						
+						} ?>
+						
 					</ul>
 				</div>
 			</div>
