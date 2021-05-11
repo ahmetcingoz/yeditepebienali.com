@@ -18,7 +18,7 @@
 				<div class="box">
 					<div class="heading">
 						<h1><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h1>
-						<h2><?php echo _translate('category', $article[0]) ?></h2>
+						<h2><?php echo _translate('subcategory', $article[1]) ?></h2>
 					</div>
 				</div>
 			</div>
@@ -164,7 +164,7 @@
 </main>
 
 <style>
-	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 5px; background-color: #FFF; border: 1px solid #e8b75f;}
+	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-top: 1px solid #e8b75f;}
 	.bienal-images li {width: 25% !important;}
 	.bienal-images .holder {display: flex; height:18vw;}
 	.bienal-images .holder .img {
@@ -182,6 +182,7 @@
 	.breadcrumb a {color:#e8b75f !important;}
 	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
 	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
+	.promo .heading {overflow: visible !important;}
 
 	@media only screen and (max-width: 1000px) {
 		.promo {display: none;}
@@ -201,9 +202,11 @@
 		background-size: cover; 
 		background-image:url(<?php echo $images[$random_background[0]] ?>);
 		animation-name: background;
-		animation-duration: 120s;
+		animation-duration: 200s;
 		animation-delay: 0s;
 		animation-iteration-count: infinite;
+		filter: blur(0px) grayscale(100%) brightness(1.75);
+		
 	}	
 	
 @keyframes background {
