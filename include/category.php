@@ -81,7 +81,7 @@
 												<div class="caption">
 													<div class="c1">
 														<div class="c2">
-															<a href="<?php echo _seo(_translate('title', $article_key . '-' . $subcategory_date_key))?>"><strong class="title"><?php echo _translate('title', $article_key)?></strong></a>
+															<a href="<?php echo _seo(_translate('title', $article_key . '-' . $subcategory_date_key))?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
 															<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
 															<ul class="icons">
 																<li><a href="images/img1.jpg" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>

@@ -1,23 +1,3 @@
-<?php //print_r($article);
-
-	foreach  ($article as $category_key => $category_value) {
-		
-		if (!is_array($category_value)) {
-		
-			//echo $category_value;
-			
-		} else {
-			
-			print_r($category_value);
-			
-		}
-		
-	}
-
-?>
-
-
-
 <div class="promo portfolio">
 	<div class="max-container">
 		<div class="img">
@@ -51,13 +31,13 @@
 					<div class="text">
 						<h2><?php echo _translate('article', $article[3]) ?></h2>
 						<dl>
-							<dt>Date:</dt>
+							<dt><span style="color:#e8b75f;" class="material-icons md-18">event</span></dt>
 							<dd><time><?php echo $article[4]['date'][0] ?></time></dd>
-							<dt>Time:</dt>
+							<dt><span style="color:#e8b75f;" class="material-icons md-18">notifications_none</span></dt>
 							<dd><time><?php echo $article[4]['date'][1] ?></time></dd>
-							<dt>Location:</dt>
+							<dt><span style="color:#e8b75f;" class="material-icons md-18">place</span></dt>
 							<dd><a target="_blank" href="<?php echo _seo($article[4]['location']) ?>"><?php echo $article[4]['location'] ?></a></dd>
-							<dt>Artist:</dt>
+							<dt><span style="color:#e8b75f;" class="material-icons md-18">filter_vintage</span></dt>
 							<dd>
 							<?php foreach ($article[4]['artist'] as $artist) { ?>
 								<a target="_blank" href="<?php echo _seo($artist) ?>"><?php echo $artist ?></a>
@@ -69,46 +49,8 @@
 				</div>
 				<!-- project-area -->
 				<div class="masonry-holder">
-					<h2>Related protects</h2>
+					<h2></h2>
 					<ul class="masonry add">
-						<li>
-							<div class="holder">
-								<div class="img">
-									<img src="/images/placehold/350x260.png" alt="image description">
-								</div>
-								<div class="caption">
-									<div class="c1">
-										<div class="c2">
-											<strong class="title">Amber Bottle</strong>
-											<p>Branding Identity</p>
-											<ul class="icons">
-												<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-												<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="holder">
-								<div class="img">
-									<img src="/images/placehold/350x260.png" alt="image description">
-								</div>
-								<div class="caption">
-									<div class="c1">
-										<div class="c2">
-											<strong class="title">Amber Bottle</strong>
-											<p>Branding Identity</p>
-											<ul class="icons">
-												<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-												<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
 						<li>
 							<div class="holder">
 								<div class="img">
@@ -136,6 +78,7 @@
 </main>
 
 <style>
+	.gallery dl dt {padding: 0px !important;}
 	#main a {color:#252525 !important;}
 	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 	.breadcrumb a {color:#e8b75f !important;}
