@@ -120,7 +120,7 @@
 					
 					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/category.php';
 					
-				} else if ($section == 'category' || $section == 'article') {
+				} else if ($section == 'article') {
 					
 					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/article.php';
 					
