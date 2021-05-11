@@ -30,9 +30,13 @@
 			<div class="col-xs-12">
 				<!-- gallery -->
 				<div class="gallery">
+					
+					
 					<div class="img"><img src="/images/placehold/770x570.png" alt="image description"></div>
+					
+					
 					<div class="text">
-						<h2><?php echo _translate('article', $article[3]) ?></h2>
+						<h2><?php echo _uppercase(_translate('article', $article[3])) ?></h2>
 						<dl>
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">event</span></dt>
 							<dd><time><?php echo $article[4]['date'][0] ?></time></dd>
@@ -63,7 +67,7 @@
 				<!-- project-area -->
 				
 				<div class="masonry-holder bienal-images">
-					<h2></h2>
+					<h2><?php echo _uppercase(_translate('title', 'eserler')) ?></h2>
 					<ul class="masonry add">
 
 					<?php 
@@ -75,8 +79,8 @@
 							$image_title = $image_key;
 
 							$image_key = _seo($image_key) . '.jpg';
-
-							$images = _content ('images/articles/sergiler/2018/grup-sergileri/hicten-gelen-dualar/');
+														
+							$images = _content ('images/articles/' . $article[0] . '/' . $article[2] . '/' . _seo($article[1]) . '/' . _seo($article[3]) . '/');
 
 							foreach ($images as $image) {
 
@@ -93,7 +97,7 @@
 														<a><strong class="title"><?php echo $image_title ?></strong></a>
 														<!--<a><p><?php //echo _translate('venues', $related_value['location']); ?></p></a>-->
 														<ul class="icons">
-															<li><a href="<?php echo $image ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+															<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 															<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
 														</ul>
 													</div>
@@ -162,8 +166,17 @@
 </main>
 
 <style>
-	.bienal-images .img {margin: auto;}
-	.bienal-images img {max-width: 200px !important; max-height: 100% !important;}
+	
+	.bienal-images li {width: 25% !important;}
+	.bienal-images .holder {display: flex; height:18vw;}
+	.bienal-images .holder .img {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}	
+	.bienal-images img {max-width: 100% !important; max-height: 100% !important;}
 	.gallery dl dt {padding: 0px !important;}
 	.gallery p {margin-bottom: 10px !important;}
 	#main a {color:#252525 !important;}
@@ -171,4 +184,11 @@
 	.breadcrumb a {color:#e8b75f !important;}
 	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
 	.promo {margin-bottom: 0px !important; padding: 0px !important;}
+	
+	@media only screen and (max-width: 600px) {
+	  .caption {display: none;}
+	  .bienal-images li {width: 50% !important;}
+	  .bienal-images .holder {display: flex; height:50vw;}		
+			
+	}	
 </style>
