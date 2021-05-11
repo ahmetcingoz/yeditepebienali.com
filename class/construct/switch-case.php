@@ -50,6 +50,40 @@
 
 		}
 		
+		$articles = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
+		
+		$articles = _decode_json($articles);
+		
+		foreach ($articles as $category_key => $category_value) {
+			
+			foreach ($category_value as $subcategory_key => $subcategory_value) {
+				
+				foreach ($subcategory_value as $date_key => $date_value) {
+					
+					foreach ($date_value as $article_key => $article_value) {
+						
+						switch($page) {
+								
+							case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
+								
+								//print_r ($article_key);
+								
+								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
+
+								_include_once('article', $article_array);
+
+							break;	
+
+						}						
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
 	}
 
 

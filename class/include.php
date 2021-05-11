@@ -88,7 +88,7 @@
 				
 	}
 
-	function _include_once ($section) {
+	function _include_once ($section, $article = null) {
 		
 		$uniqe_pages = $_SERVER['DOCUMENT_ROOT'] . '/include/pages/';
 
@@ -120,7 +120,11 @@
 					
 					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/category.php';
 					
-				}
+				} else if ($section == 'category' || $section == 'article') {
+					
+					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/article.php';
+					
+				} 
 				
 			}
 

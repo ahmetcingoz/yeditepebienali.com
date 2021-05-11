@@ -95,8 +95,127 @@
          "en":[
             "yeditepe biennial"
          ]
+      },
+      "II.Mehmet 'Fatihnâme'":{
+         "en":[
+            "II.Mehmet 'Fatihnâme'"
+         ]
       }
    },	
+
+	"title":{
+      "Akdeniz Medreseleri":{
+         "en":[
+            "Mediterranean Madrasas"
+         ]
+      },
+      "Arkeoloji Müzesi":{
+         "en":[
+            "Archaeological Museum'"
+         ]
+      },
+      "Çinili Köşk":{
+         "en":[
+            "Tiled Pavilion"
+         ]
+      },
+      "Cumhuriyet Eğitim Müzesi":{
+         "en":[
+            "Republic Education Museum"
+         ]
+      },
+      "Ayasofya Müzesi":{
+         "en":[
+            "Hagia Sophia Museum and Square"
+         ]
+      },
+      "Darphane-i Amire":{
+         "en":[
+            "Darphane-i Amire'"
+         ]
+      },
+      "Fatih Belediyesi Ayvansaray Türk Evi":{
+         "en":[
+            "Fatih Municipality Ayvansaray Turkish House"
+         ]
+      },
+      "Fatih Belediyesi İç Avlu":{
+         "en":[
+            "Fatih Municipality Inner Court"
+         ]
+      },
+      "Gülhane Parkı":{
+         "en":[
+            "Gülhane Park"
+         ]
+      },
+      "II. Bayezid Türk Hamamı Müzesi":{
+         "en":[
+            "II. Beyazid Turkish Bath Museum"
+         ]
+      },
+      "Kapalıçarşı-Kalpakçılar Caddesi":{
+         "en":[
+            "Grand Bazaar - Kalpakçılar Street"
+         ]
+      },
+      "Küçük Mustafa Paşa Hamamı":{
+         "en":[
+            "Kucuk Mustafa Pasha Hamam"
+         ]
+      },
+      "Leblebiciler Sokak":{
+         "en":[
+            "Leblebiciler Street"
+         ]
+      },
+      "Marmara Üniversitesi Cumhuriyet Müzesi":{
+         "en":[
+            "Marmara University Republican Museum"
+         ]
+      },
+      "Nuruosmaniye Cami Mahzeni":{
+         "en":[
+            "Nuruosmaniye Mosque Cellar"
+         ]
+      },
+      "Süleymaniye Salis Medresesi":{
+         "en":[
+            "Süleymaniye Salis Madrasa"
+         ]
+      },
+      "Süleymaniye Yazma Eserler Kütüphanesi":{
+         "en":[
+            "Süleymaniye Manuscript Library"
+         ]
+      },
+      "Sultanahmet Meydanı":{
+         "en":[
+            "Sultanahmet Square"
+         ]
+      },
+      "Topkapı Sarayı":{
+         "en":[
+            "Topkapı Palace"
+         ]
+      },
+      "Türk İslam Eserleri Müzesi":{
+         "en":[
+            "Turkish and Islamic Arts Museum"
+         ]
+      },
+      "Yeni Cami Hünkar Kasrı":{
+         "en":[
+            "New Mosque Hünkar Kasrı"
+         ]
+      },
+      "Sirkeci Garı":{
+         "en":[
+            "Sirkeci Railway Station"
+         ]
+      }
+   },	
+	
 	
    "form":{
       "adınız":{
