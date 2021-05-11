@@ -4,7 +4,7 @@
 
 	$title = 'Yeditepe Bienali';
 
-	
+	$rename_path = 'images/articles/sergiler/2018/grup-sergileri/altindan-haleler/';
 
 	/* SETTINGS */
 
