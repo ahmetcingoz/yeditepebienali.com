@@ -1,3 +1,6 @@
+<?php // print_r($article) ?>
+
+
 <div class="promo portfolio">
 	<div class="max-container">
 		<div class="img">
@@ -44,7 +47,8 @@
 							<?php } ?>
 							</dd>
 						</dl>
-						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation'] ?> </p>												
+						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation' . '-' .  $_SESSION['language']] ?> </p>
+						<p><?php foreach ($article[4]['participation'] as $student) {echo ' • ' . $student;}  ?></p>
 					</div>
 				</div>
 				
@@ -57,6 +61,62 @@
 				?>
 				
 				<!-- project-area -->
+				
+						<div class="masonry-holder bienal-images">
+							<h2></h2>
+							<ul class="masonry add">
+				
+				
+				
+				<?php 
+				
+				foreach ($article[4]['images'] as $image_key) {
+					
+					$image_title = $image_key;
+					
+					$image_key = _seo($image_key) . '.jpg';
+										
+					$images = _content ('images/articles/sergiler/2018/grup-sergileri/hicten-gelen-dualar/');
+					
+					foreach ($images as $image) {
+												
+						if ($image_key == basename($image)) { ?>
+				
+								<li>
+									<div class="holder">
+										<div class="img">
+											<img src="<?php echo $image ?>" alt="image description">
+										</div>
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<a><strong class="title"><?php echo $image_title ?></strong></a>
+													<!--<a><p><?php //echo _translate('venues', $related_value['location']); ?></p></a>-->
+													<ul class="icons">
+														<li><a href="<?php echo $image ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>	
+
+				
+
+				
+						<?php }
+						
+					}
+					
+				}
+				
+				
+				?>
+				
+							</ul>
+						</div>								
+				
 				<div class="masonry-holder">
 					<h2></h2>
 					<ul class="masonry add">
@@ -88,7 +148,8 @@
 										</div>
 									</div>
 								</li>						
-														
+										
+						
 							<?php } 
 							
 							}
@@ -103,7 +164,10 @@
 </main>
 
 <style>
+	.bienal-images .img {margin: auto;}
+	.bienal-images img {max-width: 200px !important; max-height: 100% !important;}
 	.gallery dl dt {padding: 0px !important;}
+	.gallery p {margin-bottom: 10px !important;}
 	#main a {color:#252525 !important;}
 	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 	.breadcrumb a {color:#e8b75f !important;}
