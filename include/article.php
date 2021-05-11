@@ -36,7 +36,7 @@
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">notifications_none</span></dt>
 							<dd><time><?php echo $article[4]['date'][1] ?></time></dd>
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">place</span></dt>
-							<dd><a target="_blank" href="<?php echo _seo($article[4]['location']) ?>"><?php echo $article[4]['location'] ?></a></dd>
+							<dd><a target="_blank" href="<?php echo _seo(_translate('venues', $article[4]['location'])) ?>"><?php echo _translate('venues', $article[4]['location']) ?></a></dd>
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">filter_vintage</span></dt>
 							<dd>
 							<?php foreach ($article[4]['artist'] as $artist) { ?>
@@ -47,6 +47,15 @@
 						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation'] ?> </p>												
 					</div>
 				</div>
+				
+				<?php 
+	
+					/* $image_authors = explode(' • ',$article[4]['participation']);
+	
+					print_r($image_authors);*/
+				
+				?>
+				
 				<!-- project-area -->
 				<div class="masonry-holder">
 					<h2></h2>
@@ -58,7 +67,7 @@
 						
 							if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
 						
-							<?php $i++; if ($i < 4) { ?>
+							<?php $i++; if ($i < 7) { ?>
 
 								<li>
 									<div class="holder">
@@ -68,8 +77,8 @@
 										<div class="caption">
 											<div class="c1">
 												<div class="c2">
-													<strong class="title"><?php echo _translate('article', $related_key); ?></strong>
-													<p>Branding Identity</p>
+													<a href="<?php echo _seo(_translate('article', $related_key)); ?>"><strong class="title"><?php echo _translate('article', $related_key); ?></strong></a>
+													<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
 													<ul class="icons">
 														<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
