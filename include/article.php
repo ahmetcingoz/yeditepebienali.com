@@ -21,7 +21,7 @@
 <div class="promo portfolio">
 	<div class="max-container">
 		<div class="img">
-			<img src="http://placehold.it/1770x240" alt="image description">
+			<img src="https://placehold.it/1770x240" alt="image description">
 		</div>
 		<div class="holder">
 			<div class="frame">
@@ -47,7 +47,7 @@
 			<div class="col-xs-12">
 				<!-- gallery -->
 				<div class="gallery">
-					<div class="img"><img src="http://placehold.it/770x570" alt="image description"></div>
+					<div class="img"><img src="https://placehold.it/770x570" alt="image description"></div>
 					<div class="text">
 						<h2><?php echo _translate('article', $article[3]) ?></h2>
 						<dl>
@@ -74,7 +74,7 @@
 						<li>
 							<div class="holder">
 								<div class="img">
-									<img src="http://placehold.it/350x260" alt="image description">
+									<img src="https://placehold.it/350x260" alt="image description">
 								</div>
 								<div class="caption">
 									<div class="c1">
@@ -93,7 +93,7 @@
 						<li>
 							<div class="holder">
 								<div class="img">
-									<img src="http://placehold.it/350x260" alt="image description">
+									<img src="https://placehold.it/350x260" alt="image description">
 								</div>
 								<div class="caption">
 									<div class="c1">
@@ -112,7 +112,7 @@
 						<li>
 							<div class="holder">
 								<div class="img">
-									<img src="http://placehold.it/350x260" alt="image description">
+									<img src="https://placehold.it/350x260" alt="image description">
 								</div>
 								<div class="caption">
 									<div class="c1">
