@@ -50,6 +50,36 @@
 
 		}
 		
+		$exhibitions = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
+		
+		$exhibitions = _decode_json($exhibitions);		
+		
+		foreach ($exhibitions as $exhibitions_key => $exhibitions_value) {
+			
+			foreach ($exhibitions_value as $subcategory_key => $subcategory_value) {
+				
+				foreach ($subcategory_value as $date_key => $date_value) {
+					
+					foreach ($date_value as $article_key => $article_value) {
+						
+						switch($page) {
+
+							case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
+
+								_include_once('article');
+
+							break;	
+
+						}						
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
 	}
 
 

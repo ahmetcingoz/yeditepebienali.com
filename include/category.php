@@ -16,6 +16,7 @@
 
 						<?php if ($page == $subcategory_key) { ?>
 
+
 						<div class="promo portfolio">
 							<div class="max-container">
 								<div class="img">
@@ -37,6 +38,7 @@
 								</ol>			
 							</div>
 						</div>
+						</a>
 
 						<main id="main" role="main">
 							<div class="container">
@@ -71,9 +73,7 @@
 									<!-- masonry -->
 									<ul class="masonry grid3" id="masonry-container">
 
-										<?php 
-
-											foreach ($subcategory_date_value as $article_key => $article_value) { ?>
+										<?php  foreach ($subcategory_date_value as $article_key => $article_value) { ?>
 
 										<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
 											<div class="holder">
@@ -83,8 +83,8 @@
 												<div class="caption">
 													<div class="c1">
 														<div class="c2">
-															<strong class="title"><?php echo $article_key ?></strong>
-															<p><?php if (array_key_exists('location', $article_value)) {echo $article_value['location'];} ?></p>
+															<a href="<?php echo _seo(_translate('title', $article_key . '-' . $subcategory_date_key))?>"><strong class="title"><?php echo _translate('title', $article_key)?></strong></a>
+															<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
 															<ul class="icons">
 																<li><a href="images/img1.jpg" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 																<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
@@ -94,7 +94,7 @@
 												</div>
 											</div>
 										</li>
-
+	
 										<?php } ?>
 
 									</ul>
@@ -115,6 +115,7 @@
 		</main>
 
 		<style>
+			#main a {color:#252525 !important;}
 			.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 			.breadcrumb a {color:#e8b75f !important;}
 			h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
