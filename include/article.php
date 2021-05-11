@@ -8,7 +8,7 @@
 			
 		} else {
 			
-			//print_r($category_value);
+			print_r($category_value);
 			
 		}
 		
@@ -27,8 +27,8 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<h1><?php echo _uppercase(_translate('category', $article[0])) ?></h1>
-						<h2><?php echo _translate('subcategory', $article[1]) ?></h2>
+						<h1><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h1>
+						<h2><?php echo _translate('category', $article[0]) ?></h2>
 					</div>
 				</div>
 			</div>
@@ -51,16 +51,20 @@
 					<div class="text">
 						<h2><?php echo _translate('article', $article[3]) ?></h2>
 						<dl>
-							<dt>Client:</dt>
-							<dd>DANIEL CRAWLER</dd>
 							<dt>Date:</dt>
-							<dd><time datetime="2016-08-06 20:00">09-08-2015</time></dd>
+							<dd><time><?php echo $article[4]['date'][0] ?></time></dd>
+							<dt>Time:</dt>
+							<dd><time><?php echo $article[4]['date'][1] ?></time></dd>
 							<dt>Location:</dt>
-							<dd>United States</dd>
-							<dt>Author:</dt>
-							<dd>KaWhi Leonard</dd>
+							<dd><a target="_blank" href="<?php echo _seo($article[4]['location']) ?>"><?php echo $article[4]['location'] ?></a></dd>
+							<dt>Artist:</dt>
+							<dd>
+							<?php foreach ($article[4]['artist'] as $artist) { ?>
+								<a target="_blank" href="<?php echo _seo($artist) ?>"><?php echo $artist ?></a>
+							<?php } ?>
+							</dd>
 						</dl>
-						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?></p>												
+						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation'] ?> </p>												
 					</div>
 				</div>
 				<!-- project-area -->
