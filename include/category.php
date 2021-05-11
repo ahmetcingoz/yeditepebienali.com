@@ -113,6 +113,17 @@
 		</main>
 
 		<style>
+
+	@media only screen and (max-width: 600px) {
+	   .nav {margin-top: 50px;}
+	  .container {margin-top: 25px;}
+	}	
+			
+	@media only screen and (max-width: 1000px) {
+		.promo {display: none;}
+	}	
+			
+			
 			#main a {color:#252525 !important;}
 			.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 			.breadcrumb a {color:#e8b75f !important;}
