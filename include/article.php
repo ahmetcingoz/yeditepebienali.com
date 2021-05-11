@@ -1,11 +1,18 @@
-<?php //print_r($article) ?>
+<?php $images = _content ('images/articles/' . $article[0] . '/' . $article[2] . '/' . _seo($article[1]) . '/' . _seo($article[3]) . '/'); ?>
 
+<?php $random_background = array_rand($images, 2); ?>
+<?php $random_image = array_rand($images, 3); ?>
 
-<div class="promo portfolio">
+<div class="promo portfolio wow fadeInUp">
 	<div class="max-container">
-		<div class="img">
-			<img src="/images/placehold/1770x240.png" alt="image description">
+		<div class="img background-animation">
+			<!--<img src="<?php // echo $images[$random_background[0]] ?>" alt="image description">-->
 		</div>
+		<ol class="breadcrumb">
+			<li><a><?php echo _translate('category', $article[0]) ?></a></li>
+			<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>			
+			<li class="active"><?php echo _translate('article', $article[3]) ?></li>
+		</ol>			
 		<div class="holder">
 			<div class="frame">
 				<div class="box">
@@ -16,11 +23,6 @@
 				</div>
 			</div>
 		</div>
-		<ol class="breadcrumb">
-			<li><a><?php echo _translate('category', $article[0]) ?></a></li>
-			<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>			
-			<li class="active"><?php echo _translate('article', $article[3]) ?></li>
-		</ol>			
 	</div>
 </div>
 
@@ -31,13 +33,11 @@
 				<!-- gallery -->
 				<div class="gallery">
 					
-					
-					<div class="img"><img src="/images/placehold/770x570.png" alt="image description"></div>
-					
+					<div class="img wow fadeInDown"><img src="<?php echo $images[$random_image[0]] ?>" alt="image description"></div>
 					
 					<div class="text">
-						<h2><?php echo _uppercase(_translate('article', $article[3])) ?></h2>
-						<dl>
+						<h2 class="wow fadeInUp"><?php echo _uppercase(_translate('article', $article[3])) ?></h2>
+						<dl class="wow fadeInUp">
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">event</span></dt>
 							<dd><time><?php echo $article[4]['date'][0] ?></time></dd>
 							<dt><span style="color:#e8b75f;" class="material-icons md-18">notifications_none</span></dt>
@@ -51,8 +51,8 @@
 							<?php } ?>
 							</dd>
 						</dl>
-						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation' . '-' .  $_SESSION['language']] ?> </p>
-						<p><?php foreach ($article[4]['participation'] as $student) {echo ' • ' . $student;}  ?></p>
+						<p class="wow fadeInUp"><?php echo _translate('article', $article[4][$_SESSION['language']]) ?> <?php echo $article[4]['participation' . '-' .  $_SESSION['language']] ?> </p>
+						<p class="wow fadeInUp"><?php foreach ($article[4]['participation'] as $student) {echo ' • ' . $student;}  ?></p>
 					</div>
 				</div>
 				
@@ -80,14 +80,12 @@
 
 							$image_key = _seo($image_key) . '.jpg';
 														
-							$images = _content ('images/articles/' . $article[0] . '/' . $article[2] . '/' . _seo($article[1]) . '/' . _seo($article[3]) . '/');
-
 							foreach ($images as $image) {
 
 								if ($image_key == basename($image)) { ?>
 
 									<li>
-										<div class="holder">
+										<div class="holder wow fadeInUp">
 											<div class="img">
 												<img src="<?php echo $image ?>" alt="image description">
 											</div>
@@ -133,7 +131,7 @@
 
 								<li>
 									<div class="holder">
-										<div class="img">
+										<div class="img wow fadeInUp">
 											<img src="/images/placehold/350x260.png" alt="image description">
 										</div>
 										<div class="caption">
@@ -166,7 +164,7 @@
 </main>
 
 <style>
-	
+	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 5px; background-color: #FFF; border: 1px solid #e8b75f;}
 	.bienal-images li {width: 25% !important;}
 	.bienal-images .holder {display: flex; height:18vw;}
 	.bienal-images .holder .img {
@@ -183,12 +181,36 @@
 	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 	.breadcrumb a {color:#e8b75f !important;}
 	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
-	.promo {margin-bottom: 0px !important; padding: 0px !important;}
+	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
+
+	@media only screen and (max-width: 1000px) {
+		.promo {display: none;}
+	}	
 	
 	@media only screen and (max-width: 600px) {
 	  .caption {display: none;}
 	  .bienal-images li {width: 50% !important;}
-	  .bienal-images .holder {display: flex; height:50vw;}		
-			
+	  .bienal-images .holder {display: flex; height:50vw;}	
 	}	
+
+	.background-animation {
+		/*box-shadow: inset 0px 0px 200px 0px #FFF;*/
+		height: 10vw; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-image:url(<?php echo $images[$random_background[0]] ?>);
+		animation-name: background;
+		animation-duration: 120s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}	
+	
+@keyframes background {
+  0%   {background-position: center;}
+  50%  {background-position: bottom;}
+  100% {background-position: center;}
+}	
+	
+
 </style>
