@@ -19,7 +19,7 @@
 						<div class="promo portfolio">
 							<div class="max-container">
 								<div class="img">
-									<img src="https://placehold.it/1770x240" alt="image description">
+									<img src="/images/placehold/1770x240.png" alt="image description">
 								</div>
 								<div class="holder">
 									<div class="frame">
@@ -76,7 +76,7 @@
 										<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
 											<div class="holder">
 												<div class="img">
-													<img alt="image description" src="https://placehold.it/365x271">
+													<img alt="image description" src="/images/placehold/365x271.png">
 												</div>
 												<div class="caption">
 													<div class="c1">
