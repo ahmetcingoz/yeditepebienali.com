@@ -88,7 +88,7 @@
 				
 	}
 
-	function _include_once ($section) {
+	function _include_once ($section, $article = null) {
 		
 		$uniqe_pages = $_SERVER['DOCUMENT_ROOT'] . '/include/pages/';
 

@@ -4349,8 +4349,8 @@ a:focus {
 
 .gallery .img {
 	float: left;
-	width: 65.8%;
-	margin: 5px 11.1% 0 0;
+	width: 45.0%;
+	margin: 5px 5% 0 0;
 }
 
 .gallery .img img {
@@ -4381,7 +4381,7 @@ a:focus {
 .gallery dl {
 	margin: 0;
 	border-top: 1px solid #e5e5e5;
-	padding: 54px 0 0;
+	padding: 15px 0 0;
 	letter-spacing: 1.6px;
 	font-size: 14px;
 	line-height: 16px;

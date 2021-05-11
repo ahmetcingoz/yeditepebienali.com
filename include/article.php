@@ -1,3 +1,23 @@
+<?php //print_r($article);
+
+	foreach  ($article as $category_key => $category_value) {
+		
+		if (!is_array($category_value)) {
+		
+			//echo $category_value;
+			
+		} else {
+			
+			//print_r($category_value);
+			
+		}
+		
+	}
+
+?>
+
+
+
 <div class="promo portfolio">
 	<div class="max-container">
 		<div class="img">
@@ -7,15 +27,20 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<h1>details portfiolio</h1>
-						<h2>Portfolio ~ Details</h2>
+						<h1><?php echo _uppercase(_translate('category', $article[0])) ?></h1>
+						<h2><?php echo _translate('subcategory', $article[1]) ?></h2>
 					</div>
 				</div>
 			</div>
 		</div>
+		<ol class="breadcrumb">
+			<li><a><?php echo _translate('category', $article[0]) ?></a></li>
+			<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>			
+			<li class="active"><?php echo _translate('article', $article[3]) ?></li>
+		</ol>			
 	</div>
 </div>
-<!-- contain main informative part of the site -->
+
 <main id="main" role="main">
 	<div class="container">
 		<div class="row">
@@ -24,8 +49,7 @@
 				<div class="gallery">
 					<div class="img"><img src="http://placehold.it/770x570" alt="image description"></div>
 					<div class="text">
-						<h2>Faton Ademi Mock-Up</h2>
-						<p>Lorem ipsum dolor sit amet, an consectetur adipisicing elit, sed do eiusmod tempor incididunt uteax labore et dolore magna aliqua. Ut enim ad minim veniam, quisated nostrud exercitation ullamconted laboris nisi ut aliquip ex eating a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+						<h2><?php echo _translate('article', $article[3]) ?></h2>
 						<dl>
 							<dt>Client:</dt>
 							<dd>DANIEL CRAWLER</dd>
@@ -36,6 +60,7 @@
 							<dt>Author:</dt>
 							<dd>KaWhi Leonard</dd>
 						</dl>
+						<p><?php echo _translate('article', $article[4][$_SESSION['language']]) ?></p>												
 					</div>
 				</div>
 				<!-- project-area -->
@@ -105,3 +130,11 @@
 		</div>
 	</div>
 </main>
+
+<style>
+	#main a {color:#252525 !important;}
+	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
+	.breadcrumb a {color:#e8b75f !important;}
+	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
+	.promo {margin-bottom: 0px !important; padding: 0px !important;}
+</style>

@@ -16,7 +16,6 @@
 
 						<?php if ($page == $subcategory_key) { ?>
 
-
 						<div class="promo portfolio">
 							<div class="max-container">
 								<div class="img">
@@ -38,7 +37,6 @@
 								</ol>			
 							</div>
 						</div>
-						</a>
 
 						<main id="main" role="main">
 							<div class="container">

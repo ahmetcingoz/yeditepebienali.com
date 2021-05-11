@@ -50,13 +50,13 @@
 
 		}
 		
-		$exhibitions = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
+		$articles = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
 		
-		$exhibitions = _decode_json($exhibitions);		
+		$articles = _decode_json($articles);
 		
-		foreach ($exhibitions as $exhibitions_key => $exhibitions_value) {
+		foreach ($articles as $category_key => $category_value) {
 			
-			foreach ($exhibitions_value as $subcategory_key => $subcategory_value) {
+			foreach ($category_value as $subcategory_key => $subcategory_value) {
 				
 				foreach ($subcategory_value as $date_key => $date_value) {
 					
@@ -65,8 +65,10 @@
 						switch($page) {
 
 							case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
+								
+								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value];
 
-								_include_once('article');
+								_include_once('article', $article_array);
 
 							break;	
 
