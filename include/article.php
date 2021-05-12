@@ -363,11 +363,11 @@
 		
 	}	
 	
-@keyframes background {
-  0%   {background-position: center;}
-  50%  {background-position: bottom;}
-  100% {background-position: center;}
-}	
+	@keyframes background {
+	  0%   {background-position: center;}
+	  50%  {background-position: bottom;}
+	  100% {background-position: center;}
+	}	
 	
 
 </style>
