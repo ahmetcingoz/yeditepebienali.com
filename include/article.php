@@ -211,7 +211,7 @@
 						
 						foreach ($images as $unnamed_images) { ?>
 						
-								<li>
+								<li class="item wow fadeInUp" data-wow-delay="0.1s">
 									<div class="holder">
 										<div class="img wow fadeInUp">
 											<img src="<?php echo $unnamed_images;?>" alt="image description">
