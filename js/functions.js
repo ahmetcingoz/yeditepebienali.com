@@ -19,6 +19,7 @@ jQuery(window).on('load', function() {
 	"use strict";
 
 	initIsoTop();
+	initIsoTop_two();
 	initPreLoader();
 	initStyleChanger();
 });
@@ -152,6 +153,24 @@ function initIsoTop() {
 	var isotopeHolder = jQuery('#masonry-container'),
 		win = jQuery(window);
 	jQuery('#masonry-container').isotope({
+		itemSelector: '.item',
+		transitionDuration: '0.6s'
+	});
+	jQuery('.filter a').click(function(e){
+		e.preventDefault();
+		
+		jQuery('.filter li').removeClass('active');
+		jQuery(this).parent('li').addClass('active');
+		var selector = jQuery(this).attr('data-filter');
+		isotopeHolder.isotope({ filter: selector });
+	});
+}
+
+function initIsoTop_two() {
+	// Isotope init
+	var isotopeHolder = jQuery('#masonry-container-two'),
+		win = jQuery(window);
+	jQuery('#masonry-container-two').isotope({
 		itemSelector: '.item',
 		transitionDuration: '0.6s'
 	});

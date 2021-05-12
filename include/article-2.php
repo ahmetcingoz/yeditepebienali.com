@@ -149,9 +149,9 @@
 								
 				<?php if ($works == 'true') { ?>
 				
-				<div class="masonry-holder" id="masonry-container">
+				<div class="masonry-holder bienal-images">
 					<h2><?php if ($article[0] == 'sergiler') { echo _uppercase(_translate('title', 'eserler')); } else { echo _uppercase(_translate('title', 'fotoğraflar')); }  ?></h2>
-					<ul class="masonry grid3">
+					<ul class="masonry add">
 
 					<?php 
 
@@ -167,8 +167,8 @@
 
 								if ($image_key == basename($image)) { ?>
 
-									<li class="item wow fadeInUp" data-wow-delay="0.1s">
-										<div class="holder">
+									<li>
+										<div class="holder wow fadeInUp">
 											<div class="img">
 												<img src="<?php echo $image ?>" alt="image description">
 											</div>
@@ -237,7 +237,7 @@
 				
 				<div class="masonry-holder">
 					<h2><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h2>
-					<ul class="masonry grid3" id="masonry-container-two">
+					<ul class="masonry add">
 						
 						<?php foreach ($article[5] as $related_key => $related_value) { 
 	
@@ -263,7 +263,7 @@
 
 							<?php $i++; if ($i < 7) { ?>
 
-								<li class="item wow fadeInUp" data-wow-delay="0.1s">
+								<li class="related-images">
 									<div class="holder">
 										<div class="img wow fadeInUp">
 											
@@ -344,6 +344,7 @@
 		.related-images {height: 30vw; margin-bottom: 15px;}		
 		.nav {margin-top: 50px;}
 		.container {margin-top: 25px;}
+		.caption {display: none;}
 		.bienal-images li {width: 50% !important;}
 		.bienal-images .holder {display: flex; height:50vw;}	
 	}	
