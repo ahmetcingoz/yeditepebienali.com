@@ -159,8 +159,22 @@
 											<div class="caption">
 												<div class="c1">
 													<div class="c2">
-														<a><strong class="title"><?php echo $image_title ?></strong></a>
-														<!--<a><p><?php //echo _translate('venues', $related_value['location']); ?></p></a>-->
+														
+														<?php $image_artist_word = explode(' - ', $image_title);
+																																													 
+															if (count($image_artist_word) > 1) { ?>
+																
+																<a><strong class="title"><?php echo $image_artist_word[1]; ?></strong></a>
+																<a><p><?php echo $image_artist_word[0]; ?></p></a>
+														
+															<?php } else { ?>
+
+																<a><strong class="title"><?php echo $image_title ?></strong></a>
+																
+															<?php }
+																	 
+														?>
+														
 														<ul class="icons">
 															<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 															<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
@@ -177,6 +191,21 @@
 
 						} 
 
+					} else {
+						
+						foreach ($images as $unnamed_images) { ?>
+						
+								<li>
+									<div class="holder">
+										<div class="img wow fadeInUp">
+											<img src="<?php echo $unnamed_images;?>" alt="image description">
+										</div>
+									</div>
+								</li>						
+						
+						
+						<?php }
+						
 					} ?>
 
 					</ul>
