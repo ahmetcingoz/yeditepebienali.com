@@ -811,9 +811,9 @@
             }
          }
       },
-      "karma sergiler":{
+      "Karma Sergiler":{
          "2018":{
-            "Bienal Karma Sergisi'":{
+            "Bienal Karma Sergisi":{
                "date":[
                   "26.04.2018 - 15.05.2018",
                   "10:00-17:00"
@@ -897,7 +897,7 @@
                "tr":"Merhum Süheyl Ünver’in “ince sanat dünyamızda çok ileri mertebeye vararak Türk süslemesinde rönesansımızı gerçekleştirdi” dediği Cahide Keskiner diyor ki “Her eser sanat, her eser yapan sanatkâr değildir. Özveri olmadan, kendini vermeden sanat eseri ortaya çıkmaz. Sanatkâr edebe, adaba uymalıdır. İnsan ne kadar eser üretirse üretsin, ne kadar faaliyet yaparsa yapsın, eğer bir ‘hiç’ olduğunu anlamadıysa her şey boşa gitmiş demektir.” Gelenekli sanatlarımızın bu çağın sanatkârları elinde aldığı renklerin hemen hepsini bir arada görebileceğiniz, göz göze geldiğiniz her eserle sanat nedir, sanatçı kimdir sorularını zihninizde bir daha döndürebileceğiniz Bienal Karma Sergisi, sizi Akdeniz Medresesi’nde bekliyor.",
                "en":""
             },
-            "Alparslan Babaoğlu ve Öğrencileri Ebru Sergisi":{
+            "Karma Çini Sergisi":{
                "date":[
                   "10.04.2018 - 15.05.2018",
                   "09:00-18:00"
@@ -927,9 +927,243 @@
                   "Ümmühan Çelikkaya",
                   "Yumiko Kubota"
                ],
-               "participation":"",
+               "participation-tr":"",
+               "participation-en":"",
+               "participation":[
+               ],
+               "images":[
+                  "Adil Can Güven - Klasik İznik Şam Grubu",
+                  "Adil Can Güven - Behram Gür ve Azade",
+                  "Cem Güven - Sonbahar",
+                  "Emel Gemici-1",
+                  "Emel Gemici-2",
+                  "Ersin Fethi Öçal - Besmele",
+                  "Ersin Fethi Öçal - Kandil",
+                  "Gülen Kesova - Şahmeran",
+                  "Gülen Kesova - Sarı Kelebek",
+                  "Gülfer Akgönül - Selçuklu Sultanı",
+                  "Gülfer Akgönül - Sümbül Yare",
+                  "Nursen & Güvenç Güven - Nur Ala Nur",
+                  "Nursen & Güvenç Güven - Lale Karanfil",
+                  "Nursen & Güvenç Güven - Mavi Beyaz",
+                  "İbrahim Kuşlu -Oluş ve Bozuluş-1",
+                  "İbrahim Kuşlu -Oluş ve Bozuluş-2",
+                  "Kifayet Özkul - Hayat Ağacı",
+                  "Kifayet Özkul - 114",
+                  "Melike Haliloğlu - Rahmet",
+                  "Melike Haliloğlu - Sonsuz Mavi, Baba Nakkaş Üslubu",
+                  "Naciye Nur Avlupınar - İcazet Çalışması",
+                  "Naciye Nur Avlupınar  - Kuş Yuvası",
+                  "Nursan Güven - Klasik İznik Şam Grubu",
+                  "Özkan Tokaç - Saray Bahçesi",
+                  "Rauf Sadi Güven - Horoz Testi",
+                  "Rauf Sadi Güven - Kaos",
+                  "Ryuko Kito - Türkiye Sepeti",
+                  "Ryuko Kito - Bukalemun",
+                  "Salih Sarıçam - 1505 Osmanlı Dönemi Baba Nakkaş Üslubu",
+                  "Selma Keleş Şahin - Zaman",
+                  "Selma Keleş Şahin - Hayat",
+                  "Tenzile Doğan - Zeytin Dalı",
+                  "Timur Bilir - 4'lü Kuş",
+                  "Timur Bilir - Rumi",
+                  "Ümmühan Çelikkaya - Evrenin Oluşumu",
+                  "Ümmühan Çelikkaya - Stilize Göz Otu Çiçeği",
+                  "Yumiko Kubota - Şahmeran",
+                  "Yumiko Kubota - Ejderha"
+               ],
                "tr":"Merhum Süheyl Ünver’in “ince sanat dünyamızda çok ileri mertebeye vararak Türk süslemesinde rönesansımızı gerçekleştirdi” dediği Cahide Keskiner diyor ki “Her eser sanat, her eser yapan sanatkâr değildir. Özveri olmadan, kendini vermeden sanat eseri ortaya çıkmaz. Sanatkâr edebe, adaba uymalıdır. İnsan ne kadar eser üretirse üretsin, ne kadar faaliyet yaparsa yapsın, eğer bir ‘hiç’ olduğunu anlamadıysa her şey boşa gitmiş demektir.” Gelenekli sanatlarımızın bu çağın sanatkârları elinde aldığı renklerin hemen hepsini bir arada görebileceğiniz, göz göze geldiğiniz her eserle sanat nedir, sanatçı kimdir sorularını zihninizde bir daha döndürebileceğiniz Karma Çini Sergisi, sizi Nuruosmaniye Mahsen’de bekliyor.",
                "en":""
+            }
+         },
+         "Kişisel Sergiler":{
+            "2018":{
+               "90 Yıl 90 Eser":{
+                  "date":[
+                     "24.04.2018 - 30.04.2018",
+                     "10:00-17:00"
+                  ],
+                  "location":"Sirkeci Garı",
+                  "geo_location":"",
+                  "artist":[
+                     "Etem Çalışkan"
+                  ],
+                  "participation-tr":"",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+                     "Abdulwahab Saif - Zetnep Bato -Hilye-i Şerif",
+                     "Yasemin Ergün - Kufi Yazı",
+                     "Kevser İbrahimoğlu - İstanbul",
+                     "Aynur Maktal Erbaş - Maşallah",
+                     "Ayşe Nurgül Kabasakal, Songül Sümen Ak - Dönemler",
+                     "Betül Coşkun - Hilye-i Şerif",
+                     "Büşra Akan - Rumi Şemse Tezhibi",
+                     "Fatih İmam Hatip Ortaokulu Ertuğrul Çakır Atölyesi -Nuh",
+                     "Esen Akgöl - Yaban Gülü",
+                     "Fatma Betül Acun - Makam-ı Raziye",
+                     "Figen Tekiner - Meşk",
+                     "Gül Vardar Tezbora - Bakara 1-5.",
+                     "Gülten Kosova Biltekin - Çiçekli Ebru",
+                     "Hatice Ünal - Kütahya",
+                     "Hüdayin Ertan Sav - Hu Allah Hu",
+                     "Kamuran İşcan - Lalezar",
+                     "Leyla Varol - Göke Dünya",
+                     "Mehdi Naghavi - İran Şahı Elkabı",
+                     "Meryem Kiola - Gökyüzü ile",
+                     "Meryem Şahin - Papatya Buket Ebrusu",
+                     "Safigül Bengü Olgun - Hayatvar",
+                     "Zeynep Önen - Klasik/Tasarım Tezhip",
+                     "Semra Ata - Nurun Ala Nur, Nur 35.",
+                     "Sibel Akkaya - Aşk",
+                     "Tuba Ruhengiz Azaklı",
+                     "Veysel Kucuras - Enbiya 30.",
+                     "Yasemin Taş - Serlevha",
+                     "Zeliha İyilik - Mevlevi Sikkesi",
+                     "Zeynep Bostan - Serlevha",
+                     "Zeynep Elçi - Aziz Yolculuk",
+                     "Zeynep Işık Çetinkaya - Arûs",
+                     "Zafer Baştak - Çağlar Öncesinden Günümüze Mirasımız-1",
+                     "Zafer Baştak - Çağlar Öncesinden Günümüze Mirasımız-2"
+                  ],
+                  "tr":"Kendi anlatımıyla…<br><br>“DOKSAN” Su, ateşte yüz derecede kaynar. On yıl daha çekeceğim bu dünya çilesini 5 Ocak 1928 (5928)’de Tarsus’un Göçük Köyü’nde dünyaya gelmişim Cennet’ten. Yazının icadı, insanlığın miladı... 5928 doğumlu 6018 yaşımdayım. On yıl daha yazı çizmek istiyorum. Doğduğumdan beri çalışıyorum. Ana sütü emmek de çalışmaktır... Uykuya ve yemeğe ayrılan zaman, kayıp zaman. Yaşamım, ilk çağ (ilkokul), ortaokul, lise (ortaçağ) ve yeniçağ (akademi). Üç çağın temeli, altı yaşıma kadar olanıdır. 90 yıllık yazı – çizgi içinde 50 yıl gazetecilik mesleği de var. Meslekle sanat yaşım, doksan artı meslek yaşım elli. İkisinin toplamı 140. Bu benim çalışma yaşım. Yaşamayı çalışmak için seviyorum. Cennetin kapısı çileli çalışma odamın kapısıdır.<br><br>7 Mart 6018",
+                  "en":""
+               },
+               "El Üstünde":{
+                  "date":[
+                     "26.04.2018 - 15.05.2018",
+                     "10:00-17:00"
+                  ],
+                  "location":"Akdeniz Medreseleri",
+                  "geo_location":"",
+                  "artist":[
+                     "Murat Gür"
+                  ],
+                  "participation-tr":"",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+                     "Abdulwahab Saif - Zetnep Bato -Hilye-i Şerif",
+                     "Yasemin Ergün - Kufi Yazı",
+                     "Kevser İbrahimoğlu - İstanbul",
+                     "Aynur Maktal Erbaş - Maşallah",
+                     "Ayşe Nurgül Kabasakal, Songül Sümen Ak - Dönemler",
+                     "Betül Coşkun - Hilye-i Şerif",
+                     "Büşra Akan - Rumi Şemse Tezhibi",
+                     "Fatih İmam Hatip Ortaokulu Ertuğrul Çakır Atölyesi -Nuh",
+                     "Esen Akgöl - Yaban Gülü",
+                     "Fatma Betül Acun - Makam-ı Raziye",
+                     "Figen Tekiner - Meşk",
+                     "Gül Vardar Tezbora - Bakara 1-5.",
+                     "Gülten Kosova Biltekin - Çiçekli Ebru",
+                     "Hatice Ünal - Kütahya",
+                     "Hüdayin Ertan Sav - Hu Allah Hu",
+                     "Kamuran İşcan - Lalezar",
+                     "Leyla Varol - Göke Dünya",
+                     "Mehdi Naghavi - İran Şahı Elkabı",
+                     "Meryem Kiola - Gökyüzü ile",
+                     "Meryem Şahin - Papatya Buket Ebrusu",
+                     "Safigül Bengü Olgun - Hayatvar",
+                     "Zeynep Önen - Klasik/Tasarım Tezhip",
+                     "Semra Ata - Nurun Ala Nur, Nur 35.",
+                     "Sibel Akkaya - Aşk",
+                     "Tuba Ruhengiz Azaklı",
+                     "Veysel Kucuras - Enbiya 30.",
+                     "Yasemin Taş - Serlevha",
+                     "Zeliha İyilik - Mevlevi Sikkesi",
+                     "Zeynep Bostan - Serlevha",
+                     "Zeynep Elçi - Aziz Yolculuk",
+                     "Zeynep Işık Çetinkaya - Arûs",
+                     "Zafer Baştak - Çağlar Öncesinden Günümüze Mirasımız-1",
+                     "Zafer Baştak - Çağlar Öncesinden Günümüze Mirasımız-2"
+                  ],
+                  "tr":"Sanatçının eseriyle bağ kuran, fikrin tezahürüne imkân sağlayan eller. Yıllarca çalışarak malzemeyle hemhâl olan, eserin uçsuz bucaksız coğrafyasında parmakların hüneriyle yolunu bulan çınarın kanatları. Eldir dokunan, hisseden, esere şeklini veren. Zamanın ve mekânın kıskacından eseri söküp alan, zarif dokunuşların sahibi. Çizgiler arasında bir ömür saklanır, haritasıdır hayatın. Sanatımızın saygın isimleri ile yaptığım çekimler keyifli ve öğretici idi. Yılların birikimi sadece ilimle değil, aynı zamanda irfan yüzüyle de tebellür etmişti. Her ne var ise bu eller aracılığı ile vücut buldu, esere dönüştü. Kâh kalem, kâh fırça, kâh kamış tuttu. Nice öğrenci yetişti, nice talibe el verildi. Bize de bu kıymetli elleri çekmek nasip oldu. Klasik Türk Sanatları üstat ve üstâdelerinin elleri projesi, sanatçılarımızın uğruna ömür verdikleri çalışmalarına bir ithaftır.<br><br>MURAT GÜR",
+                  "en":""
+               },
+               "Kadim Dostlar":{
+                  "date":[
+                     "02.05.2018 - 15.05.2018",
+                     "09:00-18:00"
+                  ],
+                  "location":"Topkapı Sarayı",
+                  "geo_location":"",
+                  "artist":[
+                     "Ahmet Sacit Açıkgözoğlu"
+                  ],
+                  "participation-tr":"Eserlerin Ciltle Sunulmasına Katkıda Bulunanlar : <br><br>Gürcan Mavili • Yasin Çakmak • Havva Yağcı • Emel Türkmen • Hakan Özçeltik • Songül Ergün • Selman Küçükkömürler • Rabia Mütevelli • Ravza Akatay • Deniz Abana • Cansu Kösedağı • Merve Bulut • Elif Çelenk • Ayfer Aydoğdu • Arzu Çebi • Ece Ulu • Zeynep Çolakoğlu • Dilruba Ürküt • Zehra Kakı",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+                     
+                  ],
+                  "tr":"Belki de beş asır öncesine kadar götürebildiğimiz kadim bir dostluk, tekrar hatırlatılmak üzere ele alındı.<br><br>Tevhid etmek, işaret etmek, cem etmek geleneksel sanatların başta gelen maksatlarından sayılabilir. Cilt ve Ebru beraberliği ve dostluğu, sanatların yanında ustaları ve meraklıları da birleştirecek. Eserleri çerçeve ile takdim yerine ebrunun fonksiyonel özelliğini öne çıkarıp ciltle arz etme fikri, bu eski dostluğu da nazar-ı dikkate vereceği için bilhassa tercih edildi.<br><br>Aslında bu şahsi sergimiz, mücellitleri de düşünürsek karma bir cilt sergisi sayılabilir. Türk İslam medeniyetinde her bir saha ve her bir detay vahdeti yani bir olmayı işaret eder. Hatta diğer dallarla da birleşip fiili olarak bu tevhidi ortaya koyar. Beraber anlatmak, birlikte zevk-i selime hizmet etmek, geleneğimizin en özel ve mühim hususiyetlerindendir. Ehl-i Hiref, nakkaşhane ve sanatkârların birlikte ortaya koyduğu eserler, bu özelliğin en önemli delillerindendir. Ustaların eserlerinin kıymeti, diğer sanatçıların tercihleri nispetleriyle ölçülür. Yaptığı ebrular kitap cildi, yan kâğıdı, yazı pervazı gibi yerlerde aranan usta, makbul sayılır.<br><br>Klasik ebru çeşitlerini sergimizde kullanmaya gayret ettik. Cilt, kubur ve zîr-i meşklerle tarihi eşyanın ebru ile tezyini ve takdimi ile ebrunun kullanım alanlarının eski vüs’atinde düşünülmesi gerekliliğine dikkat çekmeye çalıştık.<br><br>Destek ve gayretleriyle faaliyetlerimize imkân sağlayan Bienal yönetimi ve ekibine müteşekkiriz. Eserlerin arzına, cilt çalışmalarıyla yardım eden Mimar Sinan Güzel Sanatlar Üniversitesi yüksek lisans ve lisans öğrencileri ile kıymetli hocalarına şükranlarımızı sunuyoruz. Medeniyetimize ait değerlerin ve güzelliklerin bu nev’i faaliyetlerle hatırda tutulacağına ve bu faaliyetlerin bütünlüğümüze vesile olacağına inanıyoruz.<br><br>Ahmet Sacit Açıkgözoğlu",
+                  "en":""
+               },
+               "Ve Cümleler Eşlik Etti Sanata":{
+                  "date":[
+                     "24.04.2018 - 15.05.2018",
+                     "09:00-18:00"
+                  ],
+                  "location":"Türk İslam Eserleri Müzesi",
+                  "geo_location":"",
+                  "artist":[
+                     "F. Hande Topbaş"
+                  ],
+                  "participation-tr":"",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+
+                  ],
+                  "tr":"Merhum Süheyl Ünver’in “ince sanat dünyamızda çok ileri mertebeye vararak Türk süslemesinde rönesansımızı gerçekleştirdi” dediği Cahide Keskiner diyor ki “Her eser sanat, her eser yapan sanatkâr değildir. Özveri olmadan, kendini vermeden sanat eseri ortaya çıkmaz. Sanatkâr edebe, adaba uymalıdır. İnsan ne kadar eser üretirse üretsin, ne kadar faaliyet yaparsa yapsın, eğer bir ‘hiç’ olduğunu anlamadıysa her şey boşa gitmiş demektir.” Gelenekli sanatlarımızın bu çağın sanatkârları elinde aldığı renklerin hemen hepsini bir arada görebileceğiniz, göz göze geldiğiniz her eserle sanat nedir, sanatçı kimdir sorularını zihninizde bir daha döndürebileceğiniz Bienal Karma Sergisi, sizi Akdeniz Medresesi’nde bekliyor.",
+                  "en":""
+               },
+               "Zamansız Doknuşlar":{
+                  "date":[
+                     "07.04.2018 - 22.04.2018",
+                     "09:00-18:00"
+                  ],
+                  "location":"Türk İslam Eserleri Müzesi",
+                  "geo_location":"",
+                  "artist":[
+                     "Taner Alakuş"
+                  ],
+                  "participation-tr":"",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+
+                  ],
+                  "tr":"İçinde yaşarken zamanı, insanın andan kurtulup özgürleşmesidir sanat… geçmişe gidebilmek, geleceğe dokunmaktır. An bazen çaresizlik hissidir bazen de yaşanılan mutluluğun biteceği hüznüdür. Zamanın ötesine geçen sanat, insanın gerçek dünyadaki objelerden çizgi ve renklerin düş dünyasına yolculuğudur. Kökleri, Orta Asya’ dan İran, Ön Asya Mezopotamya, Suriye, Anadolu ve İstanbul’ a ulaşan minyatür sanatının günümüzdeki en önemli temsilcilerinden biri olan Taner Alakuş, bu sergide sanatseverleri yüzyıllar arası bir yolculuğa çıkarıyor. İstanbul da 15.yüzyılda şehrin fethi ile başlayan minyatür sanatı, saray nakkaşhanesinin kurulması ile gelişerek 19.yüzyılda kesintiye uğrasa da 21.yüzyıla ulaşmıştır. Şiblizade Ahmet, Nakkaş Osman, Ahmet Nakşi, Levni, Abdullah Buhari, Cahide Keskiner gibi üstatların fırçalarının disiplini ile beslenen Taner Alakuş bu disiplin anlayışına düş dünyasının zenginliğini ve yaşadığı yüzyılın temalarını ekleyerek minyatür sanatını farklı bir tada getirmiştir. Sanatçı Taner Alakuş, fırçasının büyüsünü yaşamak isteyen sanatseverlere düş dünyasının kapılarını açıyor. Bizler de bu dünyaya girmek isteyen sanatseverler için steril bir ortam hazırladık, sadece sanat olsun diye… gerçek dünyadan düşler ülkesine yolculuğa çıkarmak için… Haydi içeri!<br><br>Müeyyet Adaş",
+                  "en":""
+               }
+            }
+         },
+         "Koleksiyoner Sergisi":{
+            "2018":{
+               "Mustafa Kaya Koleksiyonu-Yakup Cem Eserleri":{
+                  "date":[
+                     "03.05.2018 - 15.05.2018",
+                     "09:30-17:30"
+                  ],
+                  "location":"Yeni Cami Hünkar Kasrı",
+                  "geo_location":"",
+                  "artist":[
+                     "Yakup Cem"
+                  ],
+                  "participation-tr":"",
+                  "participation-en":"",
+                  "participation":[
+                  ],
+                  "images":[
+                  ],
+                  "tr":"Gelenekli sanatlarımızın nadide örneklerini toplayan koleksiyonerlerin zaman içinde biriktirdikleri eserlerin sanatseverlerle buluşacağı Koleksiyon Sergileri, dünya gözüyle bir daha görme fırsatı bulamayacağımız güzelliklerle dolu. Bu çağın sanatkârlarının elinden çıkan eserlerin sergilendiği Yeditepe Bienali’nde, geleneği oluşturan büyük ustaların şaheserleri de bu özel sergilerle yerini alıyor.",
+                  "en":""
+               }
             }
          }
       }
