@@ -305,28 +305,8 @@
 </main>
 
 <style>
-
-	.related-images {
-		height: 20vw; 
-		margin-bottom: 15px; 
-		display: flex !important;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-	}
-	
 	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-top: 1px solid #e8b75f;}
-	.bienal-images li {width: 25% !important;}
-	.bienal-images .holder {display: flex; height:18vw;}
-	.bienal-images .holder .img {
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}	
 	
-	.bienal-images img {max-width: 100% !important; max-height: 100% !important;}
 	.gallery dl dt {padding: 0px !important;}
 	.gallery p {margin-bottom: 10px !important;}
 	#main a {color:#252525 !important;}

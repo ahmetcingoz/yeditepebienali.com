@@ -54,19 +54,17 @@
 								<?php } ?>
 
 								<div class="masonry-holder">
-									<!-- <ul class="links filter">
+									
+									<!--<ul class="links filter">
 										<li class="active"><a href="#">All</a></li>
 
-										<?php 
+										<?php foreach ($subcategory_date_value as $article_key => $article_value) { ?>
 
-											foreach ($subcategory_date_value as $article_key => $article_value) { ?>
-
-												<li><a href="#" data-filter=".<?php echo _seo($article_key)?>"><?php echo $article_key ?></a></li>
-
+											<li><a href="#" data-filter=".<?php echo _seo($article_key)?>"><?php echo $article_key ?></a></li>
 									
 										<?php } ?>
 
-									</ul> -->
+									</ul>-->
 
 									<!-- masonry -->
 									<ul class="masonry grid3" id="masonry-container">
