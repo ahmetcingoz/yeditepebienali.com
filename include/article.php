@@ -1,4 +1,20 @@
-<?php $images = _content ('images/articles/' . $article[0] . '/' . $article[2] . '/' . _seo($article[1]) . '/' . _seo($article[3]) . '/'); 
+<?php 
+
+	$path_subcategory_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($article[1]) . '/' . _seo($article[3]) . '/';
+
+	$path_category_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($article[3]) . '/';
+
+	if (is_dir($path_category_article)) {
+		
+		$path = $path_category_article;
+		
+	} else {
+		
+		$path = $path_subcategory_article;
+		
+	}
+
+	$images = _content ($path); 
 
 	$works = '';
 
@@ -164,19 +180,19 @@
 																																													 
 															if (count($image_artist_word) > 1) { ?>
 																
-																<a><strong class="title"><?php echo $image_artist_word[1]; ?></strong></a>
+																<a><strong class="title"><?php echo _uppercase($image_artist_word[1]); ?></strong></a>
 																<a><p><?php echo $image_artist_word[0]; ?></p></a>
 														
 															<?php } else { ?>
 
-																<a><strong class="title"><?php echo $image_title ?></strong></a>
+																<a><strong class="title"><?php echo _uppercase($image_title) ?></strong></a>
 																
 															<?php }
 																	 
 														?>
 														
 														<ul class="icons">
-															<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+															<!--<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>-->
 															<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
 														</ul>
 													</div>
@@ -224,23 +240,44 @@
 					<ul class="masonry add">
 						
 						<?php foreach ($article[5] as $related_key => $related_value) { 
+	
+							//echo _seo($related_key) . '/';
+	
+							$path_subcategory_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($article[1]) . '/' . _seo($related_key) . '/';
 
+							$path_category_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($related_key) . '/';
+
+							if (is_dir($path_category_article)) {
+
+								$path = $path_category_article;
+								
+							} else {
+
+								$path = $path_subcategory_article;
+								
+							}	
+
+							$related_images = _content ($path); 
+	
 							if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
 
 							<?php $i++; if ($i < 7) { ?>
 
-								<li>
+								<li class="related-images">
 									<div class="holder">
 										<div class="img wow fadeInUp">
-											<img src="/images/placehold/350x260.png" alt="image description">
+											
+											<!--<img src="/images/placehold/350x260.png" alt="image description">-->
+											<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
+											
 										</div>
 										<div class="caption">
 											<div class="c1">
 												<div class="c2">
-													<a href="<?php echo _seo(_translate('article', $related_key)); ?>"><strong class="title"><?php echo _translate('article', $related_key); ?></strong></a>
+													<a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><strong class="title"><?php echo _translate('article', $related_key); ?></strong></a>
 													<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
 													<ul class="icons">
-														<li><a href="#"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+														<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
 													</ul>
 												</div>
@@ -269,6 +306,15 @@
 
 <style>
 
+	.related-images {
+	height: 20vw; 
+	margin-bottom: 15px; 
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	}
+	
 	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-top: 1px solid #e8b75f;}
 	.bienal-images li {width: 25% !important;}
 	.bienal-images .holder {display: flex; height:18vw;}
@@ -294,6 +340,7 @@
 	}	
 	
 	@media only screen and (max-width: 600px) {
+		.related-images {height: 30vw; margin-bottom: 15px;}		
 	   .nav {margin-top: 50px;}
 	  .container {margin-top: 25px;}
 	  .caption {display: none;}
