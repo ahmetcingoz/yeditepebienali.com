@@ -138,7 +138,32 @@
                "artist":[
                   "Asiye Kafalıer Dönmez"
                ],
-               "participation":"Arz-ul Mukaddes Kudüs Sergisine İştirak Eden Sanatçılar: <br><br>Arzu Fideci • Zerrin Gülsoy • Özge Eda Köse • Hatice Kübra Uyan • Nuseybe Özdemir • Zehra Koblay • Ayşenur Genç • Yasemin Demir • Emine Sultan • Meryem Er Yumun • Zehra Cinkaya • Beyzanur Akıncı Kaplan • Eda Funda Özkan • Habibe Kalafat • Nida Gamze Temurçin • Seda Gül • Nihal Tezcan Şişman • Hatice Baran Şişik • Sabriye Küçükkaya • Sümeyye Onuk • Yasemin Aktaş • Ayşenur Kadakçı Velioğlu • Leyla Varol",
+               "participation-tr":"Arz-ul Mukaddes Kudüs Sergisine İştirak Eden Sanatçılar:",
+               "participation-en":"",
+               "participation":[
+                  "Arzu Fideci",
+                  "Zerrin Gülsoy",
+                  "Özge Eda Köse",
+                  "Hatice Kübra Uyan",
+                  "Nuseybe Özdemir",
+                  "Zehra Koblay",
+                  "Ayşenur Genç",
+                  "Yasemin Demir",
+                  "Meryem Er Yumun",
+                  "Zehra Cinkaya",
+                  "Beyzanur Akıncı Kaplan",
+                  "Eda Funda Özkan",
+                  "Habibe Kalafat",
+                  "Nida Gamze Temurçin",
+                  "Seda Gül",
+                  "Nihal Tezcan Şişman",
+                  "Hatice Baran Şişik",
+                  "Sabriye Küçükkaya",
+                  "Sümeyye Onuk",
+                  "Yasemin Aktaş",
+                  "Ayşenur Kadakçı Velioğlu",
+                  "Leyla Varol"
+               ],
                "images":[
                   "Arzu Fideci - Emanet",
                   "Asiye Kafalıer Dönmez - Buluşma",
