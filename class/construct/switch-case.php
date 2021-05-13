@@ -64,7 +64,7 @@
 
 		}
 		
-		$articles = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
+		$articles = $_SERVER['DOCUMENT_ROOT'] . '/json/category/category.json';
 		
 		$articles = _decode_json($articles);
 		

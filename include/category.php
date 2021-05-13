@@ -2,7 +2,7 @@
 
 	$year_title = 'yeditepe bienali';
 
-	$json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/exhibitions.json';
+	$json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/category.json';
 
 	$json = _decode_json($json); 
 

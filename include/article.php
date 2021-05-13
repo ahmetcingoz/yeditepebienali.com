@@ -149,9 +149,9 @@
 								
 				<?php if ($works == 'true') { ?>
 				
-				<div class="masonry-holder" id="masonry-container">
+				<div class="masonry-holder">
 					<h2><?php if ($article[0] == 'sergiler') { echo _uppercase(_translate('title', 'eserler')); } else { echo _uppercase(_translate('title', 'fotoğraflar')); }  ?></h2>
-					<ul class="masonry grid3">
+					<ul class="masonry grid3" id="masonry-container">
 
 					<?php 
 
