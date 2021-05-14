@@ -1122,8 +1122,6 @@
 			  "participation-en":"",
 			  "participation":[
 			  ],
-			  "images":[
-			  ],
 			  "tr":"Gelenekli sanatlarımızın nadide örneklerini toplayan koleksiyonerlerin zaman içinde biriktirdikleri eserlerin sanatseverlerle buluşacağı Koleksiyon Sergileri, dünya gözüyle bir daha görme fırsatı bulamayacağımız güzelliklerle dolu. Bu çağın sanatkârlarının elinden çıkan eserlerin sergilendiği Yeditepe Bienali’nde, geleneği oluşturan büyük ustaların şaheserleri de bu özel sergilerle yerini alıyor.",
 			  "en":""
 		    }
@@ -1139,17 +1137,17 @@
 			  "location":"Cumhuriyet Eğitim Müzesi",
 			  "geo_location":"",
 			  "artist":[
-            "Aytül Sepetçi",
-            "Gülsen Bilgin",
-            "Hatice İnan Kulu",
-            "Hülya Korkmaz",
-            "Miki Oshita",
-            "Seçil Erkol",
-            "Selat Metin",
-            "Sema Erkol Çelik",
-            "Serpil Sevim Kaymaz",
-            "Suna Selma Koçal",
-            "Uğur Taşatan"
+			  "Aytül Sepetçi",
+			  "Gülsen Bilgin",
+			  "Hatice İnan Kulu",
+			  "Hülya Korkmaz",
+			  "Miki Oshita",
+			  "Seçil Erkol",
+			  "Selat Metin",
+			  "Sema Erkol Çelik",
+			  "Serpil Sevim Kaymaz",
+			  "Suna Selma Koçal",
+			  "Uğur Taşatan"
 			  ],
 			  "participation-tr":"",
 			  "participation-en":"",
