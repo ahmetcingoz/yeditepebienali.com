@@ -102,19 +102,24 @@
 		
 		foreach ($artists as $category_key => $category_value) {
 
-			foreach ($category_value as $artist_key => $artist_value) {
+			foreach ($category_value as $date_key => $date_value) {
+				
+				foreach ($date_value as $artist_key => $artist_value) {
+					
+					switch($page) {
 
-				switch($page) {
+						case _seo($artist_key);
 
-					case _seo($artist_key);
+							$artist_array = [$artist_key, $artist_value, $category_value];
 
-						$artist_array = [$artist_key, $artist_value];
+							_include_once('artist', $artist_array);
 
-						_include_once('artist', $artist_array);
+						break;	
 
-					break;	
-
-				}						
+					}	
+					
+				}
+					
 
 			}
 

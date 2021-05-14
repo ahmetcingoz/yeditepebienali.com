@@ -8,9 +8,13 @@
 
 	foreach ($artists as $category_key => $category_value) {
 
-		foreach ($category_value as $artist_key => $artist_value) {
+		foreach ($category_value as $date_key => $date_value) {
 
-			$sort[$artist_key] = $artist_key;
+			foreach ($date_value as $artist_key => $artist_value) {
+			
+				$sort[$artist_key] = $artist_key;
+				
+			}			
 
 		}
 
