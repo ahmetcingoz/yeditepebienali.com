@@ -5,6 +5,11 @@
 	//ini_set('display_errors', TRUE);
 	//ini_set('default_charset', "utf-8");
 
+	//setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr_TR', 'tr', 'turkish');
+
+	setlocale(LC_ALL, 'tr_TR');
+	
+	header('Content-Type: text/html; charset=utf-8');
 	header("Content-Type: text/html; charset=utf-8");
 	header("Expires: 0");
 	header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

@@ -305,17 +305,19 @@
 </main>
 
 <style>
+	#main a {color:#252525 !important;}
+	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
+	.breadcrumb a {color:#e8b75f !important;}
+
+	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
+	.promo .heading {overflow: visible !important;}
 	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-top: 1px solid #e8b75f;}
 	
 	.gallery dl dt {padding: 0px !important;}
 	.gallery p {margin-bottom: 10px !important;}
-	#main a {color:#252525 !important;}
-	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
-	.breadcrumb a {color:#e8b75f !important;}
-	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
-	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
-	.promo .heading {overflow: visible !important;}
 
+	h4 {text-align: center; color: #e8b760; border-bottom: 2px solid #e8b760; padding-top: 5px;  padding-bottom: 5px; margin-bottom: 25px;}
+	
 	@media only screen and (max-width: 1000px) {
 		.promo {display: none;}
 	}	
