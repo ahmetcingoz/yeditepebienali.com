@@ -1,4 +1,10 @@
-<!-- promo -->
+<?php
+
+	$venues_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+
+	$venues_json = _decode_json($venues_json);
+
+?>
 <div class="promo">
 	<div class="max-container">
 		<div class="img">
@@ -8,12 +14,14 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<h1>Full width</h1>
-						<h2>Blog List</h2>
+						<h2><?php //echo _uppercase(_translate('category', $venues_json)) ?></h2>
 					</div>
 				</div>
 			</div>
 		</div>
+		<ol class="breadcrumb">
+			<li class="active"><?php //echo _translate('venues', $article[2]) ?></li>
+		</ol>
 	</div>
 </div>
 <!-- contain main informative part of the site -->
@@ -37,12 +45,8 @@
 							} 
 							
 						}					
-					
-						$artists = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
 
-						$artists = _decode_json($artists);
-
-						foreach ($artists as $category_key => $category_value) {
+						foreach ($venues_json as $category_key => $category_value) {
 
 							foreach ($category_value as $date_key => $date_value) {
 								
@@ -136,5 +140,32 @@
 	</div>
 </main>
 	
-					<!-- article -->
+<style>
+	#main a {color:#252525 !important;}
+	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
+	.breadcrumb a {color:#e8b75f !important;}
+
+	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
+	.promo .heading {overflow: visible !important;}
+	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-bottom: 1px solid #e8b75f;}
 	
+	.container {margin-bottom: 50px;}
+	
+	.artist {width: 100%; padding-left: 15px; padding-right: 15px;}
+	.artist li {width: 25%; float: left; margin-bottom: 7px;}
+	.artist li a {font-size: 15px;}
+	.artist li a:hover {text-decoration:none !important; border-bottom: 1px solid #e8b75f; }	
+	.artist h2 {width: 100%; display: block; float: left; margin-bottom: 25px; margin-top: 25px; color:#e8b75f; border-bottom: 1px solid #e8b75f}
+
+	@media only screen and (max-width: 1000px) {
+		.promo {display: none;}
+		.artist li {width: 33.33%; float: left;}
+	}	
+	
+	@media only screen and (max-width: 600px) {
+		.nav {margin-top: 50px;}
+		.container {margin-top: 25px;}
+		.artist li {width: 50%; float: left;}
+	}	
+
+</style>

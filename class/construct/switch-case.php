@@ -110,7 +110,7 @@
 
 						case _seo($artist_key);
 
-							$artist_array = [$artist_key, $artist_value, $category_value];
+							$artist_array = [$artist_key, $artist_value, $category_key, $date_key, $category_value];
 
 							_include_once('artist', $artist_array);
 
@@ -139,7 +139,7 @@
 
 						case _seo($venues_key);
 
-							$artist_array = [$venues_key, $venues_value, $category_value];
+							$venues_array = [$venues_key, $venues_value, $category_key, $date_key, $category_value];
 
 							_include_once('venues', $venues_array);
 
