@@ -124,6 +124,10 @@
 					
 					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/article.php';
 					
+				} else if ($section == 'artist') {
+					
+					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/artist.php';
+					
 				} 
 				
 			}

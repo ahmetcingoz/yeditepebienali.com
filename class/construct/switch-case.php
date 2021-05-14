@@ -96,6 +96,30 @@
 			
 		}
 		
+		$artists = $_SERVER['DOCUMENT_ROOT'] . '/json/category/artist.json';
+
+		$artists = _decode_json($artists);
+		
+		foreach ($artists as $category_key => $category_value) {
+
+			foreach ($category_value as $artist_key => $artist_value) {
+
+				switch($page) {
+
+					case _seo($artist_key);
+
+						$artist_array = [$artist_key, $artist_value];
+
+						_include_once('artist', $artist_array);
+
+					break;	
+
+				}						
+
+			}
+
+		}
+		
 	}
 
 
