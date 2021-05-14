@@ -323,11 +323,8 @@
 	}	
 	
 	@media only screen and (max-width: 600px) {
-		.related-images {height: 30vw; margin-bottom: 15px;}		
 		.nav {margin-top: 50px;}
 		.container {margin-top: 25px;}
-		.bienal-images li {width: 50% !important;}
-		.bienal-images .holder {display: flex; height:50vw;}	
 	}	
 
 	.background-animation {

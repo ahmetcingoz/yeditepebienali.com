@@ -20,7 +20,7 @@
 			
 	$collator->sort($sort);
 
-	sort($sort, SORT_LOCALE_STRING);
+	//sort($sort, SORT_LOCALE_STRING);
 
 	$number = count($sort);
 
@@ -103,17 +103,24 @@
 
 	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
 	.promo .heading {overflow: visible !important;}
-	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-top: 1px solid #e8b75f;}
+	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-bottom: 1px solid #e8b75f;}
 	
-	.artist {width: 100%}
+	.container {margin-bottom: 50px;}
+	
+	.artist {width: 100%; padding-left: 15px; padding-right: 15px;}
 	.artist li {width: 25%; float: left; margin-bottom: 7px;}
-	.artist h2 {width: 100%; display: block; float: left; margin-bottom: 25px; margin-top: 25px;}
-	
+	.artist li a {font-size: 15px;}
+	.artist li a:hover {text-decoration:none !important; border-bottom: 1px solid #e8b75f; }	
+	.artist h2 {width: 100%; display: block; float: left; margin-bottom: 25px; margin-top: 25px; color:#e8b75f; border-bottom: 1px solid #e8b75f}
+
 	@media only screen and (max-width: 1000px) {
+		.promo {display: none;}
 		.artist li {width: 33.33%; float: left;}
-	}
+	}	
 	
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 600px) {
+		.nav {margin-top: 50px;}
+		.container {margin-top: 25px;}
 		.artist li {width: 50%; float: left;}
 	}	
 
