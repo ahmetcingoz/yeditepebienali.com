@@ -16,7 +16,7 @@
 		$url = str_replace("â", 'a', $url);		
 		$url = str_replace("û", 'u', $url);		
 		$url = str_replace("î", 'i', $url);			
-		$url = str_replace("Â", 'a', $url);
+		$url = str_replace("Â", 'A', $url);
 		$url = str_replace('--', '-', $url);		
 		$url = trim($url, '-');
 		

@@ -24,8 +24,6 @@
 			
 	$collator->sort($sort);
 
-	//sort($sort, SORT_LOCALE_STRING);
-
 	$number = count($sort);
 
 ?>

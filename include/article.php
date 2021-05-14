@@ -57,7 +57,6 @@
 		</div>
 	</div>
 </div>
-
 <main id="main" role="main">
 	<div class="container">
 		<div class="row">
@@ -74,7 +73,6 @@
 						<img class="img" src="/images/placehold/770x570.png" alt="image description">
 	
 					<?php } ?>
-
 					
 					<div class="text">
 						<h2 class="wow fadeInUp"><?php echo _uppercase(_translate('article', $article[3])) ?></h2>
@@ -145,6 +143,16 @@
 	
 						<?php } ?>
 						
+						<!--<ul class="social">
+							<li>
+								<ul class="social-networks">
+									<li><a href="#" class="facebook"><i class="icon-facebook"></i><span>facebook</span></a></li>
+									<li><a href="#" class="twitter"><i class="icon-twitter"></i><span>twitter</span></a></li>
+									<li><a href="#" class="instagram"><i class="icon-instagram"></i><span>instagram</span></a></li>
+									<li><a href="#" class="pinterest-circled"><i class="icon-pinterest-circled"></i><span>pinterest-circled</span></a></li>
+								</ul>
+							</li>
+						</ul>-->
 					</div>
 				</div>
 								
