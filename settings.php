@@ -4,7 +4,7 @@
 
 	$title = 'Yeditepe Bienali';
 
-	$rename_path = 'images/articles/sergiler/2018/koleksiyoner-sergiler/mustafa-kaya-koleksiyonu-yakup-cem-eserleri/';
+	$rename_path = 'images/articles/sergiler/2018/tematik-sergiler/cumhuriyet-egitim-muzesi';
 
 	/* SETTINGS */
 
