@@ -128,7 +128,11 @@
 					
 					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/artist.php';
 					
-				} 
+				} else if ($section == 'venues') {
+					
+					include_once $_SERVER['DOCUMENT_ROOT'] . '/include/venues.php';
+					
+				}  
 				
 			}
 

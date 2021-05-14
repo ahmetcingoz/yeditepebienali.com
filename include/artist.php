@@ -1,10 +1,3 @@
-<?php 
-
-global $year; 
-
-?>
-
-
 <main style="margin-top: 50px; margin-bottom: 50px;" id="main" role="main">
 	<div class="container">
 		<div class="row">

@@ -125,6 +125,35 @@
 
 		}
 		
+		$artists = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+
+		$artists = _decode_json($artists);
+		
+		foreach ($artists as $category_key => $category_value) {
+
+			foreach ($category_value as $date_key => $date_value) {
+				
+				foreach ($date_value as $venues_key => $venues_value) {
+					
+					switch($page) {
+
+						case _seo($venues_key);
+
+							$artist_array = [$venues_key, $venues_value, $category_value];
+
+							_include_once('venues', $venues_array);
+
+						break;	
+
+					}	
+					
+				}
+					
+
+			}
+
+		}		
+		
 	}
 
 
