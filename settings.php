@@ -1,12 +1,12 @@
 <?php 
 
 	/* HEAD */
-
 	$title = 'Yeditepe Bienali';
-	$rename_path = 'images/articles/sergiler/2018/uluslararasi-sergiler/uluslararasi-tezhip-sergisi/';
+
+	$rename_path = 'images/articles/sergiler/2018/tematik-sergiler/cumhuriyet-egitim-muzesi/';
 
 	/* SETTINGS */
-
+	phpinfo();
 	$erkajans = 'false';
 	$under_construction = 'false';
 

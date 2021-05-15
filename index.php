@@ -1,5 +1,4 @@
 <?php 
-	
 	//error_reporting(E_ALL);
 	//ini_set('error_reporting', 'E_ALL');
 	//ini_set('display_errors', TRUE);
@@ -8,7 +7,7 @@
 	//setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr_TR', 'tr', 'turkish');
 
 	setlocale(LC_ALL, 'tr_TR');
-	
+	phpinfo();
 	header('Content-Type: text/html; charset=utf-8');
 	header("Content-Type: text/html; charset=utf-8");
 	header("Expires: 0");
