@@ -7,7 +7,7 @@
 	//setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr_TR', 'tr', 'turkish');
 
 	setlocale(LC_ALL, 'tr_TR');
-	phpinfo();
+	
 	header('Content-Type: text/html; charset=utf-8');
 	header("Content-Type: text/html; charset=utf-8");
 	header("Expires: 0");

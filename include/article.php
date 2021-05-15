@@ -124,7 +124,7 @@
 	
 						<?php } if (array_key_exists('participation' . '-' .  $_SESSION['language'], $article[4])) { ?>
 
-<							<?php echo $article[4]['participation' . '-' .  $_SESSION['language']] ?> </p>
+							<?php echo $article[4]['participation' . '-' .  $_SESSION['language']] ?> </p>
 						
 						<?php } if (array_key_exists('participation', $article[4])) { ?>
 						
