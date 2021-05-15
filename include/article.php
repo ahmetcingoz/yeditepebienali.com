@@ -109,7 +109,7 @@
 								<dt><span style="color:#e8b75f;" class="material-icons md-18">place</span></dt>
 								<dd><a target="_blank" href="<?php echo _seo(_translate('venues', $article[4]['location'])) ?>"><?php echo _translate('venues', $article[4]['location']) ?></a></dd>
 							
-							<?php } if (array_key_exists('location', $article[4])) { ?> 
+							<?php } if (array_key_exists('artist', $article[4])) { ?> 
 							
 								<dt><span style="color:#e8b75f;" class="material-icons md-18">filter_vintage</span></dt>
 								<dd><?php foreach ($article[4]['artist'] as $artist) { ?><a target="_blank" href="<?php echo _seo($artist) ?>"><?php echo $artist ?></a>
@@ -293,7 +293,6 @@
 											</div>
 										</div>
 									</li>						
-
 
 								<?php } 
 

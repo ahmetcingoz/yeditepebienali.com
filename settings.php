@@ -1,5 +1,5 @@
 <?php 
-	
+
 	/* HEAD */
 
 	$title = 'Yeditepe Bienali';
