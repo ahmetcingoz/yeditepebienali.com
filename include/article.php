@@ -274,10 +274,7 @@
 								<li class="item wow fadeInUp" data-wow-delay="0.1s">
 									<div class="holder">
 										<div class="img wow fadeInUp">
-
-											<!--<img src="/images/placehold/350x260.png" alt="image description">-->
 											<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
-
 										</div>
 										<div class="caption">
 											<div class="c1">
@@ -286,7 +283,6 @@
 													<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
 													<ul class="icons">
 														<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-														<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
 													</ul>
 												</div>
 											</div>
