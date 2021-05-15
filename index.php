@@ -30,8 +30,7 @@
 		
 		ob_start();
 
-			require_once $directory . '/class/file-directory.php';		
-			require_once $directory . '/class/include.php';
+			require_once $directory . '/class/construct/include.php';
 			
 			_include_all ($directory . '/class/');		
 			_include_all ($directory . '/class/construct/');	

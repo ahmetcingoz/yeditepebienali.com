@@ -6,7 +6,10 @@
 		
 		$header_json = _decode_json($header_json);
 
-		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}		
+		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}	
+		
+		
+		/* CUSTOM */
 				
 		switch($page) {
 
@@ -17,9 +20,7 @@
 			break;	
 				
 		}
-		
-		/* İBRAHİM */
-		
+				
 		switch($page) {
 
 			case 'rename';
@@ -32,12 +33,14 @@
 				
 		}		
 		
+		/* HEADER = CATEGORY & SUBCATEGORY */
+		
 		foreach ($header_json as $category_key => $category_value) {
 			
 			switch($page) {
 
 				case _seo(_translate('category', $category_key, 'true'));
-
+					
 					_include_once('category');
 
 				break;	
@@ -52,7 +55,7 @@
 
 						case _seo(_translate('subcategory', $subcategory, 'true'));
 							
-							_include_once('subcategory');
+							_include_once('category');
 
 						break;	
 
@@ -64,22 +67,26 @@
 
 		}
 		
-		$articles = $_SERVER['DOCUMENT_ROOT'] . '/json/category/category.json';
+		/* CATEGORY ARTICLES */
 		
-		$articles = _decode_json($articles);
+		$category_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/category.json';
 		
-		foreach ($articles as $category_key => $category_value) {
+		$category_json = _decode_json($category_json);
+				
+		foreach ($category_json as $category_key => $category_value) {
 			
 			foreach ($category_value as $subcategory_key => $subcategory_value) {
 				
-				foreach ($subcategory_value as $date_key => $date_value) {
+				if (is_numeric($subcategory_key)) {
 					
-					foreach ($date_value as $article_key => $article_value) {
-						
+					$date_key = $subcategory_key;
+					
+					foreach ($subcategory_value as $article_key => $article_value) {
+
 						switch($page) {
-								
-							case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
-																
+
+							case _seo(_translate('category', $article_key, 'true')) . '-' . $date_key;
+
 								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
 
 								_include_once('article', $article_array);
@@ -87,7 +94,29 @@
 							break;	
 
 						}						
-						
+
+					}			
+					
+				} else {
+					
+					foreach ($subcategory_value as $date_key => $date_value) {
+
+						foreach ($date_value as $article_key => $article_value) {
+
+							switch($page) {
+
+								case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
+
+									$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
+
+									_include_once('article', $article_array);
+
+								break;	
+
+							}						
+
+						}
+
 					}
 					
 				}
@@ -96,11 +125,14 @@
 			
 		}
 		
-		$artists = $_SERVER['DOCUMENT_ROOT'] . '/json/category/artist.json';
-
-		$artists = _decode_json($artists);
+			
+		/* ARTIST */
 		
-		foreach ($artists as $category_key => $category_value) {
+		$artist_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/artist.json';
+
+		$artist_json = _decode_json($artist_json);
+		
+		foreach ($artist_json as $category_key => $category_value) {
 
 			foreach ($category_value as $date_key => $date_value) {
 				
@@ -125,11 +157,13 @@
 
 		}
 		
-		$artists = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
-
-		$artists = _decode_json($artists);
+		/* VENUE */		
 		
-		foreach ($artists as $category_key => $category_value) {
+		$venue_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+
+		$venue_json = _decode_json($venue_json);
+		
+		foreach ($venue_json as $category_key => $category_value) {
 
 			foreach ($category_value as $date_key => $date_value) {
 				
