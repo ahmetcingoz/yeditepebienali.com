@@ -54,7 +54,7 @@
 
 								<article class="article">
 									<div class="image wow fadeInLeft" data-wow-delay="0.6s">
-										<img src="http://placehold.it/570x440" alt="image description">
+										<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
 									</div>
 									<div class="text wow fadeInRight" data-wow-delay="0.6s">
 										<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
@@ -119,7 +119,7 @@
 										</div>
 									</div>
 									<div class="image wow fadeInRight" data-wow-delay="0.6s">
-										<img src="http://placehold.it/570x440" alt="image description">
+										<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
 									</div>
 								</article>										
 									
