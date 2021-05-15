@@ -36,26 +36,6 @@
 
 	}	
 
-	function _content ($directory, $supported_file = null) {
-
-		if (!isset($supported_file)) {
-
-			$files = glob($directory . '*.*');
-
-		} else {
-
-			$files = glob($directory . '*.' . $supported_file);
-
-		}
-
-		if (count($files) <> 0) {
-
-			return $files;
-
-		}
-
-	}
-
 	function _decode_json ($file) {
 
 		$content = _file_get_contents ($file);

@@ -154,7 +154,7 @@
             "II. Beyazid Turkish Bath Museum"
          ]
       },
-      "Kapalıçarşı-Kalpakçılar Caddesi":{
+      "Kapalıçarşı - Kalpakçılar Caddesi":{
          "en":[
             "Grand Bazaar - Kalpakçılar Street"
          ]
@@ -213,9 +213,13 @@
          "en":[
             "Sirkeci Railway Station"
          ]
+      },
+      "Sirkeci Garı":{
+         "en":[
+            "Sirkeci Railway Station"
+         ]
       }
    },	
-	
 	
    "form":{
       "adınız":{

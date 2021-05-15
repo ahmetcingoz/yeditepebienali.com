@@ -1,10 +1,14 @@
 <?php 
-	
 	//error_reporting(E_ALL);
 	//ini_set('error_reporting', 'E_ALL');
 	//ini_set('display_errors', TRUE);
 	//ini_set('default_charset', "utf-8");
 
+	//setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr_TR', 'tr', 'turkish');
+
+	setlocale(LC_ALL, 'tr_TR');
+	
+	header('Content-Type: text/html; charset=utf-8');
 	header("Content-Type: text/html; charset=utf-8");
 	header("Expires: 0");
 	header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -25,8 +29,7 @@
 		
 		ob_start();
 
-			require_once $directory . '/class/file-directory.php';		
-			require_once $directory . '/class/include.php';
+			require_once $directory . '/class/construct/include.php';
 			
 			_include_all ($directory . '/class/');		
 			_include_all ($directory . '/class/construct/');	
