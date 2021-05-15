@@ -59,7 +59,7 @@
 									<div class="text wow fadeInRight" data-wow-delay="0.6s">
 										<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
 										<div class="txt">
-											<h2><?php echo _translate('venues', $venues_key) ?></h2>
+											<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
 											<p>
 												<?php 
 									
@@ -92,7 +92,7 @@
 									<div class="text wow fadeInLeft" data-wow-delay="0.6s">
 										<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
 										<div class="txt">
-											<h2><?php echo _translate('venues', $venues_key) ?></h2>
+											<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
 											
 												<p>
 												<?php 

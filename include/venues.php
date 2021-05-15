@@ -5,7 +5,7 @@
 <div class="promo portfolio wow fadeInUp">
 	<div class="max-container">
 		<div class="img background-animation">
-			<img src="/images/placehold/1770x240.png" alt="image description">
+			<!--<img src="/images/placehold/1770x240.png" alt="image description">-->
 		</div>
 		<ol class="breadcrumb">
 			<li><a href="<?php echo '/' . _seo(_translate('category', $article[2])) ?>"><?php echo _translate('category', $article[2]) ?></a></li>
@@ -15,7 +15,7 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<h1><?php //echo _uppercase(_translate('subcategory', $category_key)) ?></h1>
+						<h1><?php echo _uppercase(_translate('venues', $article[0])) ?></h1>
 					</div>
 				</div>
 			</div>
@@ -33,7 +33,23 @@
 					<div class="image-box">
 						<div class="blog-slider">
 							<div class="slide">
-								<a href="#"><img src="http://placehold.it/1170x655" alt="image description"></a>
+								
+								<?php 
+	
+								$file_types = array ('jpg', 'jpeg', 'png', 'gif');
+				   
+				   				$image = 'images/articles/mekanlar/' . _seo($article[0]);
+
+								foreach ($file_types as $image_extension) {
+
+									if (file_exists($image . '.' . $image_extension)) { ?>
+
+										<a href="#"><img src="<?php echo $image . '.' . $image_extension ?>" alt="image description"></a>								
+
+									<?php } 
+
+								} ?>
+								
 							</div>
 						</div>
 					</div>
@@ -136,7 +152,28 @@
 		.nav {margin-top: 50px;}
 		.container {margin-top: 25px;}
 		.artist li {width: 50%; float: left;}
+	}
+	
+	.background-animation {
+		height: 10vw; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-image:url(<?php echo 'images/articles/mekanlar/' . _seo($article[0]) . '.jpg' ?>);
+		animation-name: background;
+		animation-duration: 250s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		filter: grayscale(100%) brightness(150%);
+		
 	}	
+	
+	@keyframes background {
+	  0%   {background-position: center;}
+	  50%  {background-position: bottom;}
+	  100% {background-position: center;}
+	}	
+		
 
 </style>
 
