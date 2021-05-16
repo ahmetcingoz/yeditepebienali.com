@@ -63,17 +63,27 @@
 											<p>
 												<?php 
 									
-												$word_count = $venues_value[$_SESSION['language']];
-												
-												$word_count = explode(' ', $word_count);
-																					   
-												for ($i = 0; $i <= 24; $i++) {
+												if (array_key_exists($_SESSION['language'], $venues_value)) {
 													
-													echo $word_count[$i] . ' ';
+													$word_count = $venues_value[$_SESSION['language']];
+
+													$word_count = explode(' ', $word_count);
+													
+													if ($word_count > 0) {
+
+														for ($i = 0; $i <= 24; $i++) {
+
+															echo $word_count[$i] . ' ';
+
+														}
+														
+													}
+													
+													echo '...';													
 													
 												}
 												 
-												echo '...';
+												
 																					   
 												?>
 											
@@ -97,18 +107,26 @@
 												<p>
 												<?php 
 									
-												$word_count = $venues_value[$_SESSION['language']];
-												
-												$word_count = explode(' ', $word_count);
-																					   
-												for ($i = 0; $i <= 24; $i++) {
+												if (array_key_exists($_SESSION['language'], $venues_value)) {
 													
-													echo $word_count[$i] . ' ';
+													$word_count = $venues_value[$_SESSION['language']];
+
+													$word_count = explode(' ', $word_count);
+													
+													if ($word_count > 0) {
+
+														for ($i = 0; $i <= 24; $i++) {
+
+															echo $word_count[$i] . ' ';
+
+														}
+														
+													}
+												
+													echo '...';													
 													
 												}
-												 
-												echo '...';
-																					   
+												 																					   
 												?>
 											
 											</p>

@@ -25,7 +25,7 @@
             "artists"
          ]
       },
-      "mekânlar":{
+      "mekanlar":{
          "en":[
             "venues"
          ]
@@ -90,20 +90,7 @@
       }
    },
 
-	"title":{
-      "yeditepe bienali":{
-         "en":[
-            "yeditepe biennial"
-         ]
-      },
-      "II.Mehmet 'Fatihnâme'":{
-         "en":[
-            "II.Mehmet 'Fatihnâme'"
-         ]
-      }
-   },	
-
-	"title":{
+	"venues":{
       "Akdeniz Medreseleri":{
          "en":[
             "Mediterranean Madrasas"
@@ -111,7 +98,7 @@
       },
       "Arkeoloji Müzesi":{
          "en":[
-            "Archaeological Museum'"
+            "Archaeological Museum"
          ]
       },
       "Çinili Köşk":{
@@ -131,7 +118,7 @@
       },
       "Darphane-i Amire":{
          "en":[
-            "Darphane-i Amire'"
+            "Darphane-i Amire"
          ]
       },
       "Fatih Belediyesi Ayvansaray Türk Evi":{
@@ -221,11 +208,28 @@
       }
    },	
 	
+	"title":{
+	  "yeditepe bienali":{
+		 "en":[
+			"yeditepe biennial"
+		 ]
+	  }
+	},	
+	
    "form":{
       "adınız":{
          "en":[
             "your name"
          ]
       }
-   }
+   },
+
+   "word":{
+      "devamı":{
+         "en":[
+            "continue"
+         ]
+      }
+   }	
+	
 }

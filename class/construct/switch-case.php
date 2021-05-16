@@ -171,7 +171,7 @@
 					
 					switch($page) {
 
-						case _seo($venues_key);
+						case _seo(_translate('venues', $venues_key));
 
 							$venues_array = [$venues_key, $venues_value, $category_key, $date_key, $category_value];
 

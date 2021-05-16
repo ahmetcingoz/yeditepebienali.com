@@ -55,7 +55,7 @@
 					</div>
 					<!-- text-area -->
 					<div class="text-area">
-						<h2><?php echo _translate('venues', $article[2]) ?></h2>
+						<h2><?php echo _translate('category', $article[2]) ?></h2>
 						<h3><?php echo _translate('venues', $article[0]) ?></h3>
 							<?php if (array_key_exists($_SESSION['language'], $article[1])) { ?>
 							

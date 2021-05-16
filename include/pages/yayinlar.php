@@ -43,7 +43,7 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<h1><?php echo _uppercase(_translate('subcategory', $category_key)) ?></h1>
+						<h1><?php echo _uppercase(_translate('category', $category_key)) ?></h1>
 					</div>
 				</div>
 			</div>
