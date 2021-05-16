@@ -12,7 +12,11 @@
 
 			foreach ($date_value as $artist_key => $artist_value) {
 			
-				$sort[$artist_key] = $artist_key;
+				if (array_key_exists($_SESSION['language'], $artist_value)) {
+					
+					$sort[$artist_key] = $artist_key;					
+					
+				}
 				
 			}			
 

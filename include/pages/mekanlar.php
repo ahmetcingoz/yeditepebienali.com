@@ -50,99 +50,90 @@
 								
 								foreach ($date_value as $venues_key => $venues_value) { 
 								
-								if (_odd_even($odd++) == true) { ?>
+								if (array_key_exists($_SESSION['language'], $venues_value)) { ?>
+							
+								<?php if (_odd_even($odd++) == true) { ?>
 
-								<article class="article">
-									<div class="image wow fadeInLeft" data-wow-delay="0.6s">
-										<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
-									</div>
-									<div class="text wow fadeInRight" data-wow-delay="0.6s">
-										<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
-										<div class="txt">
-											<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
-											<p>
-												<?php 
-									
-												if (array_key_exists($_SESSION['language'], $venues_value)) {
-													
-													$word_count = $venues_value[$_SESSION['language']];
-
-													$word_count = explode(' ', $word_count);
-													
-													if ($word_count > 0) {
-
-														for ($i = 0; $i <= 24; $i++) {
-
-															echo $word_count[$i] . ' ';
-
-														}
-														
-													}
-													
-													echo '...';													
-													
-												}
-												 
-												
-																					   
-												?>
-											
-											</p>
-											<a class="more" href="<?php echo _seo(_translate('venues', $venues_key)) ?>">
-												<span><?php echo _translate('word', 'devamı') ?></span>
-												<i class="icon-right-thin"></i>
-											</a>
+									<article class="article">
+										<div class="image wow fadeInLeft" data-wow-delay="0.6s">
+											<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
 										</div>
-									</div>
-								</article>					
-					
-								<?php } else { ?>
-									
-								<article class="article">
-									<div class="text wow fadeInLeft" data-wow-delay="0.6s">
-										<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
-										<div class="txt">
-											<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
-											
+										<div class="text wow fadeInRight" data-wow-delay="0.6s">
+											<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
+											<div class="txt">
+												<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
 												<p>
-												<?php 
-									
-												if (array_key_exists($_SESSION['language'], $venues_value)) {
-													
-													$word_count = $venues_value[$_SESSION['language']];
+													<?php 
 
-													$word_count = explode(' ', $word_count);
-													
-													if ($word_count > 0) {
+														$word_count = $venues_value[$_SESSION['language']];
 
-														for ($i = 0; $i <= 24; $i++) {
+														$word_count = explode(' ', $word_count);
 
-															echo $word_count[$i] . ' ';
+														if ($word_count > 0) {
+
+															for ($i = 0; $i <= 24; $i++) {
+
+																echo $word_count[$i] . ' ';
+
+															}
 
 														}
-														
-													}
-												
-													echo '...';													
-													
-												}
-												 																					   
-												?>
-											
-											</p>
-											<a class="more" href="<?php echo _seo(_translate('venues', $venues_key)) ?>">
-												<span><?php echo _translate('word', 'devamı') ?></span>
-												<i class="icon-right-thin"></i>
-											</a>
-										</div>
-									</div>
-									<div class="image wow fadeInRight" data-wow-delay="0.6s">
-										<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
-									</div>
-								</article>										
-									
-								<?php } ?>
 
+														echo '...';													
+
+													?>
+												</p>
+												<a class="more" href="<?php echo _seo(_translate('venues', $venues_key)) ?>">
+													<span><?php echo _translate('word', 'devamı') ?></span>
+													<i class="icon-right-thin"></i>
+												</a>
+											</div>
+										</div>
+									</article>					
+
+									<?php } else { ?>
+
+									<article class="article">
+										<div class="text wow fadeInLeft" data-wow-delay="0.6s">
+											<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
+											<div class="txt">
+												<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
+												<p>
+													<?php 
+
+														$word_count = $venues_value[$_SESSION['language']];
+
+														$word_count = explode(' ', $word_count);
+
+														if ($word_count > 0) {
+
+															for ($i = 0; $i <= 24; $i++) {
+
+																echo $word_count[$i] . ' ';
+
+															}
+
+														}
+
+														echo '...';													
+
+													?>
+												</p>
+												<a class="more" href="<?php echo _seo(_translate('venues', $venues_key)) ?>">
+													<span><?php echo _translate('word', 'devamı') ?></span>
+													<i class="icon-right-thin"></i>
+												</a>
+											</div>
+										</div>
+										<div class="image wow fadeInRight" data-wow-delay="0.6s">
+											<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
+										</div>
+									</article>										
+
+									<?php } ?>							
+									
+								<?php }	?>
+									
 							<?php }
 
 							}

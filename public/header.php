@@ -2,10 +2,10 @@
 	<div class="max-container">
 		<div id="header_tck">
 			<ul class="fl">
-				<li><a href="https://www.tccb.gov.tr/" target="_blank"><img src="../images/tccb_tr.png"</a></li>
+				<li><a href="https://www.tccb.gov.tr/" target="_blank"><img src="../images/tccb_<?php echo $_SESSION['language'] ?>.png"</a></li>
 			</ul>					
 			<ul class="fr">
-				<li style="margin-right: 10px;"><a href="https://www.fatih.bel.tr/" target="_blank"><img src="../images/fatih_tr.png"</a></li>
+				<li style="margin-right: 10px;"><a href="https://www.fatih.bel.tr/" target="_blank"><img src="../images/fatih_<?php echo $_SESSION['language'] ?>.png"</a></li>
 				<li><a href="http://www.ktsv.com.tr/" target="_blank"><img src="../images/ktsv_tr.png"</a></li>
 			</ul>					
 		</div>
@@ -14,7 +14,7 @@
 		<strong class="logo">
 			<a href="/">
 				<span class="img">
-					<img src="images/logo_tr.png" alt="Yeditepe Bienali">
+					<img src="images/logo_<?php echo $_SESSION['language'] ?>.png" alt="Yeditepe Bienali">
 				</span>
 			</a>
 		</strong>

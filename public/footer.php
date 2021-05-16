@@ -6,7 +6,7 @@
 					<a href="#">
 						<!--<i class="icon">#</i>-->
 						<span class="img">
-							<img alt="Yeditepe Bienali" src="images/logo_footer_tr.png">
+							<img alt="Yeditepe Bienali" src="images/logo_footer_<?php echo $_SESSION['language'] ?>.png">
 						</span>
 					</a>
 				</strong>
