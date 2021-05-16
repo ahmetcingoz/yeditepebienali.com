@@ -274,6 +274,31 @@
          "en":[
             "works"
          ]
+      },
+      "sergi":{
+         "en":[
+            "exhibition"
+         ]
+      },
+      "ziyaretçi":{
+         "en":[
+            "visitors"
+         ]
+      },
+      "sanatçılar":{
+         "en":[
+            "artists"
+         ]
+      },
+      "mekan":{
+         "en":[
+            "venue"
+         ]
+      },
+      "yayın":{
+         "en":[
+            "publication"
+         ]
       }
    },
    "form":{
@@ -292,6 +317,16 @@
       "devamı":{
          "en":[
             "continue"
+         ]
+      },
+      "tümünü gör":{
+         "en":[
+            "view all"
+         ]
+      },
+      "hepsi":{
+         "en":[
+            "all"
          ]
       }
    }

@@ -11,7 +11,7 @@
 					<h2 class="tild"><?php echo $value['title'][0]; ?></h2>
 					<span class="num"><?php echo $value['number'][0]; ?></span>
 					<ul class="filter">
-						<li class="active"><a href="#">All</a></li>
+						<li class="active"><a href="#"><?php echo ucwords(_translate('word', 'hepsi')) ?></a></li>
 						
 						<?php 
 									
@@ -32,7 +32,7 @@
 						?> 
 						
 					</ul>
-					<a href="<?php echo $value['href'][0]; ?>" class="more">view all</a>
+					<a href="<?php echo $value['href'][0]; ?>" class="more"><?php echo _translate('word', 'tümünü gör') ?></a>
 				</div>
 				<div class="img-frame">
 					<div class="img-area" id="masonry-container">
