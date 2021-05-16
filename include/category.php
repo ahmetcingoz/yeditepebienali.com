@@ -73,8 +73,14 @@
 												<div class="caption">
 													<div class="c1">
 														<div class="c2">
-															<a href="<?php echo _seo(_translate('title', $article_key) . '-' . $category_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
-															<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+															<a href="<?php echo _seo(_translate('article', $article_key) . '-' . $category_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('article', $article_key))?></strong></a>
+															
+															<?php if (array_key_exists('location', $article_value)) { ?> 
+
+																<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+
+															<?php } ?>
+															
 															<ul class="icons">
 																<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 																<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
@@ -177,8 +183,14 @@
 														<div class="caption">
 															<div class="c1">
 																<div class="c2">
-																	<a href="<?php echo _seo(_translate('title', $article_key) . '-' . $subcategory_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
-																	<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+																	<a href="<?php echo _seo(_translate('article', $article_key) . '-' . $subcategory_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('article', $article_key))?></strong></a>
+																	
+																	<?php if (array_key_exists('location', $article_value)) { ?> 
+																	
+																		<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+																	
+																	<?php } ?>
+																	
 																	<ul class="icons">
 																		<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
 																		<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
