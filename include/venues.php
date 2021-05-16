@@ -62,14 +62,14 @@
 								<p><?php echo _translate('venues', $article[1][$_SESSION['language']]) ?></h3></p>
 								
 							<?php } ?>
-							<?php if (array_key_exists('geo-location', $article[1])) { ?>
-							
-								<p><?php echo $article[1]['geo-location'] ?></p>
-								
-							<?php } ?>										
 							<?php if (array_key_exists('iframe', $article[1])) { ?>
 							
-								<p><?php echo $article[1]['iframe'] ?></p>
+								<p><iframe frameborder="0" height="360" src="<?php echo $article[1]['iframe'] ?>" width="100%"></iframe></p>
+								
+							<?php } ?>										
+							<?php if (array_key_exists('geo-location', $article[1])) { ?>
+							
+								<p><iframe src='<?php echo $article[1]['geo-location'] ?>' width='100%' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></p>
 								
 							<?php } ?>										
 				
