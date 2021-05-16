@@ -3,7 +3,7 @@
 	/* HEAD */
 	$title = 'Yeditepe Bienali';
 
-	$rename_path = '';
+	$rename_path = 'images/articles/sanatcilar/';
 
 	/* SETTINGS */
 	$erkajans = 'false';

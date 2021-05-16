@@ -8,8 +8,8 @@
 					<?php 
 	
 						$path = 'images/articles/sanatcilar/';
-
-						$image = 'images/placehold/370x465.png';
+					
+						$image = '/images/artist-' . $_SESSION['language'];
 
 						$file_types = array ('jpg', 'jpeg', 'png', 'gif');
 
@@ -18,7 +18,7 @@
 							if (file_exists($path . _seo($article[0]) . '.' . $artist_image_extension)) {
 
 								$image = $path . _seo($article[0]) . '.' . $artist_image_extension;
-
+								
 							} 
 
 						}
