@@ -176,7 +176,6 @@
 			
 		}
 		
-			
 		/* ARTIST */
 		
 		$artist_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/artist.json';
@@ -196,6 +195,38 @@
 							$artist_array = [$artist_key, $artist_value, $category_key, $date_key, $category_value];
 
 							_include_once('artist', $artist_array);
+
+						break;	
+
+					}	
+					
+				}
+					
+
+			}
+
+		}
+		
+		
+		/* VENUES */
+		
+		$venues_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+
+		$venues_json = _decode_json($venues_json);
+		
+		foreach ($venues_json as $category_key => $category_value) {
+
+			foreach ($category_value as $date_key => $date_value) {
+				
+				foreach ($date_value as $venue_key => $venue_value) {
+										
+					switch($page) {
+
+						case _seo(_translate('venues', $venue_key));
+
+							$venues_array = [$venue_key, $venue_value, $category_key, $date_key, $category_value];
+
+							_include_once('venues', $venues_array);
 
 						break;	
 
