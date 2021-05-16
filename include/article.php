@@ -30,7 +30,7 @@
 		<ol class="breadcrumb">
 			<li><a><?php echo _translate('category', $article[0]) ?></a></li>
 			
-			<?php if (!is_numeric($article[1])) { ?>
+			<?php if ($article[1] <> 'true') { ?>
 
 				<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>			
 	
@@ -42,7 +42,7 @@
 			<div class="frame">
 				<div class="box">
 					<div class="heading">
-						<?php if (!is_numeric($article[1])) { ?> 
+						<?php if ($article[1] <> 'true') { ?> 
 						
 							<h1><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h1>
 						
@@ -239,69 +239,63 @@
 
 				<?php $count = count($article[5]) ?>
 
+				<?php //var_dump ($article[5]) ?>
+				
 				<?php if ($count > 1) { ?> 
 				
 				<div class="masonry-holder">
 					
-					<?php if(is_numeric($article[1])) { ?>
+					<?php if($article[1] <> 'true') { ?>
 	
-						<h2><?php echo _uppercase(_translate('category', $article[0])) ?></h2>
+						<h2><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h2>
 	
 					<?php } else { ?>
 				
-						<h2><?php echo _uppercase(_translate('subcategory', $article[1])) ?></h2>
+						<h2><?php echo _uppercase(_translate('category', $article[0])) ?></h2>
 				
 					<?php } ?>
 					
 					<ul class="masonry grid3" id="masonry-container-two">
 						
-						<?php if (!is_numeric($article[1])) { ?>
-						
-							<?php foreach ($article[5] as $related_key => $related_value) { 
+						<?php foreach ($article[5] as $related_key => $related_value) { 
 
-								$path_subcategory_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($article[1]) . '/' . _seo($related_key) . '/';
+							$path_subcategory_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($article[1]) . '/' . _seo($related_key) . '/';
 
-								$path_category_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($related_key) . '/';
+							$path_category_article = 'images/articles/' . _seo($article[0]) . '/' . _seo($article[2]) . '/' . _seo($related_key) . '/';
 
-								if (is_dir($path_category_article)) { $path = $path_category_article; } else { $path = $path_subcategory_article; }	
+							if (is_dir($path_category_article)) { $path = $path_category_article; } else { $path = $path_subcategory_article; }	
 
-								$related_images = _content ($path); 
+							$related_images = _content ($path); 
 
-								if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
+							if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
 
-								<?php $i++; if ($i < 7) { ?>
+							<?php $i++; if ($i < 7) { ?>
 
-									<li class="item wow fadeInUp" data-wow-delay="0.1s">
-										<div class="holder">
-											<div class="img wow fadeInUp">
-
-												<!--<img src="/images/placehold/350x260.png" alt="image description">-->
-												<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
-
-											</div>
-											<div class="caption">
-												<div class="c1">
-													<div class="c2">
-														<a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><strong class="title"><?php echo _translate('article', $related_key); ?></strong></a>
-														<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
-														<ul class="icons">
-															<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-															<!--<li><a href="#"><i class="icon-attach"></i> <span>attach</span></a></li>-->
-														</ul>
-													</div>
+								<li class="item wow fadeInUp" data-wow-delay="0.1s">
+									<div class="holder">
+										<div class="img wow fadeInUp">
+											<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
+										</div>
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><strong class="title"><?php echo _uppercase(_translate('article', $related_key)); ?></strong></a>
+													<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
+													<ul class="icons">
+														<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+													</ul>
 												</div>
 											</div>
 										</div>
-									</li>						
+									</div>
+								</li>						
 
-								<?php } 
+							<?php } 
 
-								}
+							}
 
-							} ?>						
-	
-						<?php } ?>
-						
+						} ?>						
+							
 					</ul>
 				</div>
 				

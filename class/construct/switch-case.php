@@ -6,7 +6,9 @@
 		
 		$header_json = _decode_json($header_json);
 
-		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}	
+		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}
+		
+		if(!isset( $_GET['panel'])) {$panel = 'default';} else {$panel = $_GET['panel'];}		
 		
 		
 		/* CUSTOM */
@@ -49,16 +51,65 @@
 			
 			if (is_array($category_value)) {
 
+				$biennial_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/biennial.json';
+
+				$biennial_json = _decode_json($biennial_json); 				
+				
 				foreach ($category_value as $subcategory) {
-
-					switch($page) {
-
-						case _seo(_translate('subcategory', $subcategory, 'true'));
+					
+					foreach ($biennial_json as $biennial_key => $biennial_value) {
+																		
+						if (array_key_exists($subcategory, $biennial_json)) {
 							
-							_include_once('category');
+							switch($page) {
+									
+								case _seo(_translate('subcategory', $biennial_key, 'true'));
+									
+									foreach ($biennial_value as $biennial_article_key => $biennial_article_value) { 
 
-						break;	
+										if ($_SERVER['REQUEST_URI'] == '/' . _seo($biennial_key)) {
 
+											header('Location: /' . _seo(_translate('subcategory', $biennial_key)) . '/' . _seo(_translate('subcategory', $biennial_article_key)));
+											
+											break;
+
+										} else {
+											
+											$biennial = [$biennial_key, $biennial_article_key, $biennial_article_value];
+
+											switch($panel) {
+
+												case _seo(_translate('article', $biennial_article_key, 'true'));
+
+													_include_once('biennial', $biennial);
+
+												break;	
+
+											}
+											
+										}
+									
+									}
+									
+									
+								break;	
+
+							}
+							
+						} else {
+
+							switch($page) {
+
+								case _seo(_translate('subcategory', $subcategory, 'true'));
+									
+									_include_once('category');
+
+								break;	
+
+							}
+
+						}
+						
 					}
 				
 				}
@@ -87,7 +138,7 @@
 
 							case _seo(_translate('category', $article_key, 'true')) . '-' . $date_key;
 
-								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
+								$article_array = [$category_key, 'true', $date_key, $article_key, $article_value, $subcategory_value];
 
 								_include_once('article', $article_array);
 
@@ -102,11 +153,11 @@
 					foreach ($subcategory_value as $date_key => $date_value) {
 
 						foreach ($date_value as $article_key => $article_value) {
-
+							
 							switch($page) {
 
 								case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
-
+									
 									$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
 
 									_include_once('article', $article_array);
@@ -171,7 +222,7 @@
 					
 					switch($page) {
 
-						case _seo($venues_key);
+						case _seo(_translate('venues', $venues_key));
 
 							$venues_array = [$venues_key, $venues_value, $category_key, $date_key, $category_value];
 

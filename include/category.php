@@ -7,7 +7,7 @@
 	$json = _decode_json($json); 
 
 	foreach ($json as $category_key => $category_value) {
-		
+						
 		if ($page == _seo($category_key)) { ?>
 			
 		<div class="promo portfolio">
@@ -49,39 +49,43 @@
 							<ul class="masonry grid3" id="masonry-container">
 
 								<?php foreach ($category_date_value as $article_key => $article_value) { 
+							
+									if (array_key_exists($_SESSION['language'], $article_value)) { 
+									
+										$path = 'images/articles/' . _seo($category_key) . '/' . $category_date_key . '/' . _seo($article_key) . '/';
 
-									$path = 'images/articles/' . _seo($category_key) . '/' . $category_date_key . '/' . _seo($article_key) . '/';
+										$images = _content ($path);
 
-									$images = _content ($path);
+										if (is_array($images)) {
 
-									if (is_array($images)) {
+											$random_background = array_rand($images, 2); 
+											$random_image = array_rand($images, 3); 
 
-										$random_background = array_rand($images, 2); 
-										$random_image = array_rand($images, 3); 
+											$works = 'true';
 
-										$works = 'true';
+										} ?>											
 
-									} ?>											
-
-									<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
-										<div class="holder">
-											<div class="img">
-												<img alt="image description" src="<?php echo $images[$random_background[0]] ?>">
-											</div>
-											<div class="caption">
-												<div class="c1">
-													<div class="c2">
-														<a href="<?php echo _seo(_translate('title', $article_key . '-' . $category_date_key))?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
-														<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
-														<ul class="icons">
-															<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-															<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
-														</ul>
+										<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
+											<div class="holder">
+												<div class="img">
+													<img alt="image description" src="<?php echo $images[$random_background[0]] ?>">
+												</div>
+												<div class="caption">
+													<div class="c1">
+														<div class="c2">
+															<a href="<?php echo _seo(_translate('title', $article_key . '-' . $category_date_key))?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
+															<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+															<ul class="icons">
+																<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+																<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
+															</ul>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
+										</li>
+									
+									<?php } ?>
 
 								<?php } ?>
 
@@ -89,17 +93,23 @@
 						</div>
 
 					<?php } ?>
-						
+							
 					</div>
 				</div>
 			</div>
-		</main>							
+		</main>	
+
+		<style>
+
+		.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-bottom: 1px solid #e8b75f;}
+
+		</style>
 
 		
 	<?php } else { 
 		
 			foreach ($category_value as $subcategory_key => $subcategory_value) {
-
+								
 				if ($page == _seo($subcategory_key)) { ?>
 
 				<div class="promo portfolio">
@@ -143,39 +153,43 @@
 									<ul class="masonry grid3" id="masonry-container">
 										
 										<?php foreach ($subcategory_date_value as $article_key => $article_value) { 
-										
-											$path = 'images/articles/' . _seo($category_key) . '/' . $subcategory_date_key . '/' .  _seo($subcategory_key) . '/' . _seo($article_key) . '/';
-								
-											$images = _content ($path);
-												
-											if (is_array($images)) {
+									
+											if (array_key_exists($_SESSION['language'], $article_value)) { 
 
-												$random_background = array_rand($images, 2); 
-												$random_image = array_rand($images, 3); 
+												$path = 'images/articles/' . _seo($category_key) . '/' . $subcategory_date_key . '/' .  _seo($subcategory_key) . '/' . _seo($article_key) . '/';
 
-												$works = 'true';
+												$images = _content ($path);
 
-											} ?>											
-										
-											<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
-												<div class="holder">
-													<div class="img">
-														<img alt="image description" src="<?php echo $images[$random_background[0]] ?>">
-													</div>
-													<div class="caption">
-														<div class="c1">
-															<div class="c2">
-																<a href="<?php echo _seo(_translate('title', $article_key . '-' . $subcategory_date_key))?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
-																<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
-																<ul class="icons">
-																	<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-																	<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
-																</ul>
+												if (is_array($images)) {
+
+													$random_background = array_rand($images, 2); 
+													$random_image = array_rand($images, 3); 
+
+													$works = 'true';
+
+												} ?>											
+
+												<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
+													<div class="holder">
+														<div class="img">
+															<img alt="image description" src="<?php echo $images[$random_background[0]] ?>">
+														</div>
+														<div class="caption">
+															<div class="c1">
+																<div class="c2">
+																	<a href="<?php echo _seo(_translate('title', $article_key . '-' . $subcategory_date_key))?>"><strong class="title"><?php echo _uppercase(_translate('title', $article_key))?></strong></a>
+																	<a href="<?php echo _seo(_translate('venues', $article_value['location'])); ?>"><p><?php if (array_key_exists('location', $article_value)) {echo _translate('venues', $article_value['location']);} ?></p></a>
+																	<ul class="icons">
+																		<li><a href="<?php echo $images[$random_background[0]] ?>" class="lightbox"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+																		<!--<li><a href="portfolio-detail.html"><i class="icon-attach"></i> <span>attach</span></a></li>-->
+																	</ul>
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-											</li>
+												</li>
+
+											<?php } ?>
 	
 										<?php } ?>
 

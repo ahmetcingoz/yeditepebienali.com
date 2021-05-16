@@ -3,7 +3,7 @@
 	/* HEAD */
 	$title = 'Yeditepe Bienali';
 
-	$rename_path = 'images/articles/sergiler/2018/tematik-sergiler/cumhuriyet-egitim-muzesi/';
+	$rename_path = '';
 
 	/* SETTINGS */
 	$erkajans = 'false';
