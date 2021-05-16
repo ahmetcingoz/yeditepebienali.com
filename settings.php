@@ -6,8 +6,8 @@
 	$rename_path = 'images/articles/sanatcilar/';
 
 	/* SETTINGS */
-	$erkajans = 'false';
-	$under_construction = 'false';
+	$erkajans = 'true';
+	$under_construction = 'true';
 
 
 	//$_SESSION ['language'] = _language();
