@@ -9,10 +9,10 @@
 	foreach ($publications as $category_key => $category_value) {
 
 		foreach ($category_value as $date_key => $date_value) {
-
+			
 			foreach ($date_value as $publications_key => $publications_value) {
 			
-				$sort[$publications_key] = $publications = array ($publications_key, $publications_value);
+				$sort[$publications_key] = $publications = array ($publications_key, $publications_value, $date_key);
 				
 			}			
 
@@ -57,7 +57,27 @@
 			<ul class="publications">
 
 				<?php 
+	
+					function _color ($key) {
 
+						if ($key == 'tr') {
+
+							return 'style="background-color:#ed060d"';
+
+						} else if ($key == 'en') {
+
+							return 'style="background-color:#012a66"';
+
+						} else {
+
+							return 'style="background-color:#b7b7b7"';
+
+						}
+
+
+					}
+	
+	
 					$tr = array('ş','Ş','ı','I','İ','ğ','Ğ','ü','Ü','ö','Ö','Ç','ç');
 
 					for ($i = 0; $i < $number; $i++) {
@@ -80,16 +100,24 @@
 
 							}				
 
-						} ?>
-
+						} 
+						
+						?>
+				
 						
 						<li>
-							<span><?php echo $sort[$i][0]?></span>							
-							<ul>
-								<!--<li><a href="/downloads/yayinlar/2018/pdf/tr/<?php echo _seo($sort[$i][1]['tr']) . '.pdf'?>" target="_blank"><span style="color:#e8b75f;" class="material-icons md-18">open_in_new</span></li></a>-->
-								<li><a href="/downloads/yayinlar/2018/pdf/tr/<?php echo _seo($sort[$i][1]['tr']) . '.pdf'?>" download><span style="color:#e8b75f;" class="material-icons md-18">file_download</span></li></a>
-								<li><a href="/downloads/yayinlar/2018/pdf/tr/<?php echo _seo($sort[$i][1]['tr']) . '.pdf'?>" target="_blank"><?php echo $sort[$i][1]['tr']?></a></li>
-							</ul>
+							<p><?php echo $sort[$i][0]?><span class="year"><?php echo $sort[0][2] ?></span></p>							
+							
+							<?php foreach ($sort[$i][1] as $publications_key => $publications_value ) { ?>
+
+								<ul>
+									<li><a href="/downloads/yayinlar/<?php echo $sort[0][2] ?>/pdf/<?php echo $publications_key ?>/<?php echo _seo($publications_value) . '.pdf'?>" download><span style="color:#e8b75f;" class="material-icons md-18">file_download</span></li></a>
+									<li><a href="/downloads/yayinlar/<?php echo $sort[0][2] ?>/pdf/<?php echo $publications_key ?>/<?php echo _seo($publications_value) . '.pdf'?>" target="_blank"><?php echo $publications_value; if ($_SESSION['language'] <> $publications_key) { echo '<span ' . _color($publications_key)  . ' class="language">' . _uppercase($publications_key) . ' </span>';}  ?></a></li>
+								</ul>
+															
+							
+							<?php } ?>
+															
 						</li>
 
 					<?php }
@@ -106,16 +134,35 @@
 	#main a {color:#252525}
 	.breadcrumb {border-radius: 0px !important; font-size: 12px;}
 	.breadcrumb a {color:#e8b75f !important;}
+	
+	.year {
+		font-size: 9px !important;
+		color: #ffffff;
+		margin-left: 5px;
+		background-color: #e8b75f;
+		padding-left: 3px;
+		padding-right: 10px;		
+	}
 
+	.language {
+		font-size: 9px !important;
+		color: #ffffff;
+		margin-left: 5px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	
+	
 	.promo {margin-bottom: 0px !important; padding: 0px !important; margin-top: 0px;}
 	.promo .heading {overflow: visible !important;}
 	.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-bottom: 1px solid #e8b75f;}
 	
 	.container {margin-bottom: 50px;}
 	
-	.publications span {width: 100%; font-size: 21px; float: left; margin-bottom: 5px;}
+	.publications p {width: 100%; font-size: 21px; float: left; margin-bottom: 5px;}
 	.publications {width: 100%; padding-left: 15px; padding-right: 15px;}	
 	.publications > li {width: 50%; float: left; margin-bottom: 7px;}
+	.publications > li ul {width: 100%; float: left;}	
 	.publications > li ul li {width: 25px; float: left;}
 	.publications > li ul li:last-child {width: calc(100% - 50px);}	
 	.publications li a {font-size: 15px;}
