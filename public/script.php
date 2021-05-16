@@ -1,6 +1,6 @@
-<script src="assets/js/jquery.js"></script>
-<script type="text/javascript" src="assets/js/plugins.js"></script>
-<script type="text/javascript" src="assets/js/functions.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/plugins.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function(){
 
