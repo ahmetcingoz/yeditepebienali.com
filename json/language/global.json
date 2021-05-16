@@ -89,6 +89,45 @@
          ]
       }
    },
+	
+
+   "article":{
+      "Yönetim Kurulu Başkanı'ndan":{
+         "en":[
+            "From the Chairman of the Board of Directors"
+         ]
+      },
+      "Vakıf Başkanı'ndan":{
+         "en":[
+            "From the President of the Foundation"
+         ]
+      },
+	  "Küratör'den":{
+         "en":[
+            "From the Curator"
+         ]
+      },
+	  "Basın Bülteninden":{
+         "en":[
+            "From the Press Release"
+         ]
+      },
+	  "Yeditepe Bienali":{
+         "en":[
+            "Yeditepe Biennial"
+         ]
+      },
+	  "Künye":{
+         "en":[
+            "Tag"
+         ]
+      },
+	  "Etkinlik Takvimi":{
+         "en":[
+            "Event Calendar"
+         ]
+      }
+   },
 
 	"venues":{
       "Akdeniz Medreseleri":{

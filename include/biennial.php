@@ -1,12 +1,10 @@
-
 <?php 
 
 
-
+//var_dump($article);
 
 
 ?>
-
 
 <main id="main" role="main">
 	<div class="container">
@@ -21,24 +19,41 @@
 						</div>
 					</div>
 					<div class="text-area">
-						<h2>life style</h2>
-						<h3>House Beautiful Magazine</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+						
+						<?php if (array_key_exists('date-' . $_SESSION['language'], $article[2])) { ?> 
+							<h2><?php echo $article[2]['date-' . $_SESSION['language']] ?></h2>
+						<?php } ?>
+						
+						<h3><?php echo _uppercase(_translate('article', $article[1])); ?></h3>
+
+						<?php if (array_key_exists($_SESSION['language'], $article[2])) { ?> 
+							<?php echo $article[2][$_SESSION['language']] ?>
+						<?php } ?>
+						
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-4 col-xs-12 col-lg-pull-9 col-sm-pull-8 sidebar">
 				<div class="widget wow fadeInUp" data-wow-delay="0.6s">
-					<h2>1. YEDİTEPE BİENALİ</h2>
+					<h2><?php echo _uppercase(_translate('subcategory', $article[0])) ?></h2>
 					<ul class="categories">
-						<li><a href="#">Audio</a></li>
-						<li><a href="#">Branding</a></li>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Uncategorized</a></li>
-						<li><a href="#">Video</a></li>
+						<?php 
+	
+							foreach ($article[3] as $article_key => $article_value) { ?>
+
+								<li><a href="<?php echo '/'.  _seo(_translate('subcategory', $article[0])) . '/' .  _seo(_translate('article', $article_key)); ?>"><?php echo _translate('article', $article_key); ?></a></li>
+
+							<?php } ?>
+						
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </main>
+
+<style>
+
+	p {margin-bottom: 20px !important;}
+
+</style>

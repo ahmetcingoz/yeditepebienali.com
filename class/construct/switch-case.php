@@ -58,31 +58,31 @@
 				foreach ($category_value as $subcategory) {
 					
 					foreach ($biennial_json as $biennial_key => $biennial_value) {
-																		
+						
 						if (array_key_exists($subcategory, $biennial_json)) {
 							
 							switch($page) {
 									
-								case _seo(_translate('subcategory', $biennial_key, 'true'));
+								case _seo(_translate('subcategory', $biennial_key));
 									
 									foreach ($biennial_value as $biennial_article_key => $biennial_article_value) { 
+										
+										if ($_SERVER['REQUEST_URI'] == '/' . _seo(_translate('subcategory', $biennial_key))) {
 
-										if ($_SERVER['REQUEST_URI'] == '/' . _seo($biennial_key)) {
-
-											header('Location: /' . _seo(_translate('subcategory', $biennial_key)) . '/' . _seo(_translate('subcategory', $biennial_article_key)));
+											header('Location: /' . _seo(_translate('subcategory', $biennial_key)) . '/' . _seo(_translate('article', $biennial_article_key)));
 											
 											break;
 
 										} else {
 											
-											$biennial = [$biennial_key, $biennial_article_key, $biennial_article_value];
+											$biennial = [$biennial_key, $biennial_article_key, $biennial_article_value, $biennial_value];
 
 											switch($panel) {
 
-												case _seo(_translate('article', $biennial_article_key, 'true'));
+												case _seo(_translate('article', $biennial_article_key));
 
 													_include_once('biennial', $biennial);
-
+													
 												break;	
 
 											}
