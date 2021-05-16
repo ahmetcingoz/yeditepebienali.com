@@ -3,48 +3,36 @@
 		<div class="row">
 			<div class="col-lg-9 col-sm-8 col-xs-12 col-lg-push-3 col-sm-push-4 content">
 				<div class="post wow fadeInUp" data-wow-delay="0.1s">
-					<!--<div class="image-box">
-						<div class="blog-slider">
-							<div class="slide">
-								<img src="<?php echo $article[2]['image']; ?>" alt="image description">
-							</div>
-						</div>
-					</div>-->
 					<div class="text-area">
-						<p></p>
-						<?php if (array_key_exists('date-' . $_SESSION['language'], $article[2])) { ?> 
-							<h2><?php echo $article[2]['date-' . $_SESSION['language']] ?></h2>
-						<?php } ?>
+						<h3><?php echo _uppercase(_translate('footer', $article[1])) ?></h3>
+
+						<?php if (array_key_exists($_SESSION['language'], $article[2])) {
+	
+							echo $article[2][$_SESSION['language']];
+	
+						} ?>
 						
-						<h3><?php echo _uppercase(_translate('article', $article[1])); ?></h3>
-
-						<?php if (array_key_exists($_SESSION['language'], $article[2])) { ?> 
-
-						<?php if (array_key_exists('image', $article[2])) { ?> 
-							<img class="image" src="<?php echo $article[2]['image']; ?>" alt="image description">
-						<?php } ?>
-							<?php echo $article[2][$_SESSION['language']] ?>
-						<?php } ?>
-						<?php if (array_key_exists('image-' . $_SESSION['language'], $article[2])) { ?> 
-							<img src="<?php echo $article[2]['image-' . $_SESSION['language']]; ?>" alt="image description">
-						<?php } ?>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-4 col-xs-12 col-lg-pull-9 col-sm-pull-8 sidebar">
 				<div class="widget wow fadeInUp" data-wow-delay="0.1s">
-					<h2><?php echo _uppercase(_translate('subcategory', $article[0])) ?></h2>
+					<h2><?php echo _uppercase(_translate('footer', $article[1])) ?></h2>
 					<ul class="categories">
 						
-						<?php foreach ($article[3] as $article_key => $article_value) { ?>
+						<?php foreach ($article[0] as $article_key => $article_value) { 
 						
-							<?php if (array_key_exists($_SESSION['language'], $article_value) || array_key_exists('image', $article_value) || array_key_exists('image-' . $_SESSION['language'], $article_value)) { ?>
+							if (array_key_exists($_SESSION['language'], $article_value)) { 
+								
+								if ($_SERVER['REQUEST_URI'] <> '/' . _seo($article_key)) { ?>
+									
+								<li><a href="<?php echo '/'. _seo(_translate('footer', $article_key)); ?>"><?php echo _uppercase(_translate('footer', $article_key)); ?></a></li>									
+									
+							<?php }
 
-								<li><a href="<?php echo '/'.  _seo(_translate('subcategory', $article[0])) . '/' .  _seo(_translate('article', $article_key)); ?>"><?php echo _translate('article', $article_key); ?></a></li>		
-
-							<?php }	?>
+							} 
 						
-						<?php } ?>
+						} ?>
 						
 					</ul>
 				</div>

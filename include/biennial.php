@@ -11,7 +11,6 @@
 						</div>
 					</div>-->
 					<div class="text-area">
-						<p></p>
 						<?php if (array_key_exists('date-' . $_SESSION['language'], $article[2])) { ?> 
 							<h2><?php echo $article[2]['date-' . $_SESSION['language']] ?></h2>
 						<?php } ?>

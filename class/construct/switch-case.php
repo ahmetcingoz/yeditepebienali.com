@@ -208,33 +208,25 @@
 
 		}
 		
-		/* VENUE */		
+		/* FOOTER */		
 		
-		$venue_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+		$footer_json = $_SERVER['DOCUMENT_ROOT'] . '/json/footer.json';
 
-		$venue_json = _decode_json($venue_json);
+		$footer_json = _decode_json($footer_json);
 		
-		foreach ($venue_json as $category_key => $category_value) {
+		foreach ($footer_json as $footer_key => $footer_value) {
+			
+			switch($page) {
 
-			foreach ($category_value as $date_key => $date_value) {
-				
-				foreach ($date_value as $venues_key => $venues_value) {
-					
-					switch($page) {
+				case _seo(_translate('footer', $footer_key));
 
-						case _seo(_translate('venues', $venues_key));
+					$footer_array = [$footer_json, $footer_key, $footer_value];
 
-							$venues_array = [$venues_key, $venues_value, $category_key, $date_key, $category_value];
+					_include_once('footer', $footer_array);
 
-							_include_once('venues', $venues_array);
+				break;	
 
-						break;	
-
-					}	
-					
-				}
-
-			}
+			}			
 
 		}		
 		

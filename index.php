@@ -17,7 +17,6 @@
 
 	$request 		= $_SERVER['SERVER_NAME'];
 	$header 		= $_SERVER['REQUEST_URI'];
-
 	$directory		= $_SERVER['DOCUMENT_ROOT'];
 
 	date_default_timezone_set('Europe/Istanbul');

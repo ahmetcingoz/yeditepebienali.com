@@ -3,7 +3,7 @@
       "bienal":{
          "en":[
             "biennial"
-         ]		  
+         ]
       },
       "sergiler":{
          "en":[
@@ -46,7 +46,6 @@
          ]
       }
    },
-
    "subcategory":{
       "grup sergileri":{
          "en":[
@@ -89,8 +88,6 @@
          ]
       }
    },
-	
-
    "article":{
       "Yönetim Kurulu Başkanı'ndan":{
          "en":[
@@ -102,34 +99,33 @@
             "From the President of the Foundation"
          ]
       },
-	  "Küratör'den":{
+      "Küratör'den":{
          "en":[
             "From the Curator"
          ]
       },
-	  "Basın Bülteninden":{
+      "Basın Bülteninden":{
          "en":[
             "From the Press Release"
          ]
       },
-	  "Yeditepe Bienali":{
+      "Yeditepe Bienali":{
          "en":[
             "Yeditepe Biennial"
          ]
       },
-	  "Künye":{
+      "Künye":{
          "en":[
             "Tag"
          ]
       },
-	  "Etkinlik Takvimi":{
+      "Etkinlik Takvimi":{
          "en":[
             "Event Calendar"
          ]
       }
    },
-
-	"venues":{
+   "venues":{
       "Akdeniz Medreseleri":{
          "en":[
             "Mediterranean Madrasas"
@@ -245,16 +241,36 @@
             "Sirkeci Railway Station"
          ]
       }
-   },	
-	
-	"title":{
-	  "yeditepe bienali":{
-		 "en":[
-			"yeditepe biennial"
-		 ]
-	  }
-	},	
-	
+   },
+   "footer":{
+      "aydınlatma metni":{
+         "en":[
+            "yeditepe biennial"
+         ]
+      },
+      "çerez politikası":{
+         "en":[
+            "cookie policy"
+         ]
+      },
+      "kullanım koşulları":{
+         "en":[
+            "terms of use"
+         ]
+      },
+      "gizlilik politikası":{
+         "en":[
+            "privacy policy"
+         ]
+      }
+   },
+   "title":{
+      "yeditepe bienali":{
+         "en":[
+            "yeditepe biennial"
+         ]
+      }
+   },
    "form":{
       "adınız":{
          "en":[
@@ -262,13 +278,11 @@
          ]
       }
    },
-
    "word":{
       "devamı":{
          "en":[
             "continue"
          ]
       }
-   }	
-	
+   }
 }

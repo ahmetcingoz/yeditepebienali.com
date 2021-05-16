@@ -63,10 +63,19 @@
 		<div class="f2">
 			<!-- sub-nav -->
 			<ul class="sub-nav">
-				<li><a href="#">Aydınlatma Metni</a></li>
-				<li><a href="#">Çerez Politikası</a></li>
-				<li><a href="#">Kullanım Koşulları</a></li>
-				<li><a href="#">Gizlilik Sözleşmesi</a></li>
+				
+				<?php 
+
+				$footer_json = $_SERVER['DOCUMENT_ROOT'] . '/json/footer.json';
+
+				$footer_json = _decode_json($footer_json);
+				
+				foreach ($footer_json as $footer_key => $footer_value) { ?>
+
+					<li><a href="<?php echo '/' . _seo(_translate('footer', $footer_key)) ?>"><?php echo _uppercase(_translate('footer', $footer_key)) ?></a></li>
+
+				<?php } ?>
+				
 			</ul>
 			<span class="copyright"><a href="#">Yeditepe Bienali</a> &copy; 2021. Tüm Hakları Saklıdır.</span>
 		</div>
