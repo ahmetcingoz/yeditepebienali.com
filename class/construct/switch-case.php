@@ -87,7 +87,7 @@
 
 							case _seo(_translate('category', $article_key, 'true')) . '-' . $date_key;
 
-								$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
+								$article_array = [$category_key, 'true', $date_key, $article_key, $article_value, $subcategory_value];
 
 								_include_once('article', $article_array);
 
@@ -102,7 +102,7 @@
 					foreach ($subcategory_value as $date_key => $date_value) {
 
 						foreach ($date_value as $article_key => $article_value) {
-
+							
 							switch($page) {
 
 								case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;

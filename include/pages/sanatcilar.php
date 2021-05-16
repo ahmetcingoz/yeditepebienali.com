@@ -32,7 +32,7 @@
 <div class="promo portfolio wow fadeInUp">
 	<div class="max-container">
 		<div class="img background-animation">
-			<img src="/images/placehold/1770x240.png" alt="image description">
+			<img src="/images/sanatcilar.jpg" alt="image description">
 		</div>
 		<ol class="breadcrumb">
 			<!--<li><a></a></li>
@@ -55,42 +55,38 @@
 	<div class="container">
 		<div class="row">
 			<ul class="artist">
-						
-			
-				
-				
 
-<?php 
-		
-	$tr = array('ş','Ş','ı','I','İ','ğ','Ğ','ü','Ü','ö','Ö','Ç','ç');
-			
-	for ($i = 0; $i < $number; $i++) {
+				<?php 
 
-		$substr = substr($sort[$i], 0, 2);
-		
-		if ($i == 0) {
+					$tr = array('ş','Ş','ı','I','İ','ğ','Ğ','ü','Ü','ö','Ö','Ç','ç');
 
-			echo '<h2>' . $sort[$i][0] . '</h2>';
+					for ($i = 0; $i < $number; $i++) {
 
-		} else if ($sort[$i - 1][0] <> $sort[$i][0]) {
+						$substr = substr($sort[$i], 0, 2);
 
-			if (in_array($substr, $tr)) {
+						if ($i == 0) {
 
-				echo '<h2>' . $substr . '</h2>';
-				
-			} else {
+							echo '<h2>' . $sort[$i][0] . '</h2>';
 
-				echo '<h2>' . $sort[$i][0] . '</h2>';
+						} else if ($sort[$i - 1][0] <> $sort[$i][0]) {
 
-			}				
+							if (in_array($substr, $tr)) {
 
-		}
+								echo '<h2>' . $substr . '</h2>';
 
-		echo '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
+							} else {
 
-	}
+								echo '<h2>' . $sort[$i][0] . '</h2>';
 
-?>			
+							}				
+
+						}
+
+						echo '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
+
+					}
+
+				?>			
 		
 			</ul>
 		</div>	

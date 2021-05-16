@@ -89,11 +89,17 @@
 						</div>
 
 					<?php } ?>
-						
+							
 					</div>
 				</div>
 			</div>
-		</main>							
+		</main>	
+
+		<style>
+
+		.promo .heading h1 {color: #e8b75f !important; padding-left: 75px; padding-right: 75px; padding-bottom: 5px; padding-top: 15px; border-bottom: 1px solid #e8b75f;}
+
+		</style>
 
 		
 	<?php } else { 
