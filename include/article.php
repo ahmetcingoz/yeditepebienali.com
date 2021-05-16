@@ -233,21 +233,9 @@
 					</ul>
 				</div>								
 				
-				<?php } 
+				<?php } $i = 0; $count = count($article[5]); ?>
 				
-				$i = 0;
-				
-				$count = 0;
-				
-				foreach ($article[5] as $related_key => $related_value) {
-					
-					if (array_key_exists($_SESSION['language'], $related_value)) { 
-
-						$count = count($related_value);
-
-					} 
-					
-				} ?>
+				<?php /* BURAYA BAK */ ?> 
 				
 				<?php if ($count > 1) { ?> 
 				
