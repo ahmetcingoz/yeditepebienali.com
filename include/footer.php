@@ -11,9 +11,7 @@
 							echo $article[2][$_SESSION['language']];
 	
 						} ?>
-						
-						<?php echo _translate('form', 'ibrahim') ?>
-						
+												
 					</div>
 				</div>
 			</div>
