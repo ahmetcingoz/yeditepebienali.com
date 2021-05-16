@@ -6,7 +6,9 @@
 		
 		$header_json = _decode_json($header_json);
 
-		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}	
+		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}
+		
+		if(!isset( $_GET['panel'])) {$panel = 'default';} else {$panel = $_GET['panel'];}		
 		
 		
 		/* CUSTOM */
@@ -49,16 +51,65 @@
 			
 			if (is_array($category_value)) {
 
+				$biennial_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/biennial.json';
+
+				$biennial_json = _decode_json($biennial_json); 				
+				
 				foreach ($category_value as $subcategory) {
-
-					switch($page) {
+					
+					foreach ($biennial_json as $biennial_key => $biennial_value) {
+																		
+						if (array_key_exists($subcategory, $biennial_json)) {
 							
-						case _seo(_translate('subcategory', $subcategory, 'true'));
-														
-							_include_once('category');
+							switch($page) {
+									
+								case _seo(_translate('subcategory', $biennial_key, 'true'));
+									
+									foreach ($biennial_value as $biennial_article_key => $biennial_article_value) { 
 
-						break;	
+										if ($_SERVER['REQUEST_URI'] == '/' . _seo($biennial_key)) {
 
+											header('Location: /' . _seo(_translate('subcategory', $biennial_key)) . '/' . _seo(_translate('subcategory', $biennial_article_key)));
+											
+											break;
+
+										} else {
+											
+											$biennial = [$biennial_key, $biennial_article_key, $biennial_article_value];
+
+											switch($panel) {
+
+												case _seo(_translate('article', $biennial_article_key, 'true'));
+
+													_include_once('biennial', $biennial);
+
+												break;	
+
+											}
+											
+										}
+									
+									}
+									
+									
+								break;	
+
+							}
+							
+						} else {
+
+							switch($page) {
+
+								case _seo(_translate('subcategory', $subcategory, 'true'));
+									
+									_include_once('category');
+
+								break;	
+
+							}
+
+						}
+						
 					}
 				
 				}

@@ -14,7 +14,7 @@
 		<strong class="logo">
 			<a href="/">
 				<span class="img">
-					<img src="images/logo_<?php echo $_SESSION['language'] ?>.png" alt="Yeditepe Bienali">
+					<img src="/images/logo_<?php echo $_SESSION['language'] ?>.png" alt="Yeditepe Bienali">
 				</span>
 			</a>
 		</strong>
