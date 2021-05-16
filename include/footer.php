@@ -12,6 +12,8 @@
 	
 						} ?>
 						
+						<?php echo _translate('form', 'ibrahim') ?>
+						
 					</div>
 				</div>
 			</div>

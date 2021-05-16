@@ -269,12 +269,22 @@
          "en":[
             "yeditepe biennial"
          ]
+      },
+      "Altından Haleler":{
+         "en":[
+            "Event Calendar"
+         ]
       }
    },
    "form":{
       "adınız":{
          "en":[
             "your name"
+         ]
+      },
+      "gönder":{
+         "en":[
+            "send"
          ]
       }
    },

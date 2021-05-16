@@ -52,7 +52,7 @@
 								<textarea name="textarea" class="wpcf7-form-control wpcf7-textarea textarea-class wpcf7-use-title-as-watermark" rows="9" cols="39" placeholder="Your Comment"></textarea>
 							</span>
 						</div>
-						<input id="submit" type="submit" value="SEND MESSAGES">
+						<input id="submit" type="submit" value="<?php echo _translate('form', 'gönder') ?>">
 					</form>
 					<div class="done-massage">
 						<strong>Thank you!</strong> We have received your message.

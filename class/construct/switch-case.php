@@ -156,7 +156,7 @@
 							
 							switch($page) {
 
-								case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
+								case _seo(_translate('title', $article_key, 'true')) . '-' . $date_key;
 									
 									$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
 
