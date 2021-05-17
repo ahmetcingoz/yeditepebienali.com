@@ -422,14 +422,29 @@
       }
    },
    "form":{
+      "Yorumlarınız":{
+         "en":[
+            "We will love to hear from you!"
+         ]
+      },
       "adınız":{
          "en":[
-            "your name"
+            "name"
          ]
       },
       "gönder":{
          "en":[
             "send"
+         ]
+      },
+      "Mail":{
+         "en":[
+            "email"
+         ]
+      },
+      "Yorumunuz":{
+         "en":[
+            "your comment"
          ]
       }
    },
