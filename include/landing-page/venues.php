@@ -19,8 +19,8 @@
 				
 							<ul class="text-box team<?php echo $i++; ?>">
 								<li>
-									<h2><a href="<?php echo _seo(_translate('venues', $s_key)) ?>"><?php echo $s_key ?></a></h2>
-									<span><?php echo _uppercase($s_value[2]) ?></span>
+									<h2><a href="<?php echo _seo($s_key) ?>"><?php echo $s_key ?></a></h2>
+									<span><?php echo _uppercase($s_value[2])?></span>
 								</li>
 								<li>
 									<p><?php echo $s_value[3] ?></p>
@@ -49,7 +49,7 @@
 									<div class="img"><a href="<?php echo _seo(_translate('venues', $s_key)) ?>" class="team<?php echo $two++ ?>-opener"><img src="<?php echo $s_value[0] ?>" alt="image description"></a></div>
 									<div class="txt-box">
 										<h3><a href="#" class="team<?php echo $three++ ?>-opener"><?php echo $s_key ?></a></h3>
-										<span class="designation"><?php echo _uppercase($s_value[2]) ?></span>
+										<span class="designation"><?php echo _uppercase($s_value[2])?></span>
 									</div>
 								</div>			
 							
