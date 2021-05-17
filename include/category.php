@@ -183,7 +183,7 @@
 														<div class="caption">
 															<div class="c1">
 																<div class="c2">
-																	<a href="<?php echo _seo(_translate('article', $article_key) . '-' . $subcategory_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('article', $article_key))?></strong></a>
+																	<a href="<?php echo _seo(_translate('article', $article_key) . '-' . $subcategory_date_key)?>"><strong class="title"><?php echo _uppercase(_translate('exhibition', $article_key))?></strong></a>
 																	
 																	<?php if (array_key_exists('location', $article_value)) { ?> 
 																	
