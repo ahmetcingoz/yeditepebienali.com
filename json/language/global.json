@@ -88,7 +88,7 @@
          ]
       }
    },
-   "exhibition":{
+   "article":{
       "En Güzel İsimler: Esma'ül Hüsna":{
          "en":[
             "The Most Beautiful Names (of Allah): Asma al-Husna "
@@ -188,9 +188,17 @@
          "en":[
             "international calligraphy art"
          ]
-      }
-   },
-   "article":{
+      },
+      "ilhami atalay":{
+         "en":[
+            "ilhami atalay"
+         ]
+      },
+      "mestane bakış özge temaşa":{
+         "en":[
+            "mestane bakış özge temaşa"
+         ]
+      },
       "Yönetim Kurulu Başkanı'ndan":{
          "en":[
             "From the Chairman of the Board of Directors"
@@ -225,7 +233,7 @@
          "en":[
             "Event Calendar"
          ]
-      }
+      }	   
    },
    "venues":{
       "Akdeniz Medreseleri":{
@@ -405,6 +413,11 @@
       "yayın":{
          "en":[
             "publication"
+         ]
+      },
+      "fotoğraflar":{
+         "en":[
+            "images"
          ]
       }
    },

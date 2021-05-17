@@ -47,7 +47,7 @@
 	
 					if ($_SESSION['language'] <> $language_key) {?>
 						
-						<li><a href="<?php echo $language_key ?>" style="font-size: 15px; margin-left: 5px"><?php echo _uppercase($language_key) ?></a></li>
+						<li><a href="/<?php echo $language_key ?>" style="font-size: 15px; margin-left: 5px"><?php echo _uppercase($language_key) ?></a></li>
 						
 					<?php }
 	
