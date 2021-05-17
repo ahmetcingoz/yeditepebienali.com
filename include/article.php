@@ -72,7 +72,7 @@
 					<?php } ?>
 					
 					<div class="text">
-						<h2 class="wow fadeInUp"><?php echo _uppercase(_translate('article', $article[3])) ?></h2>
+						<h2 class="wow fadeInUp"><?php echo _uppercase(_translate('exhibition', $article[3])) ?></h2>
 						<dl class="wow fadeInUp">
 							
 							<?php if (array_key_exists('date', $article[4])) { 
