@@ -97,20 +97,30 @@
 					} else {
 						
 						$header = str_replace("/","",$_SERVER['REQUEST_URI']);
-
-						echo '<h2>' . _uppercase($header[0]) . '</h2>';
 						
 						for ($i = 0; $i < $number; $i++) {
 							
 							if (_uppercase($header[0]) == $sort[$i][0]) {
 								
 								if (_seo($sort[$i]) <> $header) {
-									
-									echo '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
+																		
+									$print[$i] = '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
 									
 								}
 								
 							} 
+							
+						}
+						
+						if (isset($print) && count($print) > 0) {
+							
+							echo '<h2>' . _uppercase($header[0]) . '</h2>';										
+							
+							foreach ($print as $print_key => $print_value) {
+
+								echo $print_value;
+
+							}
 							
 						}
 						
