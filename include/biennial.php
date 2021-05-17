@@ -35,11 +35,21 @@
 					<h2><?php echo _uppercase(_translate('subcategory', $article[0])) ?></h2>
 					<ul class="categories">
 						
+						<?php $header = explode('/', $_SERVER['REQUEST_URI']); $header = end($header); ?>
+						
 						<?php foreach ($article[3] as $article_key => $article_value) { ?>
 						
 							<?php if (array_key_exists($_SESSION['language'], $article_value) || array_key_exists('image', $article_value) || array_key_exists('image-' . $_SESSION['language'], $article_value)) { ?>
 
-								<li><a href="<?php echo '/'.  _seo(_translate('subcategory', $article[0])) . '/' .  _seo(_translate('article', $article_key)); ?>"><?php echo _translate('article', $article_key); ?></a></li>		
+								<?php if ($header == _seo(_translate('article', $article_key))) { ?>
+	
+									<li><a class="active" href="<?php echo '/'.  _seo(_translate('subcategory', $article[0])) . '/' .  _seo(_translate('article', $article_key)); ?>"><?php echo _translate('article', $article_key); ?></a></li>		
+	
+								<?php } else { ?>
+	
+									<li><a href="<?php echo '/'.  _seo(_translate('subcategory', $article[0])) . '/' .  _seo(_translate('article', $article_key)); ?>"><?php echo _translate('article', $article_key); ?></a></li>		
+	
+								<?php } ?>
 
 							<?php }	?>
 						
@@ -54,6 +64,7 @@
 
 <style>
 
+	.active {font-weight: 700; color: #e8b760 !important;}
 	.image {float: left; margin-right: 25px; margin-bottom: 25px;}
 	p {margin-bottom: 20px !important;}
 	
