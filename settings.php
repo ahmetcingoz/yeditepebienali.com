@@ -9,9 +9,8 @@
 	$erkajans = 'true';
 	$under_construction = 'true';
 
-
 	//$_SESSION ['language'] = _language();
-	$_SESSION ['language'] = 'en';
+	$_SESSION ['language'] = 'tr';
 
 	/* GOOGLE ANALYTICS */
 
