@@ -77,7 +77,7 @@
 				<?php } ?>
 				
 			</ul>
-			<span class="copyright"><a href="#">Yeditepe Bienali</a> &copy; 2021. Tüm Hakları Saklıdır.</span>
+			<span class="copyright"><a href="#"><?php echo _translate('article','Yeditepe Bienali') ?></a> &copy; <?php echo _translate('footer','Tüm Hakları Saklıdır') ?></span>
 		</div>
 	</div>
 	<div id="company" class="max-container">

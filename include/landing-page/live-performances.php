@@ -28,7 +28,7 @@
 										<div class="txt-box">
 											<h3><?php echo $s_key ?></h3>
 											<p><?php echo $s_value[1]; ?></p>
-											<a href="<?php echo $s_value[2] ?>" class="continue"><span>CONTINUE</span> <i class="icon-right-thin"></i></a>
+											<a href="<?php echo $s_value[2] ?>" class="continue"><span><?php echo _uppercase(_translate('word','devamı'))?></span> <i class="icon-right-thin"></i></a>
 										</div>
 									</div>
 									<div class="images">
@@ -49,7 +49,7 @@
 										<div class="txt-box">
 											<h3><?php echo $s_key ?></h3>
 											<p><?php echo $s_value[1]; ?></p>
-											<a href="<?php echo $s_value[2] ?>" class="continue"><span>CONTINUE</span> <i class="icon-right-thin"></i></a>
+											<a href="<?php echo $s_value[2] ?>" class="continue"><span><?php echo _uppercase(_translate('word','devamı'))?></span> <i class="icon-right-thin"></i></a>
 										</div>
 									</div>
 								</div>		
@@ -68,7 +68,7 @@
 			<div class="txt-frame wow fadeInRight" data-wow-delay="0.6s">
 				<h2 class="tild"><?php echo $value['title'][0] ?></h2>
 				<span class="num"><?php echo $value['number'][0] ?></span>
-				<a href="<?php echo $value['href'][0] ?>" class="more">view all</a>
+				<a href="<?php echo $value['href'][0] ?>" class="more"><?php echo _uppercase(_translate('word','tümünü gör'))?></a>
 			</div>
 		</div>				
 

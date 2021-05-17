@@ -89,7 +89,7 @@
 				<div class="text wow fadeInRight" data-wow-delay="0.3s">
 					<h2 class="tild"><?php echo $value['title'][0] ?></h2>
 					<span class="num"><?php echo $value['number'][0] ?></span>
-					<a href="<?php echo $value['href'][0] ?>" class="more">view all</a>
+					<a href="<?php echo $value['href'][0] ?>" class="more"><?php echo _uppercase(_translate('word','tümünü gör'))?></a>
 				</div>
 			</div>	
 		</div>

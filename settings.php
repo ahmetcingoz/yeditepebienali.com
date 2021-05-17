@@ -11,6 +11,6 @@
 
 
 	//$_SESSION ['language'] = _language();
-	$_SESSION ['language'] = 'tr';
+	$_SESSION ['language'] = 'en';
 
 ?>
