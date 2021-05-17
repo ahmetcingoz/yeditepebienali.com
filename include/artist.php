@@ -119,6 +119,10 @@
 			</div>
 		</div>
 		
+		
+		<?php include_once 'include/pages/sanatcilar.php' ?>
+		
+		
 		<style>
 		
 			.unnamed-images li {
