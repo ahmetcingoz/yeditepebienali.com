@@ -11,7 +11,7 @@
 					<h2 class="tild"><?php echo $value['title'][0]; ?></h2>
 					<span class="num"><?php echo $value['number'][0]; ?></span>
 					<ul class="filter">
-						<li class="active"><a href="<?php echo _seo(_translate('subcategory','grup sergileri'))?>"><?php echo ucwords(_translate('word', 'hepsi')) ?></a></li>
+						<li class="active"><a href="#"><?php echo ucwords(_translate('word', 'hepsi')) ?></a></li>
 						
 						<?php 
 									

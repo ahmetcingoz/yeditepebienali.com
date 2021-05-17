@@ -174,7 +174,7 @@
 													$works = 'true';
 
 												} ?>											
-
+													
 												<li class="item <?php echo _seo($article_key) ?> wow fadeInUp" data-wow-delay="0.1s">
 													<div class="holder">
 														<div class="img">
@@ -200,9 +200,9 @@
 														</div>
 													</div>
 												</li>
-
+												
 											<?php } ?>
-	
+											
 										<?php } ?>
 
 									</ul>
