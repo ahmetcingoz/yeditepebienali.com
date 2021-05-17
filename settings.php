@@ -13,4 +13,8 @@
 	//$_SESSION ['language'] = _language();
 	$_SESSION ['language'] = 'en';
 
+	/* GOOGLE ANALYTICS */
+
+	$google_analytics = 'UA-1289368-70';
+
 ?>

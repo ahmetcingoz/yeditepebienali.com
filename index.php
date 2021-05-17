@@ -50,13 +50,13 @@
 
 					} else {
 
-						if ($header == '/' . _seo(_translate('sayfa', 'yapım aşamasında')) || $header == '/erkajans' || $header == '/administration') {
+						if ($header == '/' . _seo(_translate('page', 'yapım aşamasında')) || $header == '/erkajans' || $header == '/administration') {
 
 							_under_construction($erkajans);
 
 						} else {
 
-							header('Location: /' . _seo(_translate('sayfa', 'yapım aşamasında')));
+							header('Location: /' . _seo(_translate('page', 'yapım aşamasında')));
 
 						}
 
