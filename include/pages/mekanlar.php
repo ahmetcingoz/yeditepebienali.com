@@ -55,7 +55,7 @@
 								<?php if (_odd_even($odd++) == true) { ?>
 
 									<article class="article">
-										<div class="image wow fadeInLeft" data-wow-delay="0.6s">
+										<div class="image wow fadeInLeft" data-wow-delay="0.1s">
 											<img src="<?php echo 'images/articles/mekanlar/' . _seo($venues_key) . '-s.jpg' ?>" alt="image description">
 										</div>
 										<div class="text wow fadeInRight" data-wow-delay="0.6s">
@@ -94,7 +94,7 @@
 									<?php } else { ?>
 
 									<article class="article">
-										<div class="text wow fadeInLeft" data-wow-delay="0.6s">
+										<div class="text wow fadeInLeft" data-wow-delay="0.2s">
 											<!--<strong class="title"><?php echo _translate('venues', $venues_key) ?></strong>-->
 											<div class="txt">
 												<h2><a href="<?php echo '/' . _seo(_translate('venues', $venues_key)) ?>"><?php echo _translate('venues', $venues_key) ?></a></h2>
