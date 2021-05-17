@@ -2,6 +2,8 @@
 
 	function _switch_page () {
 		
+		global $language;
+		
 		$header_json = $_SERVER['DOCUMENT_ROOT'] . '/json/header.json';
 		
 		$header_json = _decode_json($header_json);
@@ -34,6 +36,24 @@
 			break;	
 				
 		}		
+		
+		/* LANGUAGE */ 
+		
+		foreach ($language as $language_session) {
+			
+			switch($page) {
+
+				case $language_session;
+
+					$_SESSION['language'] = $language_session;
+
+					header('Location: /');
+
+				break;	
+
+			}		
+			
+		}
 		
 		/* HEADER = CATEGORY & SUBCATEGORY */
 		

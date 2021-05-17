@@ -1,19 +1,18 @@
 <?php 
 
+	$rename_path = 'images/articles/sanatcilar/';
+
 	/* HEAD */
 	$title = 'Yeditepe Bienali';
 
-	$rename_path = 'images/articles/sanatcilar/';
+	/* LANGUAGE */
+	$language = array ('tr', 'en');
 
 	/* SETTINGS */
 	$erkajans = 'true';
 	$under_construction = 'true';
 
-	//$_SESSION ['language'] = _language();
-	$_SESSION ['language'] = 'tr';
-
 	/* GOOGLE ANALYTICS */
-
 	$google_analytics = 'UA-1289368-70';
 
 ?>

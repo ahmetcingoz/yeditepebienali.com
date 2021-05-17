@@ -22,7 +22,7 @@
 	date_default_timezone_set('Europe/Istanbul');
 
 	//require_once $directory . '/extension/mailer/autoload.php';
-
+	
 	if (session_status() !== PHP_SESSION_ACTIVE) {
 		
 		session_start();
@@ -33,6 +33,8 @@
 			
 			_include_all ($directory . '/class/');		
 			_include_all ($directory . '/class/construct/');	
+		
+			$_SESSION ['language'] = _language();
 		
 			require_once $directory . '/settings.php';		
 		
