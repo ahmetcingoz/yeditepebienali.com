@@ -9,7 +9,7 @@
 	
 						$path = 'images/articles/sanatcilar/';
 					
-						$image = '/images/artist-' . $_SESSION['language'];
+						$image = '/images/artist-' . $_SESSION['language'] . '.jpg';
 
 						$file_types = array ('jpg', 'jpeg', 'png', 'gif');
 
