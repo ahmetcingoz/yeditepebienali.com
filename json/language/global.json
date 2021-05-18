@@ -79,12 +79,12 @@
       },
       "1. yeditepe bienali":{
          "en":[
-            "yeditepe biennal 1"
+            "yeditepe biennial 1"
          ]
       },
       "2. yeditepe bienali":{
          "en":[
-            "yeditepe biennal 2"
+            "yeditepe biennial 2"
          ]
       }
    },
@@ -385,7 +385,7 @@
       },
       "Tüm Hakları Saklıdır":{
          "en":[
-            "All Rights Reserve"
+            "All Rights Reserved"
          ]
       }
    },
@@ -437,9 +437,9 @@
             "We will love to hear from you!"
          ]
       },
-      "adınız":{
+      "ad - soyad":{
          "en":[
-            "name"
+            "your name"
          ]
       },
       "gönder":{
@@ -447,12 +447,12 @@
             "send"
          ]
       },
-      "Mail":{
+      "e-posta":{
          "en":[
-            "email"
+            "e-mail"
          ]
       },
-      "Yorumunuz":{
+      "yorum":{
          "en":[
             "your comment"
          ]

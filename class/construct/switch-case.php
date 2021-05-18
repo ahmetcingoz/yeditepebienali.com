@@ -2,12 +2,10 @@
 
 	function _switch_page () {
 		
+		global $content;
+		
 		global $language;
 		
-		$header_json = $_SERVER['DOCUMENT_ROOT'] . '/json/header.json';
-		
-		$header_json = _decode_json($header_json);
-
 		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}
 		
 		if(!isset( $_GET['panel'])) {$panel = 'default';} else {$panel = $_GET['panel'];}		
@@ -56,7 +54,7 @@
 		
 		/* HEADER = CATEGORY & SUBCATEGORY */
 		
-		foreach ($header_json as $category_key => $category_value) {
+		foreach ($content['header'] as $category_key => $category_value) {
 			
 			switch($page) {
 
@@ -260,17 +258,13 @@
 		
 		/* FOOTER */		
 		
-		$footer_json = $_SERVER['DOCUMENT_ROOT'] . '/json/footer.json';
-
-		$footer_json = _decode_json($footer_json);
-		
-		foreach ($footer_json as $footer_key => $footer_value) {
+		foreach ($content['footer']['footer-links'] as $footer_key => $footer_value) {
 			
 			switch($page) {
 
 				case _seo(_translate('footer', $footer_key));
 
-					$footer_array = [$footer_json, $footer_key, $footer_value];
+					$footer_array = [$content['footer']['footer-links'], $footer_key, $footer_value];
 
 					_include_once('footer', $footer_array);
 

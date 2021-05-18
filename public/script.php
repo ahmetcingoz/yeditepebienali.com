@@ -18,8 +18,9 @@ jQuery(document).ready(function(){
 	jQuery('#main-slider').slick({
 		adaptiveHeight: true,
 		autoplay: true,
+		autoplaySpeed: <?php echo $slider_autoplayspeed ?>,
 		arrows: false,
-		speed: 800,
+		speed: <?php echo $slider_fadespeed ?>,
 		dots: true,
 		fade: true
 	});

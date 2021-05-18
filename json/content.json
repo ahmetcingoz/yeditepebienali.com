@@ -1,0 +1,91 @@
+{
+	"head":{
+	   "title":{
+		  "tr":"Yeditepe Bienali",
+		  "en":"Yeditepe Biennial"
+		},
+	   "description":{
+		  "tr":"Yeditepe Bienali - Resmi Web Sitesi",
+		  "en":"Yeditepe Bienali - Official Website"
+		},
+	   "keywords":{
+		  "tr":"klasik türk sanatları vakfı, 7tepe7sanat, yeditepe, bienal, sanat",
+		  "en":"klasik türk sanatları vakfı, 7tepe7sanat, yeditepe, biennial, art"
+		}
+	},
+	"header":{
+	   "bienal":[
+		  "1. yeditepe bienali"
+	   ],
+	   "sergiler":[
+		  "grup sergileri",
+		  "karma sergiler",
+		  "kişisel sergiler",
+		  "koleksiyoner sergisi",
+		  "tematik sergiler",
+		  "uluslararası sergiler"
+	   ],
+	   "canlı performans":"",
+	   "panel":"",
+	   "sanatçılar":"",
+	   "mekanlar":"",
+	   "yayınlar":"",
+	   "başvuru formu":""
+	},
+	"footer":{
+	   "company":{
+		  "tr":"KLASİK TÜRK SANATLARI VAKFI",
+		  "en":"KLASİK TÜRK SANATLARI VAKFI"
+		},
+	   "address-one":{
+		  "tr":"Aziz Mahmut Hüdayi Mahallesi<br>Doğancılar Caddesi No:82, Üsküdar",
+		  "en":"Aziz Mahmut Hüdayi Neighborhood Doğancılar Street No:82, Üsküdar"
+		},
+	   "address-two":{
+		  "tr":"Ayvansaray Mahallesi<br>Kafesci Yumni Sokak No:6, Fatih",
+		  "en":"Ayvansaray Neighborhood Kafesci Yumni Street No:6, Fatih"
+		},
+	   "email":{
+		  "tr":"bilgi@yeditepebienali.com",
+		  "en":"bilgi@yeditepebienali.com"
+		},
+	   "gsm":{
+		  "tr":"+90 537 475 65 67",
+		  "en":"+90 537 475 65 67"
+		},
+		"footer-links": {
+		   "aydınlatma metni":{
+			  "tr":"",
+			  "en":""
+		   },
+		   "çerez politikası":{
+			  "tr":"",
+			  "en":""
+		   },
+		   "kullanım koşulları":{
+			  "tr":"",
+			  "en":""
+		   },
+		   "gizlilik politikası":{
+			  "tr":"",
+			  "en":""
+		   }
+		},
+	   "site":{
+		  "tr":"Yeditepe Bienali",
+		  "en":"Yeditepe Biennial"
+		},
+	   "copyright":{
+		  "tr":"© Tüm Hakları Saklıdır",
+		  "en":"© All Rights Reserved"
+		},		
+		"contributors":{
+		  "tr":"katkı verenler",
+		  "en":"contributors"
+		},
+		"supporters":{
+		  "tr":"destek verenler",
+		  "en":"supporters"
+		}
+	}
+}

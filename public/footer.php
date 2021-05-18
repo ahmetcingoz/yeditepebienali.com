@@ -13,11 +13,11 @@
 				<div class="footer-txt">
 					<div class="text">
 						<div class="contact">
-							<p>KLASİK TÜRK SANATLARI VAKFI</p>
-							<address><span class="yellow">A :</span> Aziz Mahmut Hüdayi Mahallesi <br>Doğancılar Cadddesi No:82,  Üsküdar</address>
-							<address><span class="yellow">A :</span> Ayvansaray Mahallesi Kafesci <br>Yumni Sokak No:6,  Fatih</address>
-							<span class="email"><span class="yellow">E: </span><a href="mailto:bilgi@yeditepebienali.com" ></a>bilgi@yeditepebienali.com</span>
-							<span class="tel"><span class="yellow">T: </span><a href="tel:+905374756567">+90 537 475 65 67</a></span>
+							<p><?php echo $content['footer']['company'][$_SESSION['language']] ?></p>
+							<address><span class="yellow">A :</span><?php echo $content['footer']['address-one'][$_SESSION['language']] ?></address>
+							<address><span class="yellow">A :</span><?php echo $content['footer']['address-two'][$_SESSION['language']] ?></address>
+							<span class="email"><span class="yellow">E: </span><a href="mailto:<?php echo $content['footer']['email'][$_SESSION['language']] ?>" ><?php echo $content['footer']['email'][$_SESSION['language']] ?></a></span>
+							<span class="tel"><span class="yellow">G: </span><a href="tel:+<?php echo $content['footer']['gsm'][$_SESSION['language']] ?>"><?php echo $content['footer']['gsm'][$_SESSION['language']] ?></a></span>
 						</div>
 					</div>
 					<!--<ul class="testimonial">
@@ -36,20 +36,20 @@
 			<div class="frame">
 				<div class="wpcf7">
 					<form action="inc/process.php" class="wpcf7-form f-contact-form" enctype="multipart/form-data">
-						<h3><?php echo ucwords(_translate('form','yorumlarınız'))?></h3>
+						<h3><?php echo _uppercase(_translate('category','iletişim'))?></h3>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap text-field-required">
-								<input type="text" name="text-field-required" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-field-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','adınız'))?>">
+								<input type="text" name="text-field-required" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-field-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','ad - soyad'))?>">
 							</span>
 						</div>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap Emailfield">
-								<input type="email" name="Emailfield" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','mail'))?>" />
+								<input type="email" name="Emailfield" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','e-posta'))?>" />
 							</span>
 						</div>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap textarea">
-								<textarea name="textarea" class="wpcf7-form-control wpcf7-textarea textarea-class wpcf7-use-title-as-watermark" rows="9" cols="39" placeholder="<?php echo ucwords(_translate('form','yorumunuz'))?>"></textarea>
+								<textarea name="textarea" class="wpcf7-form-control wpcf7-textarea textarea-class wpcf7-use-title-as-watermark" rows="9" cols="39" placeholder="<?php echo ucwords(_translate('form','yorum'))?>"></textarea>
 							</span>
 						</div>
 						<input id="submit" type="submit" value="<?php echo _translate('form', 'gönder') ?>">
@@ -65,24 +65,20 @@
 			<ul class="sub-nav">
 				
 				<?php 
-
-				$footer_json = $_SERVER['DOCUMENT_ROOT'] . '/json/footer.json';
-
-				$footer_json = _decode_json($footer_json);
 				
-				foreach ($footer_json as $footer_key => $footer_value) { ?>
+				foreach ($content['footer']['footer-links'] as $footer_key => $footer_value) { ?>
 
 					<li><a href="<?php echo '/' . _seo(_translate('footer', $footer_key)) ?>"><?php echo _uppercase(_translate('footer', $footer_key)) ?></a></li>
 
 				<?php } ?>
 				
 			</ul>
-			<span class="copyright"><a href="#"><?php echo _translate('article','Yeditepe Bienali') ?></a> &copy; <?php echo _translate('footer','Tüm Hakları Saklıdır') ?></span>
+			<span class="copyright"><a href="#"><?php echo $content['footer']['site'][$_SESSION['language']] ?></a> <?php echo $content['footer']['copyright'][$_SESSION['language']] ?></span>
 		</div>
 	</div>
 	<div id="company" class="max-container">
 		<div>
-			<span>Katkı Verenler</span>
+			<span><?php echo $content['footer']['contributors'][$_SESSION['language']] ?></span>
 			<ul>
 				<li><a><img src="../images/footer/katki-verenler/01.png"</a></li>
 				<li><a><img src="../images/footer/katki-verenler/02.png"</a></li>		
@@ -97,7 +93,7 @@
 			</ul>
 		</div>
 		<div>
-			<span>Destek Verenler</span>	
+			<span><?php echo $content['footer']['supporters'][$_SESSION['language']] ?></span>	
 			<ul>
 				<li><a><img src="../images/footer/destek-verenler/01.jpg"</a></li>
 				<li><a><img src="../images/footer/destek-verenler/02.jpg"</a></li>		
