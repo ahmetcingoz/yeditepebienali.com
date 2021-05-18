@@ -1,6 +1,10 @@
 <?php
 
-	function _header () { global $content; ?>
+	function _header () { global $content; 
+
+		global $contact_us;
+			
+		?>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
@@ -20,27 +24,41 @@
 						<?php 
 						
 							foreach ($f_title_value as $s_title) { ?>
-								
+
 								<li><a href="<?php echo DIRECTORY_SEPARATOR . _seo(_translate('subcategory', $s_title)) ?>"><?php echo _uppercase(_translate('subcategory', $s_title)); ?></a></li>
 								
-							<?php }
-						
-						?>
+						<?php } ?>
 					
 					</ul>
 
 				</li>
 				
-			<?php } else { ?>
+			<?php } else {
 				
-				<li class="dropdown">
-
-					<a href="<?php echo DIRECTORY_SEPARATOR . _seo(_translate('category', $f_title_key)) ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><?php echo _uppercase(_translate('category', $f_title_key)); ?></a>
-
-				</li>						
+				if ($contact_us == true) { ?>
 				
-			<?php } 
+					<li class="dropdown">
 
+						<a href="<?php echo DIRECTORY_SEPARATOR . _seo(_translate('category', $f_title_key)) ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><?php echo _uppercase(_translate('category', $f_title_key)); ?></a>
+
+					</li>		
+				
+				<?php } else {
+										
+					if ($f_title_key <> 'iletişim') { ?>
+				
+						<li class="dropdown">
+
+							<a href="<?php echo DIRECTORY_SEPARATOR . _seo(_translate('category', $f_title_key)) ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><?php echo _uppercase(_translate('category', $f_title_key)); ?></a>
+
+						</li>					
+					
+					<?php }
+					
+				}
+				
+			} 
+				
 		} ?>
 		
 		</ul>

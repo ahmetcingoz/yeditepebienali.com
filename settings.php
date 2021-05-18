@@ -5,13 +5,9 @@
 
 	$rename_path = 'images/articles/sanatcilar/';
 
-	/* HEAD */
-	$title = 'Yeditepe Bienali';
-	$description_tr = "";
-	$description_tr = "";
-	$keywords_tr = "";
-	$keywords_en = "";
+	/* HEADER */
 
+	$contact_us = false;
 
 	/* LANDING PAGE */
 	$slider_autoplayspeed = 5000;
