@@ -5,7 +5,7 @@
 	
 	<body>
 		
-		<?php //include_once $directory . '/public/loader.php'; ?>
+		<?php include_once $directory . '/public/loader.php'; ?>
 
 		<div id="wrapper">
 

@@ -12,7 +12,6 @@
 		
 		if(!isset( $_GET['panel'])) {$panel = 'default';} else {$panel = $_GET['panel'];}		
 		
-		
 		/* CUSTOM */
 				
 		switch($page) {
@@ -64,7 +63,7 @@
 				case _seo(_translate('category', $category_key, 'true'));
 					
 					_include_once('category');
-
+					
 				break;	
 
 			}
@@ -156,7 +155,7 @@
 
 						switch($page) {
 
-							case _seo(_translate('category', $article_key, 'true')) . '-' . $date_key;
+							case _seo(_translate('article', $article_key, 'true')) . '-' . $date_key;
 
 								$article_array = [$category_key, 'true', $date_key, $article_key, $article_value, $subcategory_value];
 
