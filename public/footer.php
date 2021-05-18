@@ -36,20 +36,20 @@
 			<div class="frame">
 				<div class="wpcf7">
 					<form action="inc/process.php" class="wpcf7-form f-contact-form" enctype="multipart/form-data">
-						<h3>We will love to hear from you!</h3>
+						<h3><?php echo ucwords(_translate('form','yorumlarınız'))?></h3>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap text-field-required">
-								<input type="text" name="text-field-required" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-field-class wpcf7-use-title-as-watermark" size="12" placeholder="Name">
+								<input type="text" name="text-field-required" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-field-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','adınız'))?>">
 							</span>
 						</div>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap Emailfield">
-								<input type="email" name="Emailfield" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email-class wpcf7-use-title-as-watermark" size="12" placeholder="Email" />
+								<input type="email" name="Emailfield" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email-class wpcf7-use-title-as-watermark" size="12" placeholder="<?php echo ucwords(_translate('form','mail'))?>" />
 							</span>
 						</div>
 						<div class="rows">
 							<span class="wpcf7-form-control-wrap textarea">
-								<textarea name="textarea" class="wpcf7-form-control wpcf7-textarea textarea-class wpcf7-use-title-as-watermark" rows="9" cols="39" placeholder="Your Comment"></textarea>
+								<textarea name="textarea" class="wpcf7-form-control wpcf7-textarea textarea-class wpcf7-use-title-as-watermark" rows="9" cols="39" placeholder="<?php echo ucwords(_translate('form','yorumunuz'))?>"></textarea>
 							</span>
 						</div>
 						<input id="submit" type="submit" value="<?php echo _translate('form', 'gönder') ?>">
