@@ -118,9 +118,9 @@
 							<?php } ?>
 						</dl>
 						
-						<?php if (array_key_exists($_SESSION['language'], $article[4])) { ?>
+						<?php if (array_key_exists($_SESSION['language'], $article[4])) {?>
 	
-							<p class="wow fadeInUp"><?php echo _translate('article', $article[4][$_SESSION['language']]) ?>
+							<p class="wow fadeInUp"><?php echo $article[4][$_SESSION['language']]; ?>
 	
 						<?php } if (array_key_exists('participation' . '-' .  $_SESSION['language'], $article[4])) { ?>
 
@@ -233,13 +233,9 @@
 					</ul>
 				</div>								
 				
-				<?php } ?>
-
-				<?php $i = 0 ?>
-
-				<?php $count = count($article[5]) ?>
-
-				<?php //var_dump ($article[5]) ?>
+				<?php } $i = 0; $count = count($article[5]); ?>
+				
+				<?php /* BURAYA BAK */ ?> 
 				
 				<?php if ($count > 1) { ?> 
 				
@@ -266,32 +262,42 @@
 							if (is_dir($path_category_article)) { $path = $path_category_article; } else { $path = $path_subcategory_article; }	
 
 							$related_images = _content ($path); 
-
+	
+							if (array_key_exists($_SESSION['language'], $related_value)) {
+								
 							if (_translate('article', $related_key) <> _translate('article', $article[3])) { ?>
 
-							<?php $i++; if ($i < 7) { ?>
+								<?php $i++; if ($i < 7) { ?>
 
-								<li class="item wow fadeInUp" data-wow-delay="0.1s">
-									<div class="holder">
-										<div class="img wow fadeInUp">
-											<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
-										</div>
-										<div class="caption">
-											<div class="c1">
-												<div class="c2">
-													<a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><strong class="title"><?php echo _uppercase(_translate('article', $related_key)); ?></strong></a>
-													<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
-													<ul class="icons">
-														<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
-													</ul>
+									<li class="item wow fadeInUp" data-wow-delay="0.1s">
+										<div class="holder">
+											<div class="img wow fadeInUp">
+												<a href="<?php echo '/' . _seo($related_key) . '-' . _seo($article[2]) ?>"><img src="<?php echo $related_images[0] ?>" alt="image description"></a>
+											</div>
+											<div class="caption">
+												<div class="c1">
+													<div class="c2">
+														<a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><strong class="title"><?php echo _uppercase(_translate('article', $related_key)); ?></strong></a>
+														
+														<?php if (array_key_exists('location', $related_value)) { ?>
+
+															<a href="<?php echo _seo(_translate('venues', $related_value['location'])) ?>"><p><?php echo _translate('venues', $related_value['location']); ?></p></a>
+								
+														<?php } ?>
+														
+														<ul class="icons">
+															<li><a href="<?php echo _seo(_translate('article', $related_key) . '-' . _seo($article[2])); ?>"><i class="icon-resize-full-alt"></i> <span>resize</span></a></li>
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</li>						
+									</li>						
 
-							<?php } 
+								<?php } 
 
+								}
+								
 							}
 
 						} ?>						

@@ -22,7 +22,7 @@
 	date_default_timezone_set('Europe/Istanbul');
 
 	//require_once $directory . '/extension/mailer/autoload.php';
-
+	
 	if (session_status() !== PHP_SESSION_ACTIVE) {
 		
 		session_start();
@@ -33,6 +33,8 @@
 			
 			_include_all ($directory . '/class/');		
 			_include_all ($directory . '/class/construct/');	
+		
+			$_SESSION ['language'] = _language();
 		
 			require_once $directory . '/settings.php';		
 		
@@ -50,13 +52,13 @@
 
 					} else {
 
-						if ($header == '/' . _seo(_translate('sayfa', 'yapım aşamasında')) || $header == '/erkajans' || $header == '/administration') {
+						if ($header == '/' . _seo(_translate('page', 'yapım aşamasında')) || $header == '/erkajans' || $header == '/administration') {
 
 							_under_construction($erkajans);
 
 						} else {
 
-							header('Location: /' . _seo(_translate('sayfa', 'yapım aşamasında')));
+							header('Location: /' . _seo(_translate('page', 'yapım aşamasında')));
 
 						}
 

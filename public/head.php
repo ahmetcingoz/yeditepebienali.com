@@ -1,9 +1,10 @@
 <head>
-	<meta charset="utf-8">
+	<title><?php echo $content['head']['title'][$_SESSION['language']] ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title ?></title>
-	   <meta name="description" content="Yeditepe Bienali" />
-	   <meta name="keywords" content="klasik türk sanatları vakfı, 7tepe7sanat, yeditepe, bienal, sanat" />	
+
+	<meta name="description" content="<?php echo $content['head']['description'][$_SESSION['language']] ?>" />
+	<meta name="keywords" content="<?php echo $content['head']['keywords'][$_SESSION['language']] ?>" />
 	
 	<link rel="stylesheet" href="../style.css">	
 	

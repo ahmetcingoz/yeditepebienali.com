@@ -1,16 +1,30 @@
 <?php 
 
+	$content = $_SERVER['DOCUMENT_ROOT'] . '/json/content.json';
+	$content = _decode_json($content);
+
+	$rename_path = 'images/articles/sanatcilar/';
+
 	/* HEAD */
 	$title = 'Yeditepe Bienali';
+	$description_tr = "";
+	$description_tr = "";
+	$keywords_tr = "";
+	$keywords_en = "";
 
-	$rename_path = '';
+
+	/* LANDING PAGE */
+	$slider_autoplayspeed = 5000;
+	$slider_fadespeed = 1000;
+
+	/* LANGUAGE */
+	$language = array ('tr', 'en');
 
 	/* SETTINGS */
-	$erkajans = 'false';
-	$under_construction = 'false';
+	$erkajans = 'true';
+	$under_construction = 'true';
 
-
-	//$_SESSION ['language'] = _language();
-	$_SESSION ['language'] = 'tr';
+	/* GOOGLE ANALYTICS */
+	$google_analytics = 'UA-1289368-70';
 
 ?>

@@ -3,7 +3,7 @@
       "bienal":{
          "en":[
             "biennial"
-         ]		  
+         ]
       },
       "sergiler":{
          "en":[
@@ -25,7 +25,7 @@
             "artists"
          ]
       },
-      "mekânlar":{
+      "mekanlar":{
          "en":[
             "venues"
          ]
@@ -46,7 +46,6 @@
          ]
       }
    },
-
    "subcategory":{
       "grup sergileri":{
          "en":[
@@ -65,7 +64,7 @@
       },
       "koleksiyoner sergisi":{
          "en":[
-            "collectors’ exhibitions"
+            "collectors exhibitions"
          ]
       },
       "tematik sergiler":{
@@ -80,30 +79,173 @@
       },
       "1. yeditepe bienali":{
          "en":[
-            "yeditepe biennal 1"
+            "yeditepe biennial 1"
          ]
       },
       "2. yeditepe bienali":{
          "en":[
-            "yeditepe biennal 2"
+            "yeditepe biennial 2"
          ]
       }
    },
-
-	"title":{
-      "yeditepe bienali":{
+   "article":{
+      "En Güzel İsimler: Esma'ül Hüsna":{
          "en":[
-            "yeditepe biennial"
+            "The Most Beautiful Names (of Allah): Asma al-Husna "
+         ]
+      },
+      "Kâbus-u Azat":{
+         "en":[
+            "Liberation from Nightmare"
+         ]
+      },
+      "Saray Sanatları":{
+         "en":[
+            "Palace Arts"
+         ]
+      },
+      "Altından Haleler":{
+         "en":[
+            "Liberation from Nightmare"
+         ]
+      },
+      "Mustafa Kaya Koleksiyonu Yakup Cem Eserleri":{
+         "en":[
+            "Collector's Exhibitions"
+         ]
+      },
+      "Bienal Karma Sergisi":{
+         "en":[
+            "biennial mixed exhibition"
+         ]
+      },
+      "El Üstünde":{
+         "en":[
+            "On the Hand"
+         ]
+      },
+      "İstanbul'a Dair":{
+         "en":[
+            "about istanbul" 
+         ]
+      },
+      "Mekândan Taşanlar - Ayasofya":{
+         "en":[
+            "Overflowing From The Place - Hagia Sophia"
+         ]
+      },
+      "Mekândan Taşanlar - Kü":{
+         "en":[
+            "Overflowing From The Place - Kucuk Mustafa Pasa Hammam"
+         ]
+      },
+      "Mekandan Taşanlar - Nuruosmaniye Mahzen":{
+         "en":[
+            "Overflowing From The Place - Nuruosmaniye Mosque Cellar"
+         ]
+      },
+      "Mekandan Taşanlar - Dış Mekan Enstalasyonları":{
+         "en":[
+            "Overflowing From The Place - "
+         ]
+      },
+      "Kuş Misali - İstanbul Arkeoloji Müzesi":{
+         "en":[
+            "Like a Bird - "
+         ]
+      },
+      "Kuş Misali - Çinili Köşk":{
+         "en":[
+            "Like a Bird - "
+         ]
+      },
+      "kus misali darphane-i amire":{
+         "en":[
+            "Like a Bird - Darphane-i Amire"
+         ]
+      },
+      "Kuş Misali - Dış Mekan Enstalasyonu":{
+         "en":[
+            "Like a Bird - "
          ]
       },
       "II.Mehmet 'Fatihnâme'":{
          "en":[
-            "II.Mehmet 'Fatihnâme'"
+            "ii.mehmet fatihname"
+                  ]
+      },
+      "90 Yıl 90 Eser":{
+         "en":[
+            "90 years 90 work of art "
          ]
-      }
-   },	
-
-	"title":{
+      },
+      "Kusursuz Tekrar":{
+         "en":[
+            "Flawless Repetition"
+         ]
+      },
+      "uluslararasi hat sergisi":{
+         "en":[
+            "international calligraphy art"
+         ]
+      },
+      "ilhami atalay":{
+         "en":[
+            "ilhami atalay"
+         ]
+      },
+      "mestane bakış özge temaşa":{
+         "en":[
+            "mestane bakış özge temaşa"
+         ]
+      },
+      "Yönetim Kurulu Başkanı'ndan":{
+         "en":[
+            "From the Chairman of the Board of Directors"
+         ]
+      },
+      "Vakıf Başkanı'ndan":{
+         "en":[
+            "From the President of the Foundation"
+         ]
+      },
+      "Küratör'den":{
+         "en":[
+            "From the Curator"
+         ]
+      },
+      "Basın Bülteninden":{
+         "en":[
+            "From the Press Release"
+         ]
+      },
+      "ali lei gong - said chuanyi lei":{
+         "en":[
+            "ali lei gong - said chuanyi lei"
+         ]
+      },
+      "karanlık işler atölyesi ve leyla kara":{
+         "en":[
+            "dark things workshop and leyla kara"
+         ]
+      },
+      "Yeditepe Bienali":{
+         "en":[
+            "Yeditepe Biennial"
+         ]
+      },
+      "Künye":{
+         "en":[
+            "Tag"
+         ]
+      },
+      "Etkinlik Takvimi":{
+         "en":[
+            "Event Calendar"
+         ]
+      }	   
+   },
+   "venues":{
       "Akdeniz Medreseleri":{
          "en":[
             "Mediterranean Madrasas"
@@ -111,7 +253,7 @@
       },
       "Arkeoloji Müzesi":{
          "en":[
-            "Archaeological Museum'"
+            "Archaeological Museum"
          ]
       },
       "Çinili Köşk":{
@@ -131,7 +273,7 @@
       },
       "Darphane-i Amire":{
          "en":[
-            "Darphane-i Amire'"
+            "Darphane-i Amire"
          ]
       },
       "Fatih Belediyesi Ayvansaray Türk Evi":{
@@ -219,13 +361,125 @@
             "Sirkeci Railway Station"
          ]
       }
-   },	
-	
+   },
+   "footer":{
+      "aydınlatma metni":{
+         "en":[
+            "yeditepe biennial"
+         ]
+      },
+      "çerez politikası":{
+         "en":[
+            "cookie policy"
+         ]
+      },
+      "kullanım koşulları":{
+         "en":[
+            "terms of use"
+         ]
+      },
+      "gizlilik politikası":{
+         "en":[
+            "privacy policy"
+         ]
+      },
+      "Tüm Hakları Saklıdır":{
+         "en":[
+            "All Rights Reserved"
+         ]
+      }
+   },
+   "title":{
+      "yeditepe bienali":{
+         "en":[
+            "yeditepe biennial"
+         ]
+      },
+      "eserler":{
+         "en":[
+            "works"
+         ]
+      },
+      "sergi":{
+         "en":[
+            "exhibition"
+         ]
+      },
+      "ziyaretçi":{
+         "en":[
+            "visitors"
+         ]
+      },
+      "sanatçılar":{
+         "en":[
+            "artists"
+         ]
+      },
+      "mekan":{
+         "en":[
+            "venue"
+         ]
+      },
+      "yayın":{
+         "en":[
+            "publication"
+         ]
+      },
+      "fotoğraflar":{
+         "en":[
+            "images"
+         ]
+      }
+   },
    "form":{
-      "adınız":{
+      "Yorumlarınız":{
+         "en":[
+            "We will love to hear from you!"
+         ]
+      },
+      "ad - soyad":{
          "en":[
             "your name"
          ]
+      },
+      "gönder":{
+         "en":[
+            "send"
+         ]
+      },
+      "e-posta":{
+         "en":[
+            "e-mail"
+         ]
+      },
+      "yorum":{
+         "en":[
+            "your comment"
+         ]
       }
-   }
+   },
+   "word":{
+      "devamı":{
+         "en":[
+            "continue"
+         ]
+      },
+      "tümünü gör":{
+         "en":[
+            "view all"
+         ]
+      },
+      "hepsi":{
+         "en":[
+            "all"
+         ]
+      }
+   },
+   "page":{
+      "yapım aşamasında":{
+         "en":[
+            "under construction"
+         ]
+      }
+   }	
 }

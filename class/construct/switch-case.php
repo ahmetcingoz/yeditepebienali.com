@@ -2,12 +2,13 @@
 
 	function _switch_page () {
 		
-		$header_json = $_SERVER['DOCUMENT_ROOT'] . '/json/header.json';
+		global $content;
 		
-		$header_json = _decode_json($header_json);
-
-		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}	
+		global $language;
 		
+		if(!isset( $_GET['page'])) {$page = 'default';} else {$page = $_GET['page'];}
+		
+		if(!isset( $_GET['panel'])) {$panel = 'default';} else {$panel = $_GET['panel'];}		
 		
 		/* CUSTOM */
 				
@@ -33,32 +34,99 @@
 				
 		}		
 		
+		/* LANGUAGE */ 
+		
+		foreach ($language as $language_session) {
+			
+			switch($page) {
+
+				case $language_session;
+
+					$_SESSION['language'] = $language_session;
+
+					header('Location: /');
+
+				break;	
+
+			}		
+			
+		}
+		
 		/* HEADER = CATEGORY & SUBCATEGORY */
 		
-		foreach ($header_json as $category_key => $category_value) {
+		foreach ($content['header'] as $category_key => $category_value) {
 			
 			switch($page) {
 
 				case _seo(_translate('category', $category_key, 'true'));
 					
 					_include_once('category');
-
+					
 				break;	
 
 			}
 			
 			if (is_array($category_value)) {
 
+				$biennial_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/biennial.json';
+
+				$biennial_json = _decode_json($biennial_json); 				
+				
 				foreach ($category_value as $subcategory) {
-
-					switch($page) {
-
-						case _seo(_translate('subcategory', $subcategory, 'true'));
+					
+					foreach ($biennial_json as $biennial_key => $biennial_value) {
+						
+						if (array_key_exists($subcategory, $biennial_json)) {
 							
-							_include_once('category');
+							switch($page) {
+									
+								case _seo(_translate('subcategory', $biennial_key));
+									
+									foreach ($biennial_value as $biennial_article_key => $biennial_article_value) { 
+										
+										if ($_SERVER['REQUEST_URI'] == '/' . _seo(_translate('subcategory', $biennial_key))) {
 
-						break;	
+											header('Location: /' . _seo(_translate('subcategory', $biennial_key)) . '/' . _seo(_translate('article', $biennial_article_key)));
+											
+											break;
 
+										} else {
+											
+											$biennial = [$biennial_key, $biennial_article_key, $biennial_article_value, $biennial_value];
+
+											switch($panel) {
+
+												case _seo(_translate('article', $biennial_article_key));
+
+													_include_once('biennial', $biennial);
+													
+												break;	
+
+											}
+											
+										}
+									
+									}
+									
+									
+								break;	
+
+							}
+							
+						} else {
+
+							switch($page) {
+
+								case _seo(_translate('subcategory', $subcategory, 'true'));
+									
+									_include_once('category');
+
+								break;	
+
+							}
+
+						}
+						
 					}
 				
 				}
@@ -85,7 +153,7 @@
 
 						switch($page) {
 
-							case _seo(_translate('category', $article_key, 'true')) . '-' . $date_key;
+							case _seo(_translate('article', $article_key, 'true')) . '-' . $date_key;
 
 								$article_array = [$category_key, 'true', $date_key, $article_key, $article_value, $subcategory_value];
 
@@ -105,8 +173,8 @@
 							
 							switch($page) {
 
-								case _seo(_translate('subcategory', $article_key, 'true')) . '-' . $date_key;
-
+								case _seo(_translate('article', $article_key, 'true')) . '-' . $date_key;
+									
 									$article_array = [$category_key, $subcategory_key, $date_key, $article_key, $article_value, $date_value];
 
 									_include_once('article', $article_array);
@@ -125,7 +193,6 @@
 			
 		}
 		
-			
 		/* ARTIST */
 		
 		$artist_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/artist.json';
@@ -157,23 +224,24 @@
 
 		}
 		
-		/* VENUE */		
 		
-		$venue_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
+		/* VENUES */
+		
+		$venues_json = $_SERVER['DOCUMENT_ROOT'] . '/json/category/venues.json';
 
-		$venue_json = _decode_json($venue_json);
+		$venues_json = _decode_json($venues_json);
 		
-		foreach ($venue_json as $category_key => $category_value) {
+		foreach ($venues_json as $category_key => $category_value) {
 
 			foreach ($category_value as $date_key => $date_value) {
 				
-				foreach ($date_value as $venues_key => $venues_value) {
-					
+				foreach ($date_value as $venue_key => $venue_value) {
+										
 					switch($page) {
 
-						case _seo($venues_key);
+						case _seo(_translate('venues', $venue_key));
 
-							$venues_array = [$venues_key, $venues_value, $category_key, $date_key, $category_value];
+							$venues_array = [$venue_key, $venue_value, $category_key, $date_key, $category_value];
 
 							_include_once('venues', $venues_array);
 
@@ -182,8 +250,27 @@
 					}	
 					
 				}
+					
 
 			}
+
+		}
+		
+		/* FOOTER */		
+		
+		foreach ($content['footer']['footer-links'] as $footer_key => $footer_value) {
+			
+			switch($page) {
+
+				case _seo(_translate('footer', $footer_key));
+
+					$footer_array = [$content['footer']['footer-links'], $footer_key, $footer_value];
+
+					_include_once('footer', $footer_array);
+
+				break;	
+
+			}			
 
 		}		
 		
@@ -191,23 +278,6 @@
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

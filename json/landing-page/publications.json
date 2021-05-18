@@ -7,10 +7,10 @@
          "YAYINLAR"
       ],
       "href":[
-         "#"
+         "/yayinlar"
       ],
       "category":{
-		"ALTINDAN HALELER TEZHİP SERGİSİ":[
+		"ALTINDAN HALELER":[
 			"Geleneksel Türk Sanatlarının biriciği tezhibe bir de Yeditepe Bienali’nden bakıyoruz. Eşsiz motifleri ve renkleriyle birbirinden değerli çalışmaların manevi ve estetik duygularımızı doyurmasını sağlıyoruz. Geçmişin anılarını bugün de yaşatıyoruz.",
 			"#"
 		],
@@ -22,7 +22,7 @@
 			"Güneş doğar, batar. Sonra tekrar doğar ve batar. Ezan okunur, sonra tekrar okunur, sonra tekrar. Okunanda da tekrar eder satırlar. Bu tekrarlar ile var olan ritmin söylediklerini duyan sanatkârların dilinden: “Tekrarında sanat var”. ",
 			"#"
 		],
-		"HİRFET-İ KALEM HAT SERGİSİ":[
+		"HİRFET-İ KALEM":[
 			"Kâinata dair her detayda kimi arayışlardan biri: estetik. Göze, kulağa her duyuyu doyuran… Var oluşumuza dair bitmek bilmeyen arayışlardan güzellik, yazıda da hayat buluyor. Yeditepe Bienali’nde hüsn-i hat sanatı, sanatkârların mürekkeplerinden akıyor.",
 			"#"
 		],
@@ -56,43 +56,43 @@
          "PUBLICATION"
       ],
       "href":[
-         "#"
+         "/publications"
       ],
       "category":{
-		"ALTINDAN HALELER TEZHİP SERGİSİ":[
-			"Geleneksel Türk Sanatlarının biriciği tezhibe bir de Yeditepe Bienali’nden bakıyoruz. Eşsiz motifleri ve renkleriyle birbirinden değerli çalışmaların manevi ve estetik duygularımızı doyurmasını sağlıyoruz. Geçmişin anılarını bugün de yaşatıyoruz.",
+		"GOLDEN HALOS":[
+			"We view illuminated manuscript, the unique traditional Turkish art, also from Yeditepe Biennial. We enable the valuable works of art with unique motifs and colors to nurture our spiritual and esthetic feelings. We allow the memories of the past to live today too.",
 			"#"
 		],
-		"II. MEHMED FATİHNÂME ":[
-			"Tarihimizin şanlı hükümdarı Fatih Sultan Mehmed Han’a, yaşamına ve başarılarına yakından bakma fırsatı yakalıyoruz Fatihnâme’yle. Doğumunda kentin görünümüyle başlıyoruz seyahate, tahta çıkışı ve zaferleriyle devam ediyoruz. Ayasofya’da ilk Cuma namazını kıldırmasını anıyor, yaşam içinde yol alışına tanıklık ediyoruz âdeta.",
+		"MEHMED II FATİHNÂME ":[
+			"Thanks to Fatihnâme, we have the opportunity to view closely the life and achievements of Sultan Mehmed II, the Conqueror, the glorious ruler of the Turkish history. We start the journey with the panorama of the city at the time of his birth and continue with his accession to the throne and his victories. We commemorate the first Friday prayer in Ayasofya (Hagia Sophia) and virtually witness his journey in time.",
 			"#"
 		],
-		"KUSURSUZ TEKRAR":[
-			"Güneş doğar, batar. Sonra tekrar doğar ve batar. Ezan okunur, sonra tekrar okunur, sonra tekrar. Okunanda da tekrar eder satırlar. Bu tekrarlar ile var olan ritmin söylediklerini duyan sanatkârların dilinden: “Tekrarında sanat var”. ",
+		"FLAWLESS REPETITION":[
+			"The sun rises and sets. Then it rises again and sets. Adhan is called, then called again and again. The lines repeat in adhan too. From the language of the artists who hear the rhythm with these repetitions: “There is art in His repetition”.",
 			"#"
 		],
-		"HİRFET-İ KALEM HAT SERGİSİ":[
-			"Kâinata dair her detayda kimi arayışlardan biri: estetik. Göze, kulağa her duyuyu doyuran… Var oluşumuza dair bitmek bilmeyen arayışlardan güzellik, yazıda da hayat buluyor. Yeditepe Bienali’nde hüsn-i hat sanatı, sanatkârların mürekkeplerinden akıyor.",
+		"ART OF THE PEN":[
+			"One of the pursuits in every detail of the universe: esthetics. Addressing the eyes and ears, satisfying every sense… Beauty, one of the endless quests for our existence, comes to life in writing too. The art of calligraphy flows from the ink of the artists at Yeditepe Biennial.",
 			"#"
 		],
-		"EL ÜSTÜNDE ":[
-			"Eller ne çok şey yansıtır insana dair. Yaşama, yaşanmışlıklara göz kırpar. Dokunan, hisseden, esere şekil veren ile vücut bulur her ne var ise. Klasik Türk Sanatları üstat ve üstâdelerinin uğruna ömür verdikleri kıymetli çalışmalarına ithafhen sanat El Üstünde.",
+		"ON THE HAND ":[
+			"Hands show so many things about people. They are related to life and experiences. Everything comes into existence with the one who touches, feels and shapes the work. Art is On the Hand, dedicated to the valuable works that masters of Classical Turkish Arts spent their lives for. ",
 			"#"
 		],
-		"MÜREKKEPTEN GÖKKUŞAĞINA":[
-			"Türk-Çin sanat diyaloğunun eşsiz örneklerinden biri Mürekkepten Gökkuşağına. Geleneksel Çin resim sanatıyla İslâm sanat felsefesinin değerli kesişimlerinden. Mürekkepten kâğıda dökülen kültürlerarası bir sanat.",
+		"FROM INK TO RAINBOW":[
+			"One of the unique examples of Turkish-Chinese art dialogue: From Ink to Rainbow. It is one of the valuable meeting points of the traditional Chinese painting and the Islamic philosophy of art. It is an intercultural art flowing from ink onto paper.",
 			"#"
 		],
-		"EBRU SERGİSİ":[
-			"Rengin suda hayat bulduğu bir sanattır ebru. Sanatkârın ruhundan taşanlar akar o suya. Tarihimizin eşsiz sanat türlerinden biri olan ebrunun geçmişten geleceğe olan serüvenine göz kırpar Yeditepe Bienali Ebru Sergisi.",
+		"MARBLING EXHIBITION":[
+			"Marbling is an art where color comes to life in water. What overflows from the spirit of the artist flows into that water. Yeditepe Biennial Ebru Exhibition is related to the adventure of marbling, one of the unique art forms of our history, from the past to the future.",
 			"#"
 		],
-		"MESNEVİ’DEN HİKÂYELER":[
-			"Minyatür sanatını yaşatan değerli bir sanatkârın elinden ve öğrencilerinden Mesnevi’den Hikâyeler. Medeniyetimizin nadide hikâyelerinin ete kemiğe büründüğü bu sergide Aşık ile Maşuk’tan Yusuf Züleyha’ya, Gemideki Derviş hikâyesinden Leyla ve Mecnun’a uzanıyoruz Yeditepe Bienali’nde.",
+		"STORIES FROM MATHNAWI":[
+			"Stories from Mathnawi from a valuable artist who maintains the miniature art and from one of his students. At Yeditepe Biennial, we reach from the Lover and the Beloved to Yusuf and Züleyha, from the story of the Dervish on the Ship to Layla and Majnun in this exhibition where the valuable stories of our civilization take shape in flesh and bones.",
 			"#"
 		],
-		"ZAMANSIZ DOKUNUŞLAR":[
-			"İnsanın andan kurtulup özgürleşmesini sağlar sanat, zamandan alıkoyar sanatkârı. İnsanı gerçek dünyadan koparıp renkler ve çizgiler özelinde düş dünyasına yolculuk etmesini sağlar. Zamansız Dokunuşlar da minyatür sanatıyla geçmişe seyahate götürür izleyeni.",
+		"TIMELESS TOUCHES":[
+			"Art enables man to get rid of the moment and become free; art moves the artist beyond time. It takes man away from the real world and enables man to travel to the world of dreams through colors and lines. Timeless Touches takes the viewer on a journey to the past with the miniature art.",
 			"#"
 		]
       }

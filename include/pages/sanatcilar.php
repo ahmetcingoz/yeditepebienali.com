@@ -12,7 +12,11 @@
 
 			foreach ($date_value as $artist_key => $artist_value) {
 			
-				$sort[$artist_key] = $artist_key;
+				if (array_key_exists($_SESSION['language'], $artist_value)) {
+					
+					$sort[$artist_key] = $artist_key;					
+					
+				}
 				
 			}			
 
@@ -26,30 +30,32 @@
 
 	$number = count($sort);
 
-?>
 
-
-<div class="promo portfolio wow fadeInUp">
-	<div class="max-container">
-		<div class="img background-animation">
-			<img src="/images/sanatcilar.jpg" alt="image description">
-		</div>
-		<ol class="breadcrumb">
-			<!--<li><a></a></li>
-			<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>-->
-			<li class="active"><?php echo _translate('category', $category_key) ?></li>
-		</ol>			
-		<div class="holder">
-			<div class="frame">
-				<div class="box">
-					<div class="heading">
-						<h1><?php echo _uppercase(_translate('subcategory', $category_key)) ?></h1>
+	if ($_SERVER['REQUEST_URI'] == '/' .  _seo(_translate('category', 'sanatçılar'))) { ?>
+		
+		<div class="promo portfolio wow fadeInUp">
+			<div class="max-container">
+				<div class="img background-animation">
+					<img src="/images/sanatcilar.jpg" alt="image description">
+				</div>
+				<ol class="breadcrumb">
+					<!--<li><a></a></li>
+					<li><a href="<?php echo '/' . _seo(_translate('subcategory', $article[1])) ?>"><?php echo _translate('subcategory', $article[1]) ?></a></li>-->
+					<li class="active"><?php echo _translate('category', $category_key) ?></li>
+				</ol>			
+				<div class="holder">
+					<div class="frame">
+						<div class="box">
+							<div class="heading">
+								<h1><?php echo _uppercase(_translate('category', $category_key)) ?></h1>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+		
+	<?php } ?>
 
 <main id="main" role="main">
 	<div class="container">
@@ -59,32 +65,67 @@
 				<?php 
 
 					$tr = array('ş','Ş','ı','I','İ','ğ','Ğ','ü','Ü','ö','Ö','Ç','ç');
+				
+					if ($_SERVER['REQUEST_URI'] == '/' .  _seo(_translate('category', 'sanatçılar'))) { 
+						
+						for ($i = 0; $i < $number; $i++) {
 
-					for ($i = 0; $i < $number; $i++) {
+							$substr = substr($sort[$i], 0, 2);
 
-						$substr = substr($sort[$i], 0, 2);
-
-						if ($i == 0) {
-
-							echo '<h2>' . $sort[$i][0] . '</h2>';
-
-						} else if ($sort[$i - 1][0] <> $sort[$i][0]) {
-
-							if (in_array($substr, $tr)) {
-
-								echo '<h2>' . $substr . '</h2>';
-
-							} else {
+							if ($i == 0) {
 
 								echo '<h2>' . $sort[$i][0] . '</h2>';
 
-							}				
+							} else if ($sort[$i - 1][0] <> $sort[$i][0]) {
+
+								if (in_array($substr, $tr)) {
+
+									echo '<h2>' . $substr . '</h2>';
+
+								} else {
+
+									echo '<h2>' . $sort[$i][0] . '</h2>';
+
+								}				
+
+							}
+
+							echo '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
 
 						}
 
-						echo '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
+					} else {
+						
+						$header = str_replace("/","",$_SERVER['REQUEST_URI']);
+						
+						for ($i = 0; $i < $number; $i++) {
+							
+							if (_uppercase($header[0]) == $sort[$i][0]) {
+								
+								if (_seo($sort[$i]) <> $header) {
+																		
+									$print[$i] = '<li><a href="' . _seo($sort[$i]) . '">' . $sort[$i] . '</a></li>';
+									
+								}
+								
+							} 
+							
+						}
+						
+						if (isset($print) && count($print) > 0) {
+							
+							echo '<h2>' . _uppercase($header[0]) . '</h2>';										
+							
+							foreach ($print as $print_key => $print_value) {
 
+								echo $print_value;
+
+							}
+							
+						}
+						
 					}
+				
 
 				?>			
 		

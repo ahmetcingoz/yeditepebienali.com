@@ -1,17 +1,13 @@
 <?php
 
-	function _header () {
-		
-		$header_json = $_SERVER['DOCUMENT_ROOT'] . '/json/header.json';
-		
-		$header_json = _decode_json($header_json); ?>
+	function _header () { global $content; ?>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 		
 		<?php		
 
-		foreach ($header_json as $f_title_key => $f_title_value) { 
+		foreach ($content['header'] as $f_title_key => $f_title_value) { 
 			
 			if (is_array($f_title_value)) { ?>
 				

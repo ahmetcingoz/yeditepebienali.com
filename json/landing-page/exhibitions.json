@@ -7,7 +7,7 @@
          "SERGİLER"
       ],
       "href":[
-         "#"
+         "/grup-sergileri"
       ],
       "category":{
 		"En Güzel İsimler: Esma'ül Hüsna":[
@@ -29,8 +29,8 @@
 			""
 		],
 		"Saray Sanatları":[
-			"Kâbus-u Azat",
-			"Saray Sanatları",
+			"Serap Matalon",
+			"Lütuf ve Kahır",
 			"/images/main/exhibitions/04.jpg",
 			"add"
 		],
@@ -56,42 +56,42 @@
          "EXHIBITIONS"
       ],
       "href":[
-         "#"
+         "/group-exhibitions"
       ],
       "category":{
-		"En Güzel İsimler: Esma'ül Hüsna":[
+		"The Most Beautiful Names (of Allah): Asma al-Husna":[
 			"Elif Ece Kopuz",
-			"Kelime-i Tevhid",
+			"La İlaha İllallah (There is no god but Allah)",
 			"/images/main/exhibitions/01.jpg",
 			""
 		],
-		"Kâbus-u Azat":[
+		"Liberation from Nightmare":[
 			"Aylin Özkan",
-			"Geçmişe Yolculuk; Uygur Türklerinde İnanç",
+			"Journey to the Past; Faith in Uyghur Turks",
 			"/images/main/exhibitions/02.jpg",
 			""
 		],
-		"Bienal Karma Sergi":[
+		"Biennial Mixed Exhibition":[
 			"Eda Funda Özkan",
-			"Kudüs Hilye",
+			"Jerusalem Hilya",
 			"/images/main/exhibitions/03.jpg",
 			""
 		],
-		"Saray Sanatları":[
-			"Kâbus-u Azat",
-			"Saray Sanatları",
+		"Palace Arts":[
+			"Serap Matalon",
+			"Grace and Wrath",
 			"/images/main/exhibitions/04.jpg",
 			"add"
 		],
-		"Kusursuz Tekrar":[
+		"Flawless Repetition":[
 			"Said Chuanyi Lei",
-			"Çay Keyfi",
+			"Delight of Tea",
 			"/images/main/exhibitions/05.jpg",
 			""
 		],
-		"İstanbul’a Dair":[
+		"About Istanbul":[
 			"Mahir Kurtulan",
-			"Kayıp Zaman Atlası",
+			"Lost Time Atlas",
 			"/images/main/exhibitions/06.jpg",
 			"add"
 		]
